@@ -3,62 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/posts/hnav/</loc>
+    <loc>http://shilohc.github.io/blog/posts/hnav/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/keyboards/</loc>
+    <loc>http://shilohc.github.io/blog/tags/keyboards/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>http://shilohc.github.io/blog/posts/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/projects/</loc>
+    <loc>http://shilohc.github.io/blog/tags/projects/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/sting_operation/</loc>
+    <loc>http://shilohc.github.io/blog/posts/sting_operation/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://shilohc.github.io/blog/tags/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/typewriter_keyboard/</loc>
+    <loc>http://shilohc.github.io/blog/posts/typewriter_keyboard/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://shilohc.github.io/blog/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>http://shilohc.github.io/blog/about/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/keyboard_layout/</loc>
+    <loc>http://shilohc.github.io/blog/posts/keyboard_layout/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://shilohc.github.io/blog/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/all/</loc>
+    <loc>http://shilohc.github.io/blog/all/</loc>
   </url>
   
 </urlset>
