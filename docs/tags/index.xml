@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>http://shilohc.github.io/blog/tags/</link>
+    <link>https://shilohc.github.io/blog/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://shilohc.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://shilohc.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>keyboards</title>
-      <link>http://shilohc.github.io/blog/tags/keyboards/</link>
+      <link>https://shilohc.github.io/blog/tags/keyboards/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://shilohc.github.io/blog/tags/keyboards/</guid>
+      <guid>https://shilohc.github.io/blog/tags/keyboards/</guid>
       <description></description>
     </item>
     
     <item>
       <title>projects</title>
-      <link>http://shilohc.github.io/blog/tags/projects/</link>
+      <link>https://shilohc.github.io/blog/tags/projects/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://shilohc.github.io/blog/tags/projects/</guid>
+      <guid>https://shilohc.github.io/blog/tags/projects/</guid>
       <description></description>
     </item>
     
