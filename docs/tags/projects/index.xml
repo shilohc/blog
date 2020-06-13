@@ -6,10 +6,19 @@
     <description>Recent content in projects on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shilohc.github.io/blog/tags/projects/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google Calendar Time Tracker</title>
+      <link>https://shilohc.github.io/blog/posts/gcal_tracker/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/gcal_tracker/</guid>
+      <description>The rest of this post was originally written in spring of 2019, when I&amp;rsquo;d just created the time tracker. In the interim, Google seems to have changed their auth flow, and I can no longer get the tracker to work &amp;ndash; not that I tried very hard, in all honesty.</description>
+    </item>
     
     <item>
       <title>H-NAV</title>

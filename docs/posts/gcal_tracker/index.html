@@ -64,8 +64,8 @@
 
 </div>
 
-    <h1>Sting Operation</h1>
-    <p class="post-info">103 words | ~ 1 min read | last modified Jun 12, 2020 | 
+    <h1>Google Calendar Time Tracker</h1>
+    <p class="post-info">221 words | ~ 2 min read | last modified Jun 13, 2020 | 
     
       <i data-feather="tag"></i>
       
@@ -74,9 +74,13 @@
       
     
     </p>
-    <p>Sting Operation is a homebrew telepresence robot; my original intent was to use it to attend <a href="http://hbrobotics.org/">robot club</a> when I&rsquo;m away at MIT.  Currently, it&rsquo;s outfitted with a Neato BotVac LiDAR, a Raspberry Pi running ROS, and a PyBoard controlling the motors and LIDAR. An iPad mounted on a tripod lets me FaceTime the robot.</p>
-<p><img src="https://shilohc.github.io/blog/img/stingoperation.jpg" alt="Picture of Sting Operation"></p>
-<p>Pictured above: Sting Operation base (minus tripod). It&rsquo;s a two-wheeled base with a castor wheel.  There is also a RC receiver that can be used for local teleoperation, and a dial on the front of the robot indicating its state (under remote control, under local control, stopped, etc).</p>
+    <blockquote>
+<p>The rest of this post was originally written in spring of 2019, when I&rsquo;d just created the time tracker.  In the interim, Google seems to have changed their auth flow, and I can no longer get the tracker to work &ndash; not that I tried very hard, in all honesty.  It&rsquo;s undocumented and hastily written, and I wouldn&rsquo;t necessarily recommend trying to reuse my code.  Nevertheless, I still like the idea!  Maybe I&rsquo;ll rewrite it some day&hellip;</p>
+</blockquote>
+<p>Google Calendar Time Tracker is a simple command-line utility that displays time breakdowns for the tasks on my Google Calendar, grouped by calendar and optionally by name.  For example, I can compute the total time of the events in my calendar for 6.832 (Underactuated Robotics) for the past week, and also check what portion of this time was spent on homework or in class.</p>
+<p>I wrote this to track how much time I spend on each of my classes, but it&rsquo;s flexible enough to be useful as a generic time tracker for contractors billing by the hour, interns working an hourly wage, or anyone else that wants to check how they&rsquo;re spending their time. You can find it on my github <a href="https://github.com/shilohc/gcal-tracker">here</a>.</p>
+<p><img src="https://shilohc.github.io/blog/img/gcal_tracker.png" alt="Screenshot of Google Calendar with an inset showing the output of my time tracker"></p>
+<p>Above is my calendar for the week, with an inset showing some of the time tracker&rsquo;s output for this week&rsquo;s planned schedule.</p>
 
   </div>
 

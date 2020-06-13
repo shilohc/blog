@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://shilohc.github.io/blog/posts/gcal_tracker/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/posts/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/tags/projects/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/tags/</loc>
+    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shilohc.github.io/blog/posts/hnav/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
@@ -13,22 +33,7 @@
   </url>
   
   <url>
-    <loc>https://shilohc.github.io/blog/posts/</loc>
-    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shilohc.github.io/blog/tags/projects/</loc>
-    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shilohc.github.io/blog/posts/sting_operation/</loc>
-    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shilohc.github.io/blog/tags/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
