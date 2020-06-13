@@ -9,11 +9,13 @@ It's no secret that I'm massively obsessed with mechanical keyboards.  For sheer
 
 How can I exercise this power for myself, I hear you ask?  First, get a keyboard that supports QMK.  I personally use a Preonic, which is not for everyone, but I recommend that you get a keyboard that has a split spacebar or otherwise has some extra thumb keys -- these are very convenient to assign as "layer activation" keys.  Then, follow the [QMK docs](https://docs.qmk.fm/#/newbs) on making a new keymap file and flashing your keyboard.  
 
-TODO: pictures of the Preonic: with more normal/understandable keycaps, and with the mt3 godspeed/runic keycaps i use
+![The Preonic, with its original keycaps](/img/preonic1.jpg)
 
 You'll notice that the Preonic has a "lower" key to the left of the spacebar and a "raise" key to the right.  These let you easily access "raise" and "lower" layers by holding down the respective key -- instantly and enormously expanding your keyboard.  It also has actual, physical arrow keys, something that's important to me, and yet it takes up less space than a normal 60% keyboard.  
 
-The rest of this post will be about my personal layout choices.  You may want to follow along by looking at my personal config, which is [here](https://github.com/shilohc/qmk_firmware/tree/shilohc/keymaps/keyboards/preonic/keymaps/shilohc).  You can find all my personal QMK configs in my fork of QMK [here](https://github.com/shilohc/qmk_firmware/tree/shilohc/keymaps).  I also have a custom config for a DZ60, which is the PCB I used for my typewriter keyboard -- more on this in a future post.  
+The rest of this post will be about my personal layout choices.  You may want to follow along by looking at my personal config, which is [here](https://github.com/shilohc/qmk_firmware/tree/shilohc/keymaps/keyboards/preonic/keymaps/shilohc).  You can find all my personal QMK configs in my fork of QMK [here](https://github.com/shilohc/qmk_firmware/tree/shilohc/keymaps).  I also have a custom config for a DZ60, which is the PCB I used for my [typewriter keyboard]({{< ref "/posts/typewriter_keyboard" >}}).
+
+![The Preonic, with Tengwar DSA keycaps](/img/preonic2.jpg)
 
 First, the default layer, labeled `_QWERTY` in `keymap.c`.  I haven't made too many changes here:
 * Delete key changed to backslash because I write a lot of LaTeX and don't use delete.  
@@ -31,6 +33,8 @@ The `_RAISE` layer is for special commands, since I moved all the symbol functio
 * I experimented with using several other keys on this layer to control brightness, music, etc., but honestly I mostly don't use them.  
 
 Finally, there's the `_ADJUST` layer, which I never use (except once, when I was randomly button-mashing and accidentally switched into Colemak).  The less said about this, the better.  
+
+![The Preonic, with Godspeed MT3 keycaps](/img/preonic3.jpg)
 
 In the default keymap, both raise and lower have all the function keys on them, which is wasteful.  In addition, raise has a few symbols on it, in the same place where the lower layer also has symbols, which was really confusing for me to learn -- I could never remember whether the symbol I wanted was on raise or lower.  And some of the symbols were just hard to reach, especially `~` and `|` which I type a lot in bash commands.  With all the symbols on the raise layer, the functionality is (mostly) neatly divided into "symbols layer" and "not symbols layer", which is easier to remember.  
 
