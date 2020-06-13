@@ -1,0 +1,167 @@
+<!doctype html>
+
+
+
+ <html class="no-js" lang=""> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro|Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href=http://example.org/css/main.css>
+  <link rel="stylesheet" href=http://example.org/css/magnific-popup.css>
+
+  
+  
+  
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+  
+  <link href="//fonts.googleapis.com/css?family=Fira+Code:400,700|Ovo:400" rel="stylesheet">
+
+
+
+<html>
+  <body lang="en">
+  
+
+
+  <div id="main">
+    
+
+<div id="nav">
+  
+  
+  <ul>
+    
+      <li><a href="http://example.org/about/">
+          <span>About</span>
+      </a></li>
+    
+      <li><a href="http://example.org/all/">
+          <span>All Posts</span>
+      </a></li>
+    
+      <li><a href="http://example.org/tags/">
+          <span>Tags</span>
+      </a></li>
+    
+      <li><a href="http://example.org/blogroll/">
+          <span>Blogroll</span>
+      </a></li>
+    
+  </ul>
+
+</div>
+
+    <h1>Custom Keyboard Layout</h1>
+    <p class="post-info">984 words | ~ 5 min read | last modified Jun 10, 2020 | 
+    
+      <i data-feather="tag"></i>
+      
+      
+      <a class="btn tag-btn btn-sm" href="http://example.org/tags/keyboards">keyboards</a>
+      
+    
+    </p>
+    <p>It&rsquo;s no secret that I&rsquo;m massively obsessed with mechanical keyboards.  For sheer customizability, they&rsquo;re impossible to beat.  Yes, I can put a lot of effort into software key remappings and then carefully port them over to every new computer I use &ndash; or I can just use open-source keyboard firmware <a href="https://docs.qmk.fm/#/">QMK</a> and my keyboard will work wherever I plug it in.  QMK also lets me program keys to do one thing when tapped and another thing when held down, or configure &ldquo;layers&rdquo; so that my letter keys will turn into symbol keys, so it&rsquo;s more powerful than software configuration.</p>
+<p>How can I exercise this power for myself, I hear you ask?  First, get a keyboard that supports QMK.  I personally use a Preonic, which is not for everyone, but I recommend that you get a keyboard that has a split spacebar or otherwise has some extra thumb keys &ndash; these are very convenient to assign as &ldquo;layer activation&rdquo; keys.  Then, follow the <a href="https://docs.qmk.fm/#/newbs">QMK docs</a> on making a new keymap file and flashing your keyboard.</p>
+<p>TODO: pictures of the Preonic: with more normal/understandable keycaps, and with the mt3 godspeed/runic keycaps i use</p>
+<p>You&rsquo;ll notice that the Preonic has a &ldquo;lower&rdquo; key to the left of the spacebar and a &ldquo;raise&rdquo; key to the right.  These let you easily access &ldquo;raise&rdquo; and &ldquo;lower&rdquo; layers by holding down the respective key &ndash; instantly and enormously expanding your keyboard.  It also has actual, physical arrow keys, something that&rsquo;s important to me, and yet it takes up less space than a normal 60% keyboard.</p>
+<p>The rest of this post will be about my personal layout choices.  You may want to follow along by looking at my personal config, which is <a href="https://github.com/shilohc/qmk_firmware/tree/shilohc/keymaps/keyboards/preonic/keymaps/shilohc">here</a>.  You can find all my personal QMK configs in my fork of QMK <a href="https://github.com/shilohc/qmk_firmware/tree/shilohc/keymaps">here</a>.  I also have a custom config for a DZ60, which is the PCB I used for my typewriter keyboard &ndash; more on this in a future post.</p>
+<p>First, the default layer, labeled <code>_QWERTY</code> in <code>keymap.c</code>.  I haven&rsquo;t made too many changes here:</p>
+<ul>
+<li>Delete key changed to backslash because I write a lot of LaTeX and don&rsquo;t use delete.</li>
+<li>Capslock changed to escape, something I highly recommend to all vim users.  If you use emacs I would instead suggest remapping it to ctrl.</li>
+<li>The Enter key has been changed to <code>SFT_T(KC_ENT)</code>.  If it&rsquo;s held down, and another key is pressed, it functions as a shift; if tapped, it acts as enter.  This is because when I first switched to the Preonic I exclusively used the right shift key, which the Preonic doesn&rsquo;t have.  I now use the left shift more often on my preonic, but on my Macbook&rsquo;s rubber keyboard cover, there&rsquo;s still a massive wear spot in the right shift while the left shift is near-pristine.</li>
+</ul>
+<p>The <code>_LOWER</code> layer is the one I&rsquo;ve customized the most &ndash; this is now my &ldquo;symbols and function keys&rdquo; layer.</p>
+<ul>
+<li>The symbols that usually live on the number keys, <code>!@#$%^&amp;*()</code>, have been moved to the top row of letters, and the other common programming symbols live on the home row.</li>
+<li>All three sets of brackets (parentheses, square-brackets, and curlyboys) are in a vertical stack on the rightmost columns of letter keys.</li>
+<li>Backslash stays the same, but pipe (<code>|</code>) has been moved to the quote key.</li>
+<li>You&rsquo;ll notice that the little diagram in the comments says Squid on it.  I was experimenting with QMK&rsquo;s Unicode-sending functionality, something the USB HID device standard typically doesn&rsquo;t allow, by using this key to send the squid kaomoji, <code>くコ:彡</code>.  Unfortunately, it didn&rsquo;t work.</li>
+</ul>
+<p>The <code>_RAISE</code> layer is for special commands, since I moved all the symbol functionality into <code>_LOWER</code>.</p>
+<ul>
+<li>H, J, K, L can be used to drive the mouse around, and the semicolon key sends a click.  U and I scroll down and up.  This is probably the functionality on this layer I use most often.</li>
+<li>I experimented with using several other keys on this layer to control brightness, music, etc., but honestly I mostly don&rsquo;t use them.</li>
+</ul>
+<p>Finally, there&rsquo;s the <code>_ADJUST</code> layer, which I never use (except once, when I was randomly button-mashing and accidentally switched into Colemak).  The less said about this, the better.</p>
+<p>In the default keymap, both raise and lower have all the function keys on them, which is wasteful.  In addition, raise has a few symbols on it, in the same place where the lower layer also has symbols, which was really confusing for me to learn &ndash; I could never remember whether the symbol I wanted was on raise or lower.  And some of the symbols were just hard to reach, especially <code>~</code> and <code>|</code> which I type a lot in bash commands.  With all the symbols on the raise layer, the functionality is (mostly) neatly divided into &ldquo;symbols layer&rdquo; and &ldquo;not symbols layer&rdquo;, which is easier to remember.</p>
+<p>I&rsquo;ve chosen to stick to the QWERTY layout rather than switch to Dvorak or Colemak or Workman or something, mostly because I use vim and don&rsquo;t want to disrupt that muscle memory.  (One afternoon I decided to try out Dvorak &ndash; my typing speed after a few hours of practice wasn&rsquo;t terrible, but then I tried to edit something in vim and I went directly to hell.  It was like, things are happening!  Why have I just jumped to the start of the file and deleted a bunch of lines?  That&rsquo;s not what I wanted!)  I find that even with QWERTY, my Preonic represents a significant ergonomic improvement over a standard keyboard, since it&rsquo;s ortholinear and very compact, reducing the distance my fingers have to stretch &ndash; and my custom layout improves things more by putting all the symbols under the top two rows of letters.  Your mileage, of course, may vary.  A keyboard layout is a very personal thing, and I encourage you to experiment and customize yours until it perfectly fits you and your needs.</p>
+<p><img src="http://example.org/img/keyboard_layout_meme.png" alt="a keyboard layout is something that can actually be so personal"></p>
+
+  </div>
+
+<div id="sidebar">
+  
+
+  <h1><a href="http://example.org/" style="text-decoration:none;">emerg*nt misbeh@vior</a></h1>
+
+  <h2>Pages</h2>
+  <ul>
+    
+      <li><a href="http://example.org/about/" style="text-decoration:none;">About</a></li>
+    
+      <li><a href="http://example.org/all/" style="text-decoration:none;">All Posts</a></li>
+    
+      <li><a href="http://example.org/tags/" style="text-decoration:none;">Tags</a></li>
+    
+      <li><a href="http://example.org/blogroll/" style="text-decoration:none;">Blogroll</a></li>
+    
+  </ul>
+
+  <h2>Recent Posts</h2>
+  <ul>
+    
+    
+      
+        <li><a href="http://example.org/posts/hnav/" style="text-decoration:none;">H-NAV</a></li>
+      
+    
+      
+        <li><a href="http://example.org/posts/sting_operation/" style="text-decoration:none;">Sting Operation</a></li>
+      
+    
+      
+        <li><a href="http://example.org/posts/typewriter_keyboard/" style="text-decoration:none;">Typewriter Keyboard</a></li>
+      
+    
+      
+    
+      
+        <li><a href="http://example.org/posts/keyboard_layout/" style="text-decoration:none;">Custom Keyboard Layout</a></li>
+      
+    
+  </ul>
+
+  <h2>Contact</h2>
+  <ul>
+    
+      <li><a href="mailto:shilohc@mit.edu">Email</a></li>
+    
+      <li><a href="https://github.com/shilohc">Github</a></li>
+    
+  </ul>
+</div>
+
+  
+</body>
+</html>
+

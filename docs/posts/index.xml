@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>H-NAV</title>
+      <link>http://example.org/posts/hnav/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/hnav/</guid>
+      <description>The H-NAV is a LIDAR-based navigational aid for visually impaired people. The LIDAR detects obstacles within two meters that are approximately at face height, and a set of vibrating motors in the hatband indicates the obstacles&amp;rsquo; direction and rough distance.</description>
+    </item>
+    
+    <item>
+      <title>Sting Operation</title>
+      <link>http://example.org/posts/sting_operation/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/sting_operation/</guid>
+      <description>Sting Operation is a homebrew telepresence robot; my original intent was to use it to attend robot club when I&amp;rsquo;m away at MIT. Currently, it&amp;rsquo;s outfitted with a Neato BotVac LiDAR, a Raspberry Pi running ROS, and a PyBoard controlling the motors and LIDAR.</description>
+    </item>
+    
+    <item>
+      <title>Typewriter Keyboard</title>
+      <link>http://example.org/posts/typewriter_keyboard/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/typewriter_keyboard/</guid>
+      <description>This is a mechanical keyboard build (DZ60 PCB, Kailh Box Navy switches) that uses as its keycaps real keys from old typewriters.
+I used three different sets of vintage typewriter keys.</description>
+    </item>
+    
+    <item>
+      <title>Custom Keyboard Layout</title>
+      <link>http://example.org/posts/keyboard_layout/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/keyboard_layout/</guid>
+      <description>It&amp;rsquo;s no secret that I&amp;rsquo;m massively obsessed with mechanical keyboards. For sheer customizability, they&amp;rsquo;re impossible to beat. Yes, I can put a lot of effort into software key remappings and then carefully port them over to every new computer I use &amp;ndash; or I can just use open-source keyboard firmware QMK and my keyboard will work wherever I plug it in.</description>
+    </item>
+    
+  </channel>
+</rss>

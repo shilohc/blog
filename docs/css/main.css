@@ -1,0 +1,572 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+    margin: 20px 5px;
+    width: 100%;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8em;
+	background: #eae9fe; /*#b9b8fc; /* light purple */
+  padding: 2px;
+  white-space: nowrap;
+}
+
+blockquote {
+  background: #eae9fe;
+  border-left: 10px solid #b9b8fc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: 'liga', 'kern';
+    font-stretch: normal;
+    -webkit-font-kerning: auto;
+    font-kerning: auto;
+    -webkit-font-smoothing: antialiased!important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    vertical-align: baseline;
+    /*font-family: 'Fira Code', monospace;*/
+	  /*font-size: calc(15px + (15 - 12) * ((100vw - 300px) / (1600 - 300)));*/
+}
+
+.purple {
+    color: #524EF9;
+}
+
+#main h1::before, #sidebar h1::before {
+    content: "# ";
+    color: #524EF9;
+}
+
+
+#sidebar h2::before, #nav h2::before {
+    content: "## ";
+    color: #524EF9;
+}
+
+#sidebar h1, #nav h1 {
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Fira Code";
+    text-rendering: optimizeLegibility;
+    line-height: 1.1;
+    color: #444;
+}
+
+#main h1 {
+    margin: 10px 0 10px 0;
+	  position: relative;
+	  padding-left: 1em;
+    color: #444;
+    font-family: "Fira Code";
+    line-height: 1.2em;
+}
+
+#main h1::before {
+	position: absolute;
+	left: 0;
+}
+
+h1#software-infrastructure-engineering {
+    margin-bottom: 4rem;
+}
+
+
+.img-holder {
+    float: left;
+    padding-right: 30px;
+}
+
+#intro-img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#main,
+#sidebar {
+    position: absolute;
+    top: 20px;
+    /*font-family: "Open Sans";*/
+    font-family: "Ovo";
+    text-decoration: none;
+}
+
+#main {
+    left: 480px;
+    padding: 20px 20px 150px 0;
+    width: 45%;
+    /*font-family: "Open Sans";*/
+    line-height: 1.4em;
+    letter-spacing: .01em;
+    color: #222;
+}
+
+#main ol, #main ul {
+    padding-left: 20px;
+}
+
+#main li {
+    padding: 0.2em 0;
+}
+
+.list ul {
+    list-style-type: none;
+}
+
+.list-text {
+    font-size: 0.9rem;
+}
+
+pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	padding: 10px;
+}
+
+a.nolink {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+#sidebar {
+    left: 20px;
+    width: 400px;
+    padding: 20px 30px 0 0;
+    border-right: 1px solid #ccc;
+    text-align: right;
+}
+
+#sidebar h2 {
+    font-family: 'Fira Code', monospace;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: -15px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 25px 0;
+}
+
+#sidebar li {
+    font-size: 10pt;
+    line-height: 1.4em;
+    margin-bottom: 3px;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #b9b8fc; /* light purple */
+}
+
+/* Small Nav */
+
+#nav {
+    display: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#nav li {
+    list-style-type: none;
+}
+
+#nav img.logo {
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+#nav h1 {
+    font-size: 1.3rem;
+}
+
+#nav-items {
+    background: #f7f7f7;
+    width: 100%;
+    padding:0 10px 0 10px;
+}
+
+#nav-btn {
+    display: none;
+}
+
+#nav-pointer {
+    display: inline-block;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}
+
+*:focus {
+    outline: none;
+}
+
+.post-info {
+    color: grey;
+    font-size: 0.8em;
+    font-family: 'Fira Code', monospace;
+}
+
+#right {
+    width: 50%;
+    text-align: right;
+    line-height: 3.1rem;
+}
+
+#left {
+    float: left;
+    width: 50%;
+}
+
+.share-btn-holder {
+    text-align: center;
+}
+
+/* Share buttons copypasta */
+
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee
+}
+
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9
+}
+
+.resp-sharing-button--pinterest {
+  background-color: #bd081c
+}
+
+.resp-sharing-button--pinterest:hover {
+  background-color: #8c0615
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998
+}
+
+.resp-sharing-button--facebook:hover {
+  background-color: #2d4373
+}
+
+.resp-sharing-button--tumblr {
+  background-color: #35465C
+}
+
+.resp-sharing-button--tumblr:hover {
+  background-color: #222d3c
+}
+
+.resp-sharing-button--reddit {
+  background-color: #5f99cf
+}
+
+.resp-sharing-button--reddit:hover {
+  background-color: #3a80c1
+}
+
+.resp-sharing-button--google {
+  background-color: #dd4b39
+}
+
+.resp-sharing-button--google:hover {
+  background-color: #c23321
+}
+
+.resp-sharing-button--linkedin {
+  background-color: #0077b5
+}
+
+.resp-sharing-button--linkedin:hover {
+  background-color: #046293
+}
+
+.resp-sharing-button--email {
+  background-color: #777
+}
+
+.resp-sharing-button--email:hover {
+  background-color: #5e5e5e
+}
+
+.resp-sharing-button--xing {
+  background-color: #1a7576
+}
+
+.resp-sharing-button--xing:hover {
+  background-color: #114c4c
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: #25D366
+}
+
+.resp-sharing-button--whatsapp:hover {
+  background-color: #1da851
+}
+
+.resp-sharing-button--hackernews {
+background-color: #FF6600
+}
+.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
+
+.resp-sharing-button--vk {
+  background-color: #507299
+}
+
+.resp-sharing-button--vk:hover {
+  background-color: #43648c
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+  border-color: #2795e9;
+}
+
+.resp-sharing-button--email {
+  background-color: #777777;
+  border-color: #777777;
+}
+
+.resp-sharing-button--email:hover,
+.resp-sharing-button--email:active {
+  background-color: #5e5e5e;
+  border-color: #5e5e5e;
+}
+
+.resp-sharing-button--linkedin {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.resp-sharing-button--linkedin:hover,
+.resp-sharing-button--linkedin:active {
+  background-color: #046293;
+  border-color: #046293;
+}
+
+.resp-sharing-button--reddit {
+  background-color: #5f99cf;
+  border-color: #5f99cf;
+}
+
+.resp-sharing-button--reddit:hover,
+.resp-sharing-button--reddit:active {
+  background-color: #3a80c1;
+  border-color: #3a80c1;
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: #25D366;
+  border-color: #25D366;
+}
+
+.resp-sharing-button--whatsapp:hover,
+.resp-sharing-button--whatsapp:active {
+  background-color: #1DA851;
+  border-color: #1DA851;
+}
+
+.resp-sharing-button--hackernews {
+  background-color: #FF6600;
+  border-color: #FF6600;
+}
+
+.resp-sharing-button--hackernews:hover
+.resp-sharing-button--hackernews:active {
+  background-color: #FB6200;
+  border-color: #FB6200;
+}
+
+.resp-sharing-button--vk {
+  background-color: #507299;
+  border-color: #507299;
+}
+
+.resp-sharing-button--vk:hover
+.resp-sharing-button--vk:active {
+  background-color: #43648c;
+  border-color: #43648c;
+}
+
+.resp-sharing-button--telegram {
+  background-color: #54A9EB;
+}
+
+.resp-sharing-button--telegram:hover {
+  background-color: #4B97D1;}
+/* End share buttons */
+
+@media only screen and (min-width: 730px){
+    #sidebar {
+        left: 0;
+        width: 190px;
+        padding: 20px 12px 0 0;
+    }
+
+    #main {
+        left: 214px;
+        width: 486px;
+    }
+
+
+    #sidebar h1 {
+        font-size: 1.2rem;
+    }
+
+    .img-holder {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 730px){
+
+        #sidebar {
+            display: none;
+        }
+
+        #nav {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+
+        #nav h1 {
+            text-align: left;
+        }
+
+        #main {
+            left: 15px;
+            width: 85%;
+            padding-left: 20px;
+            top: 0px;
+        }
+
+        #main h1 {
+            position: static;
+            padding-left: 0;
+        }
+
+        #main h1::before {
+            content: none;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .post-info {
+            text-align: center;
+        }
+
+        #home h1 {
+            display: none;
+        }
+
+
+}
