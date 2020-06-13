@@ -1,0 +1,43 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+canonifyURLs = true
+enableEmoji = true
+googleAnalytics = ""
+theme = "pristine"
+summaryLength = 25
+
+[params]
+  title = "emerg*nt misbeh@vior"
+  google_fonts = [
+    ["Fira Code", "400, 700"],
+    ["Ovo", "400"]
+  ]
+  heading_font = "Fira Code"
+  body_font = "Open Sans"
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  name = "All Posts"
+  url = "/all/"
+  weight = 2
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  name = "Blogroll"
+  url = "/blogroll/"
+  weight = 4
+
+[[params.social]]
+  title = "Email"
+  url = "mailto:shilohc@mit.edu"
+[[params.social]]
+  title = "Github"
+  url = "https://github.com/shilohc"
