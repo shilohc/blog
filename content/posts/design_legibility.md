@@ -2,7 +2,7 @@
 title: "Design: Edge Cases and Legibility"
 tags: ["design"]
 date: 2020-06-17
-lastmod: 2020-06-19
+lastmod: 2020-06-20
 draft: false
 ---
 
@@ -33,6 +33,7 @@ Epistemological resources to help you on your quest:
 * Of prime importance is the concept of legibility, which I first encountered in the SlateStarCodex review of "Seeing like a State", [here](https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/ ).  
 * Further reading on legibility: [Notes on the Legibility War](https://notebook.drmaciver.com/posts/2019-06-04-09:58.html ), [Legibility Privileges](https://notebook.drmaciver.com/posts/2020-02-23-09:37.html ), and [Legibility as a relationship](https://notebook.drmaciver.com/posts/2020-03-02-09:31.html ) by D. R. MacIver.  These posts also link to other resources on legibility.
 * [Notes on the Legibility War](https://notebook.drmaciver.com/posts/2019-06-04-09:58.html ) also mentions the idea of torque, which is the "force that acts between lives and classification systems, shaping each to the other".  I tend to prefer Siderea's concept of Procrustean Epistemologies: [Part 1](https://siderea.dreamwidth.org/1540620.html ), [Part 2](https://siderea.dreamwidth.org/1541132.html ), [Metalogue 1](https://siderea.dreamwidth.org/1548040.html ).
+* Also related is the concept of the [typical mind fallacy](https://wiki.lesswrong.com/wiki/Typical_mind_fallacy ).
 
 Lots and lots (and lots) of examples of specific problems:
 
