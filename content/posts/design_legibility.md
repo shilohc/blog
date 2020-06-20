@@ -37,7 +37,7 @@ Epistemological resources to help you on your quest:
 
 Lots and lots (and lots) of examples of specific problems:
 
- * [Means Tests and Self-Employment](https://siderea.dreamwidth.org/1430601.html ), also by Siderea
+ * [Means Tests and Self-Employment](https://siderea.dreamwidth.org/1430601.html ) and [De Facto Sexism](https://siderea.livejournal.com/1220766.html ), also by Siderea
  * [Dear Tech, You Suck at Delight](https://medium.com/talking-microcopy-writing-ux/dear-tech-you-suck-at-delight-86382d101575 )
  * [Inadvertent Algorithmic Cruelty](http://meyerweb.com/eric/thoughts/2014/12/24/inadvertent-algorithmic-cruelty/ )
  * [Personal Histories](http://www.sarawb.com/2015/01/13/personal-histories/ )
