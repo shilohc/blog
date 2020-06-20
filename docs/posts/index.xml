@@ -6,10 +6,48 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shilohc.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Criticizing design articles because I can</title>
+      <link>https://shilohc.github.io/blog/posts/design_criticism_01/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/design_criticism_01/</guid>
+      <description>This article on form design seems perfectly innocuous. It&amp;rsquo;s a helpful guide that lays out best practices and briefly describes why they&amp;rsquo;re better than the obvious alternative.</description>
+    </item>
+    
+    <item>
+      <title>That Fitbit rant</title>
+      <link>https://shilohc.github.io/blog/posts/fitbit/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/fitbit/</guid>
+      <description>While we&amp;rsquo;re at it, here&amp;rsquo;s another design rant that&amp;rsquo;s been percolating within me like a fine wine.
+So, I have a Fitbit. Due to my chronic illness I need to keep an eye on my (unusually high) heart rate, which is why I originally bought the thing; it turns out to also be very useful for tracking my sleep.</description>
+    </item>
+    
+    <item>
+      <title>Design: Edge Cases and Legibility</title>
+      <link>https://shilohc.github.io/blog/posts/design_legibility/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/design_legibility/</guid>
+      <description>From A Designer&amp;rsquo;s Code of Ethics:
+ A designer does not believe in edge cases. When you decide who you’re designing for, you’re making an implicit statement about who you’re not designing for.</description>
+    </item>
+    
+    <item>
+      <title>Custom Keyboard Layout, Part 2</title>
+      <link>https://shilohc.github.io/blog/posts/keyboard_layout_2/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/keyboard_layout_2/</guid>
+      <description>Okay, so my earlier post about modifying your keyboard layout sold you, but you don&amp;rsquo;t want to buy a whole new keyboard just yet? You want a software-side key remapping solution?</description>
+    </item>
     
     <item>
       <title>Google Calendar Time Tracker</title>

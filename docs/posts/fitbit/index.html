@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>emergent misbehavior</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="https://shilohc.github.io/blog/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro|Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href=https://shilohc.github.io/blog/css/main.css>
+
+  
+  
+  
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+  
+  <link href="//fonts.googleapis.com/css?family=Fira+Code:400,700|Ovo:400|Crimson+Pro:400,400italic|Alegreya:400,400italic" rel="stylesheet">
+
+
+
+<html>
+  <body lang="en">
+
+
+  <div id="main">
+    
+
+<div id="nav">
+  
+  
+  <ul>
+    
+      <li><a href="https://shilohc.github.io/blog/about/">
+          <span>About</span>
+      </a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/all/">
+          <span>All Posts</span>
+      </a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/tags/">
+          <span>Tags</span>
+      </a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/blogroll/">
+          <span>Blogroll</span>
+      </a></li>
+    
+  </ul>
+
+</div>
+
+    <h1>That Fitbit rant</h1>
+    <p class="post-info">840 words | ~ 4 min read | Jun 19, 2020 | last modified Jun 19, 2020 | 
+    
+    </p>
+    <p>While we&rsquo;re at it, here&rsquo;s another design rant that&rsquo;s been percolating within me like a fine wine.</p>
+<p>So, I have a Fitbit.  Due to my chronic illness I need to keep an eye on my (unusually high) heart rate, which is why I originally bought the thing; it turns out to also be very useful for tracking my sleep.  I do not give a shit about weight loss and I actively do not want my Fitbit to tell me about it; in the past I&rsquo;ve experimented with tracking calories and I very nearly gave myself an eating disorder, so I do not want my exercise tracker to talk to me about weight.</p>
+<p>The Fitbit and its app, at seemingly every opportunity, want to talk to me about weight.  I&rsquo;ve configured the homescreen of my app to remove &ldquo;calories burned&rdquo;, food logging, and weight tracking, which is all the customization I have in my control.  However, for my current device (the Inspire HR), I can&rsquo;t select a watch face that will show me my heart rate and the date without also showing me &ldquo;calories burned&rdquo;, and my device doesn&rsquo;t support custom watch faces.  When my heart rate goes above 100 BPM (which frequently happens while I am sitting down doing nothing), the app helpfully informs me that I am in the &ldquo;fat burn zone&rdquo;.</p>
+<p>The last iOS app redesign now shows me &ldquo;tips&rdquo; when I launch the app, which I can&rsquo;t disable, only close as they appear.  Lots of them are about weight tracking, calories, food, and weight loss, and even in the ones that aren&rsquo;t, diet talk sneaks in.  Today I was informed that &ldquo;Keeping a healthy sleep routine is like maintaining a good diet &ndash; every day counts.&rdquo;  Once I tried their &ldquo;Intro to Healthy Habits&rdquo; guided program, in the hopes that it would remind me to do an exercise occasionally, and it mostly boiled down to sending me push notifications about food tracking and weight.  When you get started with this program, you <em>have</em> to pick a goal weight.  This is, apparently, the only possible &ldquo;healthy habits&rdquo; goal Fitbit thinks you can have.</p>
+<p>I&rsquo;m not the only person with a Fitbit who uses it for something that the designers didn&rsquo;t seem to expect.  For example, I know of a disabled person with mobility issues who uses the step counting/step goal feature to warn her when she&rsquo;s taken too many steps, because she can cause herself permanent injury by going too far over the limit.  But the weight thing seems pretty egregious: lots of people struggle with disordered eating, which can take many forms, including compulsive exercise and calorie tracking.  I am not arguing that Fitbit should remove these tracking capabilities entirely; however, Fitbit is actively alienating people who have struggled with disordered eating by not allowing its users to disable all mentions of weight and calories.</p>
+<p>And that&rsquo;s not even getting into the current research on weight loss.  I&rsquo;m definitely not an expert here, and diet/nutrition science kind of seems like a mess, but the consensus seems to be that losing weight and keeping it off is impossible long-term because your body has a robust control system to maintain a weight set point.  This system has a lot of knobs it can turn: your hunger response seems like the obvious one, but it can also regulate how much you fidget (which makes it very hard to measure how many calories you actually consume).  We don&rsquo;t currently understand how to change the weight set point, so unless you have iron self-control (or develop an eating disorder) your diet probably won&rsquo;t do much about your weight.  Reducing your calorie intake may also indicate to your body that you are starving, and that it therefore needs to retain more of what you <em>do</em> eat as fat &ndash; causing you to gain weight overall.  So, you know, maybe Fitbit should cool it with the implication that their little wristwatch can even help you lose weight in the first place.</p>
+<p>(Most of my thinking here comes from reading about <a href="https://www.sizediversityandhealth.org/content.asp?id=76">HAES</a> and from various other weight science blogs; I can&rsquo;t find any of the links now except for <a href="https://slatestarcodex.com/tag/diet/">ssc&rsquo;s diet tag</a>.  So, epistemic status: the paragraph above is not exactly robust.  But I still think Fitbit pushes weight loss on their users a lot harder than is justified, and hasn&rsquo;t presented much evidence that this is in any way effective.)</p>
+<p>So, <em>my</em> solution to this problem has been to use the Fitbit app as little as possible and slurp out my data using the Fitbit API.  Which is obviously not a solution that&rsquo;s accessible to your average non-technical user.  And even for a technical user like me, trying to implement OAuth2 to Fitbit&rsquo;s satisfaction is pretty annoying (especially since the docs <a href="https://dev.fitbit.com/build/reference/web-api/basics/#app-types">are</a> <a href="https://dev.fitbit.com/build/reference/web-api/oauth2/#implicit-grant-flow">inconsistent</a> about what flavors of token you can use with the &ldquo;Personal&rdquo; app type).  But damn it, I&rsquo;m going to build my own Fitbit data viewer <em>just</em> so I can avoid having any contact whatsoever with the app that Fitbit has designed.</p>
+
+  </div>
+
+<div id="sidebar">
+  
+
+  <h1><a href="https://shilohc.github.io/blog/" style="text-decoration:none;">emerg*nt misbeh@vior</a></h1>
+
+  <h2>Pages</h2>
+  <ul>
+    
+      <li><a href="https://shilohc.github.io/blog/about/" style="text-decoration:none;">About</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/all/" style="text-decoration:none;">All Posts</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/tags/" style="text-decoration:none;">Tags</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/blogroll/" style="text-decoration:none;">Blogroll</a></li>
+    
+  </ul>
+
+  <h2>Recent Posts</h2>
+  <ul>
+    
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/design_criticism_01/" style="text-decoration:none;">Criticizing design articles because I can</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/fitbit/" style="text-decoration:none;">That Fitbit rant</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/design_legibility/" style="text-decoration:none;">Design: Edge Cases and Legibility</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/keyboard_layout_2/" style="text-decoration:none;">Custom Keyboard Layout, Part 2</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/gcal_tracker/" style="text-decoration:none;">Google Calendar Time Tracker</a></li>
+      
+    
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/hnav/" style="text-decoration:none;">H-NAV</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/sting_operation/" style="text-decoration:none;">Sting Operation</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/typewriter_keyboard/" style="text-decoration:none;">Typewriter Keyboard</a></li>
+      
+    
+      
+    
+  </ul>
+
+  <h2>Contact</h2>
+  <ul>
+    
+      <li><a href="mailto:shilohc@mit.edu">Email</a></li>
+    
+      <li><a href="https://github.com/shilohc">Github</a></li>
+    
+  </ul>
+</div>
+
+  
+</body>
+</html>
+

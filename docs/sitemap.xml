@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://shilohc.github.io/blog/posts/gcal_tracker/</loc>
-    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <loc>https://shilohc.github.io/blog/posts/design_criticism_01/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://shilohc.github.io/blog/posts/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/posts/fitbit/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/posts/design_legibility/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/posts/keyboard_layout_2/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/tags/keyboards/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/tags/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/posts/gcal_tracker/</loc>
     <lastmod>2020-06-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,17 +48,18 @@
   </url>
   
   <url>
-    <loc>https://shilohc.github.io/blog/tags/</loc>
-    <lastmod>2020-06-13T00:00:00+00:00</lastmod>
+    <loc>https://shilohc.github.io/blog/</loc>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/blogroll/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://shilohc.github.io/blog/posts/hnav/</loc>
-    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shilohc.github.io/blog/tags/keyboards/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,14 +74,8 @@
   </url>
   
   <url>
-    <loc>https://shilohc.github.io/blog/</loc>
-    <lastmod>2020-06-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://shilohc.github.io/blog/about/</loc>
-    <lastmod>2020-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>

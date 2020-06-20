@@ -6,10 +6,19 @@
     <description>Recent content in keyboards on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shilohc.github.io/blog/tags/keyboards/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Custom Keyboard Layout, Part 2</title>
+      <link>https://shilohc.github.io/blog/posts/keyboard_layout_2/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/keyboard_layout_2/</guid>
+      <description>Okay, so my earlier post about modifying your keyboard layout sold you, but you don&amp;rsquo;t want to buy a whole new keyboard just yet? You want a software-side key remapping solution?</description>
+    </item>
     
     <item>
       <title>Typewriter Keyboard</title>
