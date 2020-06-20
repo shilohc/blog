@@ -2,6 +2,7 @@
 title: "On the Philosophy of Design, Part II"
 date: 2019-05-12T00:23:17-04:00
 draft: true
+tags: ["design"]
 ---
 
 In [my last post](/posts/design_philosophy_01/) on design, I talked about how asking for unnecessary information about your users on forms (and worse, making it a required field) is highly likely to exclude "edge-case" users.  

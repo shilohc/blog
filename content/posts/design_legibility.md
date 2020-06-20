@@ -1,5 +1,6 @@
 ---
 title: "Design: Edge Cases and Legibility"
+tags: ["design"]
 date: 2020-06-17
 lastmod: 2020-06-19
 draft: false

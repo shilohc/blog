@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>design on </title>
+    <link>https://shilohc.github.io/blog/tags/design/</link>
+    <description>Recent content in design on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shilohc.github.io/blog/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Criticizing design articles because I can</title>
+      <link>https://shilohc.github.io/blog/posts/design_criticism_01/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/design_criticism_01/</guid>
+      <description>This article on form design seems perfectly innocuous. It&amp;rsquo;s a helpful guide that lays out best practices and briefly describes why they&amp;rsquo;re better than the obvious alternative.</description>
+    </item>
+    
+    <item>
+      <title>Design: Edge Cases and Legibility</title>
+      <link>https://shilohc.github.io/blog/posts/design_legibility/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/design_legibility/</guid>
+      <description>From A Designer&amp;rsquo;s Code of Ethics:
+ A designer does not believe in edge cases. When you decide who you’re designing for, you’re making an implicit statement about who you’re not designing for.</description>
+    </item>
+    
+  </channel>
+</rss>

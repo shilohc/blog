@@ -3,6 +3,7 @@ title: "That Fitbit rant"
 date: 2020-06-19
 lastmod: 2020-06-19
 draft: false
+tags: ["design"]
 ---
 
 While we're at it, here's another design rant that's been percolating within me like a fine wine.
