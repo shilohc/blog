@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>emergent misbehavior</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="https://shilohc.github.io/blog/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro|Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href=https://shilohc.github.io/blog/css/main.css>
+
+  
+  
+  
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+  
+  <link href="//fonts.googleapis.com/css?family=Fira+Code:400,700|Ovo:400|Crimson+Pro:400,400italic|Alegreya:400,400italic" rel="stylesheet">
+
+
+
+<html>
+  <body lang="en">
+
+
+  <div id="main">
+    
+
+<div id="nav">
+  
+  
+  <ul>
+    
+      <li><a href="https://shilohc.github.io/blog/about/">
+          <span>About</span>
+      </a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/all/">
+          <span>All Posts</span>
+      </a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/tags/">
+          <span>Tags</span>
+      </a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/blogroll/">
+          <span>Blogroll</span>
+      </a></li>
+    
+  </ul>
+
+</div>
+
+    <h1>The Robot Is A Sweet Boy, Doing His Best</h1>
+    <p class="post-info">1264 words | ~ 6 min read | Jun 21, 2020 | last modified Jun 21, 2020 | 
+    
+    </p>
+    <p>I see so many videos on social media of robots (usually from Boston Dynamics), with a flood of comments along the lines of &ldquo;haha wow can&rsquo;t wait for this thing to kill us all&rdquo;.  Let me bust some myths: robots are like, kind of crap, you guys.  We&rsquo;ve made a lot of amazing advances in controls for legged robots lately, particularly four-legged robots, and deep learning has vastly changed robot perception &ndash; but stuff like object manipulation still sucks.  And most robot tasks, uh, kind of require object manipulation.  Boston Dynamics&rsquo; specialization is in controls, so if you want those robots to do high-level task and motion planning (of the kind you&rsquo;d need to carry out a &ldquo;kill all humans&rdquo; order, or carry an object into a different room and set it gently on a table, or other extremely hard tasks like that) you&rsquo;ll need to implement it yourself.  Also, most videos of robots doing stuff are carefully edited to include only the <em>successful</em> runs; most likely either there&rsquo;s 3x as much blooper reel footage that you don&rsquo;t see, or the robot is being teleoperated to get a nice clean take for the video.</p>
+<p>I saw <a href="https://www.youtube.com/watch?v=hM1Gd3wbA_U">this video</a> on Twitter today, helpfully captioned &ldquo;This unassuming robot could sneak into your home.&rdquo;  First of all: i LOVE this SPROINGY LAD, he is doing SO WELL!! him jump!  And he goes up uneven surfaces and stairs <em>super well</em>.  But let&rsquo;s take a look at the actual video footage again, this time through the eyes of a cynical robotics engineer.</p>
+<ul>
+<li>We see the lil dude climbing a fence very slowly over the course of a long time-lapse shot (look how fast the trees are shaking).  How long does it take him to fumblingly do this outside the realm of film?  An hour?  How many takes of him falling off the fence before getting to the top are we not seeing?  Also, can he even go over the top of the fence?  I don&rsquo;t think his arrangement of legs will let him push himself onto the other side of the fence, no matter how you control them.</li>
+<li>The video&rsquo;s main cause for alarm seems to be &ldquo;omg it can go up stairs!!  It can open doors!&rdquo;  Well, okay, it can go up stairs.  So if it gets into your house, it can go up stairs.  And it opens a door by throwing itself at the door, pushing the lever arm <strong>up</strong> (at which point the door opens a crack), then pushing open the door and going about its business.  My gut instinct is that this demo has probably been hard-coded to successfully open this specific door some of the time.  Certainly I can&rsquo;t see any cameras on the robot to perceive the handle, so the location of the handle relative to the robot seems to be hard-coded &ndash; which makes me think the robot is being teleoperated and the human had to try a bunch of times to get him lined up just right.</li>
+<li>If your door doesn&rsquo;t have a lever-arm-type handle (if it has a round knob, for example), this robot is screwed.  If the handle is lever-arm-type but can&rsquo;t be opened by pulling up, the robot is screwed.  If the door is heavy enough that the (lightweight-looking) robot can&rsquo;t push it open, the robot is screwed.  If the handle is not where the robot expects it to be (e.g. if it is on the right-hand-side of the door), the robot is screwed.  If the door is a sliding door, the robot is screwed.  If there&rsquo;s a screen door that needs to be held out of the way while you open the main door, the robot is screwed.  There&rsquo;s, uh, a <em>lot</em> of different kinds of doors.</li>
+<li>I also don&rsquo;t think he&rsquo;s anywhere near ready to pick a lock.  How does he break into a home??  Hope for an open window?</li>
+<li>For the uninitiated: An encoder is used to measure how much a motor turns (and it&rsquo;s, uh, not a new invention).  Typically on wheeled robots this is used to get odometry data (how far the robot has gone and in which directions), which rapidly builds up error over time, particularly if the wheels slip or lose contact with the ground frequently.  But this is a legged robot that bounces, so I don&rsquo;t see how they can get odometry worth a damn out of the encoders.  That makes me think they&rsquo;re using the encoders as feedback in the control algorithms for the legs here, but truly you wouldn&rsquo;t know it from the completely nonsensical captions.</li>
+<li>Notice also that the original audio has been dubbed over.  Now, I don&rsquo;t know for sure how much noise this lad makes, but motors are often pretty loud unless specifically designed to be nice and unobtrusive &ndash; and this looks to me like a research/prototype robot, so I kind of doubt they&rsquo;re spending extra money on the Good Quiet Motors.  Many of the Boston Dynamics robots you see a lot in this context have pneumatic actuation, which requires an air compressor, which can also be very loud (see the original BigDog video).  I am not accepting any assertions that this robot can sneak <strong>anywhere</strong> until I can hear how much noise he makes.</li>
+<li>What is it gonna do once it gets in my house?? It doesn&rsquo;t have arms!</li>
+</ul>
+<p>Basically, far from &ldquo;THIS ROBOT CAN BREAK INTO ANY HOME&rdquo;, I have seen 0 evidence so far that he can break into my unlocked garage.  Also, I love him, and he is my very springy son.</p>
+<p>If you want to get a good idea of the current state of robot manipulation, check out <a href="https://www.youtube.com/watch?v=JzlsvFN_5HI">this video</a>*.  I want to point out that the QR codes taped to everything are known in the biz as &ldquo;fiducials&rdquo;, and they&rsquo;re letting the robot see where all the stuff is (and how far away it is).  I also want to say that this video is a huge goddamn mood.</p>
+<p>However, if you&rsquo;ll permit me to get serious for a sec, the real risk of advancements in AI technology isn&rsquo;t a movie-type robot rebellion &ndash; it&rsquo;s the damage to privacy and justice done by <a href="https://www.nytimes.com/2020/05/28/technology/clearview-ai-privacy-lawsuit.html">widespread use</a> of <a href="https://www.cnbc.com/2020/06/11/clearview-ai-facial-recognition-europe.html">facial recognition</a> and the biased (racist, sexist, etc.) and completely non-introspectable classifiers we see in applications like <a href="https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/">setting jail time</a>, <a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G">hiring and recruiting</a>, and <a href="https://www.bloomberg.com/news/articles/2019-11-11/apple-card-s-ai-stumble-looks-familiar-to-old-school-banks">deciding if someone is creditworthy</a>.  And that&rsquo;s just what&rsquo;s happening today; who knows what new, horrible applications of machine learning will be invented in the coming few years?  But that&rsquo;s kind of a downer to end this post on, so here&rsquo;s the <a href="https://www.youtube.com/watch?v=g0TaYhjpOfo">DRC Robot Fall Compilation</a>.</p>
+<hr>
+<p>* this is kind of a joke, but less than we robotics engineers would like.  For an example of a good robot video about some very recent manipulation research, take a look at <a href="https://berkeleyautomation.github.io/dex-net/">Dex-Net</a>.  It uses a 5x timelapse, because otherwise the video would be interminably boring to watch, but note how it tells you at what rate the video has been sped up, and doesn&rsquo;t use jump-cuts.  If you see jump-cuts in a robot video, or even just a suspiciously fast cut-away from the robot successfully finishing a task, that&rsquo;s a fairly telltale sign that someone&rsquo;s edited out some hilarious robot fails.  Note also that Dex-Net works in a highly controlled environment and has both a vacuum manipulator and a two-finger gripper to pick up various kinds of objects.  For reasons I won&rsquo;t get into here, it&rsquo;s much easier to compute grasps for vacuum manipulators, but obviously they won&rsquo;t work on all objects &ndash; which is where the 2-finger gripper comes in.</p>
+
+  </div>
+
+<div id="sidebar">
+  
+
+  <h1><a href="https://shilohc.github.io/blog/" style="text-decoration:none;">emerg*nt misbeh@vior</a></h1>
+
+  <h2>Pages</h2>
+  <ul>
+    
+      <li><a href="https://shilohc.github.io/blog/about/" style="text-decoration:none;">About</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/all/" style="text-decoration:none;">All Posts</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/tags/" style="text-decoration:none;">Tags</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/blogroll/" style="text-decoration:none;">Blogroll</a></li>
+    
+  </ul>
+
+  <h2>Recent Posts</h2>
+  <ul>
+    
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/headphone_hooks/" style="text-decoration:none;">Headphone Hooks</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/robot_friend_01/" style="text-decoration:none;">The Robot Is A Sweet Boy, Doing His Best</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/internships/" style="text-decoration:none;">Shiloh&#39;s Guide to Robotics &amp; Software Internships</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/design_criticism_01/" style="text-decoration:none;">Criticizing design articles because I can</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/fitbit/" style="text-decoration:none;">That Fitbit rant</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/design_legibility/" style="text-decoration:none;">Design: Edge Cases and Legibility</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/keyboard_layout_2/" style="text-decoration:none;">Custom Keyboard Layout, Part 2</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/gcal_tracker/" style="text-decoration:none;">Google Calendar Time Tracker</a></li>
+      
+    
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/hnav/" style="text-decoration:none;">H-NAV</a></li>
+      
+    
+  </ul>
+
+  <h2>Contact</h2>
+  <ul>
+    
+      <li><a href="mailto:shilohc@mit.edu">Email</a></li>
+    
+      <li><a href="https://github.com/shilohc">Github</a></li>
+    
+  </ul>
+</div>
+
+  
+</body>
+</html>
+

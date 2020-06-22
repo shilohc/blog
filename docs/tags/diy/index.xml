@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>diy on </title>
+    <link>https://shilohc.github.io/blog/tags/diy/</link>
+    <description>Recent content in diy on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shilohc.github.io/blog/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Headphone Hooks</title>
+      <link>https://shilohc.github.io/blog/posts/headphone_hooks/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shilohc.github.io/blog/posts/headphone_hooks/</guid>
+      <description>I did not set out in life to be an audiophile, but at some point in life you look around and realize that you&amp;rsquo;ve spent hundreds of dollars on headphones and developed strong opinions on their quality, and at that point it seems kind of silly to deny that you&amp;rsquo;re an audophile.</description>
+    </item>
+    
+  </channel>
+</rss>
