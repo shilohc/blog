@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>diy on </title>
@@ -8,7 +7,7 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://shilohc.github.io/blog/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://shilohc.github.io/blog/tags/diy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,8 +16,23 @@
       <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/posts/headphone_hooks/</guid>
-      <description>I did not set out in life to be an audiophile, but at some point in life you look around and realize that you&amp;rsquo;ve spent hundreds of dollars on headphones and developed strong opinions on their quality, and at that point it seems kind of silly to deny that you&amp;rsquo;re an audophile.</description>
+      <description>&lt;p&gt;I did not set out in life to be an audiophile, but at some point in life you look around and realize that you&amp;rsquo;ve spent hundreds of dollars on headphones and developed strong opinions on their quality, and at that point it seems kind of silly to deny that you&amp;rsquo;re an audophile.  So.&lt;/p&gt;
+&lt;p&gt;I have three main sets of headphones that I keep at my desk: Sennheiser HD 280 Pro, Bose QC35 ii, and Sennheiser HD 6XX (Massdrop edition).  These all have different characteristics and serve different purposes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the HD 280s are wired headphones* with very good passive sound attenuation, and I&amp;rsquo;ve owned them for long enough that the original headband pad completely shredded, so it&amp;rsquo;s been replaced with a crochet pad I made.  The earpads are also coming unglued but I&amp;rsquo;m procrastinating on replacing them.  These were my daily driver headphones for walking around campus and doing work at my desk when my dorm was loud, which was a lot of the time (my dorm had other social properties that I liked enough for the noise to be worthwhile).  They clamp tightly to my head in such a way that I get headaches from prolonged use; glasses choice matters a lot for this (my current computer glasses frames were carefully selected to be as comfortable as possible for wearing headphones).  This tight clamping gives them better isolation properties.&lt;/li&gt;
+&lt;li&gt;the Bose headphones are wireless noise-canceling headphones.  I wear these when there&amp;rsquo;s a lot of environmental noise and the HD 280s don&amp;rsquo;t quite cut it.  I don&amp;rsquo;t like to wear wireless headphones when I can avoid it, but admittedly they are a lot better for walking around campus with (the HD 280s have this incredibly long and inconvenient cable and I developed a habit of spinning it around, which was probably dangerous/annoying for other hallway users).&lt;/li&gt;
+&lt;li&gt;the HD 6XX are my most recent headphone purchase, because I realized I had like $60 in Massdrop credits due to delayed keycap sets** and wanted to get myself a nice graduation/birthday present.  They are open-back headphones, because my new apartment is generally pretty quiet, and this bothers me less than noise canceling/attenuation for prolonged periods of time.  It&amp;rsquo;s also nice to be able to hear my roommates when they&amp;rsquo;re yelling for me.  These are my new daily driver headphones for doing work.  Open-back headphones also theoretically sound nicer/more &amp;ldquo;open&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, I only have the one set of ears, so the headphones not in use have to go &lt;em&gt;somewhere&lt;/em&gt;.  Previously, I was keeping all of these headphones piled up on a table near my desk.  This was annoying, and made it hard to put other things on the table; they&amp;rsquo;d also always end up on top of other items I keep on that table, like my stapler and tape dispenser.  Since headphones are sort of a funky shape, the common solution to the problem of headphone storage is the headphone hook, which is typically a cheap plastic hook with a sticky backing that you glue onto your desk somewhere.  I had a headphone hook stuck to my desk in my old dorm room, and it was ugly and felt a bit flimsy, especially since I kept piling multiple sets of headphones onto it.  Due to the furniture geometry, it also got in the way when I was moving out and had to pull my bookshelf away from the wall to rescue some stuff that fell behind it.&lt;/p&gt;
+&lt;p&gt;Therefore, my new headphone hook solution was to buy three foldable wall-mount aluminum clothes hooks and a roll of double-sided VHB tape.  The set of three hooks cost ~$10 and the tape roll was 16ft for ~$20.  Of course, I didn&amp;rsquo;t use anywhere near the whole roll; I have practically the whole thing left for future endeavors to perma-stick things to other things.  In my new room geometry, there are no pieces of furniture being blocked by these hooks, but they&amp;rsquo;re foldable anyway so I can easily get them out of the way if that changes.  The hooks are stuck to the side of my loft bed ladder in a visually pleasing vertical line, which makes them all easy to access.  They&amp;rsquo;re also close enough to my laptop that I can leave the headphones plugged in while hanging them on the hook and the cable doesn&amp;rsquo;t get in the way of anything else.  I&amp;rsquo;m very pleased with this solution.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/headphone_hooks.png&#34; alt=&#34;headphone hooks, folded and unfolded, and with headphones hanging from them&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I wrote the first draft of this post on Jun 8.  I&amp;rsquo;ve been using these hooks for a good few weeks now, and they&amp;rsquo;re great.  Unfortunately, this didn&amp;rsquo;t solve the perpetual-table-clutter problem, but at least the clutter is made of other stuff now &amp;ndash; progress?&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;* I am never sure how to deal with plural &amp;ldquo;headphones&amp;rdquo; grammatically.  the HD 280s are?  the HD 280 is a headphones?  the HD 280 is a headphone?&lt;/p&gt;
+&lt;p&gt;** Group-buy keycap sets are inevitably delayed.  Massdrop being an experienced group-buy manager, sometimes they do in fact deliver things on time, but I am a big fan of SA profile keycaps, and the SA production line has been very backed up lately.  And Massdrop gives me a $10 credit every time.  &lt;code&gt;&amp;gt;:)&lt;/code&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>
 </rss>
+

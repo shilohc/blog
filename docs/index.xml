@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
@@ -8,99 +7,16 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://shilohc.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://shilohc.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Handle Detector</title>
-      <link>https://shilohc.github.io/blog/posts/handle_detector/</link>
+      <title>Posts</title>
+      <link>https://shilohc.github.io/blog/posts/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://shilohc.github.io/blog/posts/handle_detector/</guid>
-      <description>Last fall, I took 6.881 Intelligent Robot Manipulation (well, actually 6.881 is a &amp;ldquo;Special Subjects&amp;rdquo; course number, and when this course is offered again it&amp;rsquo;ll probably be renumbered, but that was the number I took it under).</description>
-    </item>
-    
-    <item>
-      <title>You Are Not Immune To Amigurumi Crab</title>
-      <link>https://shilohc.github.io/blog/posts/amigurumi-crab/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/amigurumi-crab/</guid>
-      <description>This free crochet pattern for an amigurumi crab is one of the cutest little guys I&amp;rsquo;ve ever seen. His little face is a delight! So, of course, I&amp;rsquo;ve made three of them (one for me and two as gifts).</description>
-    </item>
-    
-    <item>
-      <title>Headphone Hooks</title>
-      <link>https://shilohc.github.io/blog/posts/headphone_hooks/</link>
-      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/headphone_hooks/</guid>
-      <description>I did not set out in life to be an audiophile, but at some point in life you look around and realize that you&amp;rsquo;ve spent hundreds of dollars on headphones and developed strong opinions on their quality, and at that point it seems kind of silly to deny that you&amp;rsquo;re an audophile.</description>
-    </item>
-    
-    <item>
-      <title>The Robot Is A Sweet Boy, Doing His Best</title>
-      <link>https://shilohc.github.io/blog/posts/robot_friend_01/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/robot_friend_01/</guid>
-      <description>I see so many videos on social media of robots (usually from Boston Dynamics), with a flood of comments along the lines of &amp;ldquo;haha wow can&amp;rsquo;t wait for this thing to kill us all&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Shiloh&#39;s Guide to Robotics &amp; Software Internships</title>
-      <link>https://shilohc.github.io/blog/posts/internships/</link>
-      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/internships/</guid>
-      <description>I&amp;rsquo;m currently employed at my *checks notes* seventh internship, which God willing ought to be my last. Accordingly, I wanted to write up everything I know about internships, before I get employed full-time and forget it all.</description>
-    </item>
-    
-    <item>
-      <title>Criticizing design articles because I can</title>
-      <link>https://shilohc.github.io/blog/posts/design_criticism_01/</link>
-      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/design_criticism_01/</guid>
-      <description>This article on form design seems perfectly innocuous. It&amp;rsquo;s a helpful guide that lays out best practices and briefly describes why they&amp;rsquo;re better than the obvious alternative.</description>
-    </item>
-    
-    <item>
-      <title>That Fitbit rant</title>
-      <link>https://shilohc.github.io/blog/posts/fitbit/</link>
-      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/fitbit/</guid>
-      <description>While we&amp;rsquo;re at it, here&amp;rsquo;s another design rant that&amp;rsquo;s been percolating within me like a fine wine.
-So, I have a Fitbit. Due to my chronic illness I need to keep an eye on my (unusually high) heart rate, which is why I originally bought the thing; it turns out to also be very useful for tracking my sleep.</description>
-    </item>
-    
-    <item>
-      <title>Design: Edge Cases and Legibility</title>
-      <link>https://shilohc.github.io/blog/posts/design_legibility/</link>
-      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/design_legibility/</guid>
-      <description>From A Designer&amp;rsquo;s Code of Ethics:
- A designer does not believe in edge cases. When you decide who you’re designing for, you’re making an implicit statement about who you’re not designing for.</description>
-    </item>
-    
-    <item>
-      <title>Custom Keyboard Layout, Part 2</title>
-      <link>https://shilohc.github.io/blog/posts/keyboard_layout_2/</link>
-      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/keyboard_layout_2/</guid>
-      <description>Okay, so my earlier post about modifying your keyboard layout sold you, but you don&amp;rsquo;t want to buy a whole new keyboard just yet? You want a software-side key remapping solution?</description>
-    </item>
-    
-    <item>
-      <title>Google Calendar Time Tracker</title>
-      <link>https://shilohc.github.io/blog/posts/gcal_tracker/</link>
-      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/gcal_tracker/</guid>
-      <description>The rest of this post was originally written in spring of 2019, when I&amp;rsquo;d just created the time tracker. In the interim, Google seems to have changed their auth flow, and I can no longer get the tracker to work &amp;ndash; not that I tried very hard, in all honesty.</description>
+      <guid>https://shilohc.github.io/blog/posts/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -109,35 +25,28 @@ So, I have a Fitbit. Due to my chronic illness I need to keep an eye on my (unus
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/blogroll/</guid>
-      <description>The humble blogroll seems to be much less popular these days than it was in the heyday of blogs, but I miss &amp;lsquo;em. Let&amp;rsquo;s bring this back.</description>
-    </item>
-    
-    <item>
-      <title>H-NAV</title>
-      <link>https://shilohc.github.io/blog/posts/hnav/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/hnav/</guid>
-      <description>The H-NAV is a LIDAR-based navigational aid for visually impaired people. The LIDAR detects obstacles within two meters that are approximately at face height, and a set of vibrating motors in the hatband indicates the obstacles&amp;rsquo; direction and rough distance.</description>
-    </item>
-    
-    <item>
-      <title>Sting Operation</title>
-      <link>https://shilohc.github.io/blog/posts/sting_operation/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/sting_operation/</guid>
-      <description>Sting Operation is a homebrew telepresence robot; my original intent was to use it to attend robot club when I&amp;rsquo;m away at MIT. Currently, it&amp;rsquo;s outfitted with a Neato BotVac LiDAR, a Raspberry Pi running ROS, and a PyBoard controlling the motors and LIDAR.</description>
-    </item>
-    
-    <item>
-      <title>Typewriter Keyboard</title>
-      <link>https://shilohc.github.io/blog/posts/typewriter_keyboard/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://shilohc.github.io/blog/posts/typewriter_keyboard/</guid>
-      <description>This is a mechanical keyboard build (DZ60 PCB, Kailh Box Navy switches) that uses as its keycaps real keys from old typewriters.
-I used three different sets of vintage typewriter keys.</description>
+      <description>&lt;p&gt;The humble blogroll seems to be much less popular these days than it was in the heyday of blogs, but I miss &amp;lsquo;em.  Let&amp;rsquo;s bring this back.&lt;/p&gt;
+&lt;h2 id=&#34;tech-blogs&#34;&gt;Tech blogs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.benkuhn.net&#34;&gt;Ben Kuhn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://danluu.com&#34;&gt;Dan Luu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notebook.drmaciver.com/&#34;&gt;DRMacIver&amp;rsquo;s Notebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gwern.net&#34;&gt;Gwern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hillelwayne.com&#34;&gt;Hillel Wayne&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jefftk.com/index&#34;&gt;Jeff Kaufman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kalzumeus.com&#34;&gt;Kalzumeus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tonsky.me/&#34;&gt;tonsky.me&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;not-tech-blogs&#34;&gt;Not tech blogs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://mcmansionhell.com/&#34;&gt;McMansion Hell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://siderea.dreamwidth.org&#34;&gt;Siderea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://slatestarcodex.com/&#34;&gt;Slate Star Codex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://theunitofcaring.tumblr.com&#34;&gt;The Unit of Caring&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mel Baggs&amp;rsquo; blogs &lt;a href=&#34;https://ballastexistenz.wordpress.com/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://cussinanddiscussin.wordpress.com/&#34;&gt;here&lt;/a&gt; (archives only, as sie is now deceased)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juststimming.wordpress.com/&#34;&gt;Just Stimming&lt;/a&gt; by Julia Bascom&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -146,17 +55,21 @@ I used three different sets of vintage typewriter keys.</description>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/about/</guid>
-      <description>Hi, I&amp;rsquo;m Shiloh! I&amp;rsquo;m a robotics hobbyist turned &amp;ldquo;legitimate&amp;rdquo; &amp;ldquo;professional&amp;rdquo; &amp;ldquo;engineer&amp;rdquo;, specializing in planning and control. Still, nobody can prevent me from building ill-advised hobby projects in my free time.</description>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Shiloh!  I&amp;rsquo;m a robotics hobbyist turned &amp;ldquo;legitimate&amp;rdquo; &amp;ldquo;professional&amp;rdquo; &amp;ldquo;engineer&amp;rdquo;, specializing in planning and control.  Still, nobody can prevent me from building ill-advised hobby projects in my free time.  In addition to robot projects, I build mechanical keyboards, knit and crochet, and paint.  Someday, I dream of constructing a supervillain lair and building a robot to toss my enemies into the lava pit.&lt;/p&gt;
+&lt;p&gt;You can find my professional portfolio &lt;a href=&#34;https://shilohc.github.io/portfolio/&#34;&gt;here&lt;/a&gt; and contact me at &lt;code&gt;shilohc [at] mit [dot] edu&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;MIT SB &amp;lsquo;20 MEng &amp;lsquo;21, course 6-2.  I am nonbinary and use they/them pronouns.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Custom Keyboard Layout</title>
-      <link>https://shilohc.github.io/blog/posts/keyboard_layout/</link>
-      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      <title>Posts</title>
+      <link>https://shilohc.github.io/blog/all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shilohc.github.io/blog/posts/keyboard_layout/</guid>
-      <description>It&amp;rsquo;s no secret that I&amp;rsquo;m massively obsessed with mechanical keyboards. For sheer customizability, they&amp;rsquo;re impossible to beat. Yes, I can put a lot of effort into software key remappings and then carefully port them over to every new computer I use &amp;ndash; or I can just use open-source keyboard firmware QMK and my keyboard will work wherever I plug it in.</description>
+      <guid>https://shilohc.github.io/blog/all/</guid>
+      <description></description>
     </item>
     
   </channel>
 </rss>
+

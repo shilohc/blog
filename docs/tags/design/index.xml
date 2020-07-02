@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>design on </title>
@@ -8,7 +7,7 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://shilohc.github.io/blog/tags/design/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://shilohc.github.io/blog/tags/design/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,7 +16,43 @@
       <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/posts/design_criticism_01/</guid>
-      <description>This article on form design seems perfectly innocuous. It&amp;rsquo;s a helpful guide that lays out best practices and briefly describes why they&amp;rsquo;re better than the obvious alternative.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://uxdesign.cc/design-better-forms-96fadca0f49c&#34;&gt;This article&lt;/a&gt; on form design seems perfectly innocuous.  It&amp;rsquo;s a helpful guide that lays out best practices and briefly describes why they&amp;rsquo;re better than the obvious alternative.  But then I got to this part:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;why-ask&#34;&gt;Why ask?&lt;/h3&gt;
+&lt;p&gt;Omit optional fields and think of other ways to collect data.  Always ask yourself if the question can be inferred, postponed, or completely excluded.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Okay, we&amp;rsquo;re doing great so far.  The more unnecessary data you ask for, the more likely you are to violate your users&amp;rsquo; privacy, and incidentally the more likely you are to exclude &amp;ldquo;edge-case&amp;rdquo; users.  For example, Basler makes you fill out a brief biographical form in order to &lt;em&gt;download software for their cameras&lt;/em&gt; &amp;ndash; name, address, and salutation (select exactly one of Mr. or Ms.) are all required fields.  No joy for nonbinary people or people with doctorates.  As a nonbinary person I am never going to let this one go, because I was essentially forced to misgender myself to do my job correctly when I worked at an otherwise fantastic internship that used Basler cameras.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data entry is increasingly automated.  For example, mobile and wearable devices collect large amounts of data without the user&amp;rsquo;s conscious awareness.  Think of ways you can leverage social, conversational UI, SMS, email, voice, OCR, location, fingerprint, biometric, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I DON&amp;rsquo;T LIKE THE SOUND OF THAT AT ALL.&lt;/p&gt;
+&lt;p&gt;So&amp;hellip; what you&amp;rsquo;re saying, essentially, is that instead of actually asking users for data you don&amp;rsquo;t strictly need (so that they could leave it off the form if they don&amp;rsquo;t want you to have it), you want designers to collect it by other means, &amp;ldquo;without the user&amp;rsquo;s conscious awareness&amp;rdquo; if necessary??  Let me be clear: this is unethical.  Bad designer!  No cookie!  Consent is important for all things in life, including sex and collection of user data.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Next up is &lt;a href=&#34;https://www.fastcompany.com/3053406/how-apple-is-giving-design-a-bad-name&#34;&gt;How Apple Is Giving Design A Bad Name&lt;/a&gt; was written by Don Norman and Bruce Tognazzini.  I don&amp;rsquo;t have anything bad to say about the actual design recommendations in this article, but I do have a beef with its casual ableism.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what it says in the context of a discussion about how the Apple system font, which uses thin lines and low contrast, is hard to read, taking as an example a middle-aged woman who used the iOS accessibility settings to embiggen the system font.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s important to note that she did not have defective vision. She just didn’t have the eyesight of a 17-year-old.&lt;/p&gt;
+&lt;p&gt;[&amp;hellip;]&lt;/p&gt;
+&lt;p&gt;What kind of design philosophy requires millions of its users to have to pretend they are disabled in order to be able to use the product?  Apple could have designed its phone so that the majority of people could read and use the phone without having to label themselves as needy, disabled, and requiring assistance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;First of all, I don&amp;rsquo;t particularly care for the implication that being disabled is somehow bad or shameful.  The (not-particularly-well-)hidden message here is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Obviously, it&amp;rsquo;s insulting to the user to force them to identify themselves as disabled, or use accessibility tools meant for disabled people.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The user here didn&amp;rsquo;t have &lt;em&gt;defective vision&lt;/em&gt;, oh no!  She wasn&amp;rsquo;t really &lt;em&gt;disabled&lt;/em&gt;.  Because being disabled is &lt;em&gt;bad&lt;/em&gt;.  Now, the problem here seems to be that Apple has designed for the ability of exactly one type of user (our hypothetical 17-year-old), and therefore excludes&amp;hellip; other users&amp;hellip; because they don&amp;rsquo;t have the same level of ability&amp;hellip; But this isn&amp;rsquo;t a disability issue!  Because being disabled is &lt;em&gt;bad&lt;/em&gt;.  The article goes on to say that this woman then enabled the accessibility tool for enlarging text, which makes some text run off the screen in other apps.&lt;/p&gt;
+&lt;p&gt;Now, to me, both of these things are failures of accessibility!  Both the insufficient contrast in the system font, and the fact that the accessibility tool makes some text unreadable, are accessibility problems.  Design for accessibility helps everyone, even people who don&amp;rsquo;t think of themselves as disabled.  And stigmatizing disability and the use of accessibility tools is harmful*; there&amp;rsquo;s no good reason for this, and it may deter someone from using tools that can help them.&lt;/p&gt;
+&lt;p&gt;But I&amp;rsquo;m not done.  Let&amp;rsquo;s look at this quote again:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Apple could have designed its phone so that the majority of people could read and use the phone without having to label themselves as needy, disabled, and requiring assistance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Using accessibility tools, says the article, means you are labeling yourself as &amp;ldquo;needy&amp;rdquo;, &amp;ldquo;disabled&amp;rdquo;, and &amp;ldquo;requiring assistance&amp;rdquo;, which it conflates by listing them like this.  The concept that any disabled person must be in need of assistance from any abled person in the vicinity is &amp;ndash; well, first of all, it&amp;rsquo;s false, but it&amp;rsquo;s also actively dangerous to disabled people.  For example, many wheelchair users report that abled people tend to try to &amp;ldquo;help&amp;rdquo; them by suddenly pushing their chairs, which can, and regularly does, injure the wheelchair user.  In addition, if the disabled person refuses &amp;ldquo;help&amp;rdquo;, the abled person often gets angry about it.  Please understand: a disabled person is not &amp;ldquo;needy&amp;rdquo; or &amp;ldquo;requiring assistance&amp;rdquo; just because they are existing, somewhere.  Do not, do not, do not assume that a disabled person requires assistance unless they are actually asking you for help.&lt;/p&gt;
+&lt;p&gt;Besides, someone who enables accessibility options on their phone is not &amp;ldquo;needy&amp;rdquo;; they have used the tools at their disposal to help themselves.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in learning more about accessibility and disability, the disability rights and neurodiversity movements are great places to start.  I&amp;rsquo;d also recommend reading about the &lt;a href=&#34;https://en.wikipedia.org/wiki/Social_model_of_disability&#34;&gt;social model of disability&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;* We can also see a pretty clear pattern where people undergoing the normal course of aging &lt;em&gt;hate&lt;/em&gt; thinking of themselves as &amp;ldquo;disabled&amp;rdquo;, due to this stigma.  Because of this, they injure themselves by refusing to use mobility aids, or suffer through refusing other accessibility tools because they&amp;rsquo;re not going to &amp;ldquo;give in&amp;rdquo;.  Many older adults also judge younger invisibly disabled people, because a 20-year-old couldn&amp;rsquo;t &lt;em&gt;possibly&lt;/em&gt; need a cane for any legitimate reason, and this can result in verbal or even physical abuse.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;It would make this post rhetorically prettier to have a third example here, but unfortunately I don&amp;rsquo;t have one at the moment.  That&amp;rsquo;s all for today!&lt;/p&gt;
+&lt;p&gt;Further reading: &lt;a href=&#34;https://m.signalvnoise.com/move-slowly-and-fix-things/&#34;&gt;Move Slowly and Fix Things&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,8 +61,14 @@
       <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/posts/fitbit/</guid>
-      <description>While we&amp;rsquo;re at it, here&amp;rsquo;s another design rant that&amp;rsquo;s been percolating within me like a fine wine.
-So, I have a Fitbit. Due to my chronic illness I need to keep an eye on my (unusually high) heart rate, which is why I originally bought the thing; it turns out to also be very useful for tracking my sleep.</description>
+      <description>&lt;p&gt;While we&amp;rsquo;re at it, here&amp;rsquo;s another design rant that&amp;rsquo;s been percolating within me like a fine wine.&lt;/p&gt;
+&lt;p&gt;So, I have a Fitbit.  Due to my chronic illness I need to keep an eye on my (unusually high) heart rate, which is why I originally bought the thing; it turns out to also be very useful for tracking my sleep.  I do not give a shit about weight loss and I actively do not want my Fitbit to tell me about it; in the past I&amp;rsquo;ve experimented with tracking calories and I very nearly gave myself an eating disorder, so I do not want my exercise tracker to talk to me about weight.&lt;/p&gt;
+&lt;p&gt;The Fitbit and its app, at seemingly every opportunity, want to talk to me about weight.  I&amp;rsquo;ve configured the homescreen of my app to remove &amp;ldquo;calories burned&amp;rdquo;, food logging, and weight tracking, which is all the customization I have in my control.  However, for my current device (the Inspire HR), I can&amp;rsquo;t select a watch face that will show me my heart rate and the date without also showing me &amp;ldquo;calories burned&amp;rdquo;, and my device doesn&amp;rsquo;t support custom watch faces.  When my heart rate goes above 100 BPM (which frequently happens while I am sitting down doing nothing), the app helpfully informs me that I am in the &amp;ldquo;fat burn zone&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The last iOS app redesign now shows me &amp;ldquo;tips&amp;rdquo; when I launch the app, which I can&amp;rsquo;t disable, only close as they appear.  Lots of them are about weight tracking, calories, food, and weight loss, and even in the ones that aren&amp;rsquo;t, diet talk sneaks in.  Today I was informed that &amp;ldquo;Keeping a healthy sleep routine is like maintaining a good diet &amp;ndash; every day counts.&amp;rdquo;  Once I tried their &amp;ldquo;Intro to Healthy Habits&amp;rdquo; guided program, in the hopes that it would remind me to do an exercise occasionally, and it mostly boiled down to sending me push notifications about food tracking and weight.  When you get started with this program, you &lt;em&gt;have&lt;/em&gt; to pick a goal weight.  This is, apparently, the only possible &amp;ldquo;healthy habits&amp;rdquo; goal Fitbit thinks you can have.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not the only person with a Fitbit who uses it for something that the designers didn&amp;rsquo;t seem to expect.  For example, I know of a disabled person with mobility issues who uses the step counting/step goal feature to warn her when she&amp;rsquo;s taken too many steps, because she can cause herself permanent injury by going too far over the limit.  But the weight thing seems pretty egregious: lots of people struggle with disordered eating, which can take many forms, including compulsive exercise and calorie tracking.  I am not arguing that Fitbit should remove these tracking capabilities entirely; however, Fitbit is actively alienating people who have struggled with disordered eating by not allowing its users to disable all mentions of weight and calories.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s not even getting into the weight-science aspect.  I&amp;rsquo;m definitely not an expert here, and diet/nutrition science kind of seems like a mess, but there&amp;rsquo;s &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/17469900/&#34;&gt;evidence&lt;/a&gt; that losing weight and keeping it off long-term isn&amp;rsquo;t possible through diet alone, and there&amp;rsquo;s a &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/25614201/&#34;&gt;&amp;ldquo;fat overshoot&amp;rdquo; effect&lt;/a&gt; that can cause you to gain more weight than you originally lost (possibly due to the starvation response).  As with everything biological, weight and body composition is regulated by &lt;a href=&#34;https://web.archive.org/web/20200106162146/https://slatestarcodex.com/2017/04/26/anorexia-and-metabolic-set-point/&#34;&gt;a nasty, complex control system&lt;/a&gt; whose precise behavior is dependent on your genetics, and which is interconnected with all the other complex biological systems in weird ways, and which isn&amp;rsquo;t very well-understood, but which we insist on trying to mess with anyway.  So, personally, I think that the responsible thing for Fitbit to do would be to make sure its users are at least a little bit aware that there&amp;rsquo;s more complexity here than a straightforward calories in -&amp;gt; calories out model, and stop implying that permanent weight loss is not only possible-and-desirable-for-everyone but also so easy that their little wristwatch can help you pull it off.  (And IMO trying to lose weight is probably not a good idea unless you really know what you&amp;rsquo;re doing and have done a lot more research on weight science than me.)&lt;/p&gt;
+&lt;p&gt;Anyway, &lt;em&gt;my&lt;/em&gt; solution to the &amp;ldquo;pushiness&amp;rdquo; of the Fitbit WRT weight loss has been to use the Fitbit app as little as possible and slurp out my data using the Fitbit API.  Which is obviously not a solution that&amp;rsquo;s accessible to your average non-technical user.  And even for a technical user like me, trying to implement OAuth2 to Fitbit&amp;rsquo;s satisfaction is pretty annoying (especially since the docs &lt;a href=&#34;https://dev.fitbit.com/build/reference/web-api/basics/#app-types&#34;&gt;are&lt;/a&gt; &lt;a href=&#34;https://dev.fitbit.com/build/reference/web-api/oauth2/#implicit-grant-flow&#34;&gt;inconsistent&lt;/a&gt; about what flavors of token you can use with the &amp;ldquo;Personal&amp;rdquo; app type).  But damn it, I&amp;rsquo;m going to build my own Fitbit data viewer &lt;em&gt;just&lt;/em&gt; so I can avoid having any contact whatsoever with the app that Fitbit has designed.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -36,9 +77,61 @@ So, I have a Fitbit. Due to my chronic illness I need to keep an eye on my (unus
       <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/posts/design_legibility/</guid>
-      <description>From A Designer&amp;rsquo;s Code of Ethics:
- A designer does not believe in edge cases. When you decide who you’re designing for, you’re making an implicit statement about who you’re not designing for.</description>
+      <description>&lt;p&gt;From &lt;a href=&#34;https://muledesign.com/2017/07/a-designers-code-of-ethics&#34;&gt;A Designer&amp;rsquo;s Code of Ethics&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;a-designer-does-not-believe-in-edge-cases&#34;&gt;A designer does not believe in edge cases.&lt;/h2&gt;
+&lt;p&gt;When you decide who you’re designing for, you’re making an implicit statement about who you’re not designing for. For years we referred to people who weren’t crucial to our products’ success as “edge cases”. We were marginalizing people. And we were making a decision that there were people in the world whose problems weren’t worth solving.&lt;/p&gt;
+&lt;p&gt;Facebook now claims to have two billion users. 1% of two billion people, which most products would consider an edge case, is twenty million people. Those are the people at the margins.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“When you call something an edge case, you’re really just defining the limits of what you care about.” &lt;/p&gt;
+&lt;p&gt;&amp;ndash; Eric Meyer&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;These are the trans people who get caught on the edges of “real names” projects. These are the single moms who get caught on the edges of “both parents must sign” permission slips. These are the elderly immigrants who show up to vote and can’t get ballots in their native tongues.&lt;/p&gt;
+&lt;p&gt;They are not edge cases. They are human beings, and we owe them our best work.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I don&amp;rsquo;t think the main issue is that designers think consciously about an edge case and decide not to care about it.  That is an issue &amp;ndash; but to me, the bigger problem is that there&amp;rsquo;s a lot of edge cases that just&amp;hellip; don&amp;rsquo;t occur to the designer, or anyone else involved in the product.  Designers wind up making a lot of assumptions subconsciously, without even realizing what&amp;rsquo;s happening.  Thus, it&amp;rsquo;s not enough to just say &amp;ldquo;oh, I&amp;rsquo;ll just deal properly with all the edge cases as they come up&amp;rdquo; &amp;ndash; you must actively work to divest yourself of these assumptions.&lt;/p&gt;
+&lt;p&gt;To me, &amp;ldquo;good&amp;rdquo; design (universal, accessible, and to some extent pleasing) consists of making as few assumptions as possible about your users.  When design does make excessive assumptions, or false assumptions, it often has the effect of forcing the users to fit the design.  This is upsetting to the users, who (if they have a choice in the matter) may then choose to stop using the product (if it is a product).  However, if the product or design is imposed on the user by an outside force, the resulting effect &amp;ndash; of forcing the user to fit the designer&amp;rsquo;s assumptions &amp;ndash; gets far more dangerous.&lt;/p&gt;
+&lt;p&gt;What I wish to do now is provide context: a list of links that have informed and shaped my thinking on this topic.&lt;/p&gt;
+&lt;p&gt;Epistemological resources to help you on your quest:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Of prime importance is the concept of legibility, which I first encountered in the SlateStarCodex review of &amp;ldquo;Seeing like a State&amp;rdquo;, &lt;a href=&#34;https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Further reading on legibility: &lt;a href=&#34;https://notebook.drmaciver.com/posts/2019-06-04-09:58.html&#34;&gt;Notes on the Legibility War&lt;/a&gt;, &lt;a href=&#34;https://notebook.drmaciver.com/posts/2020-02-23-09:37.html&#34;&gt;Legibility Privileges&lt;/a&gt;, and &lt;a href=&#34;https://notebook.drmaciver.com/posts/2020-03-02-09:31.html&#34;&gt;Legibility as a relationship&lt;/a&gt; by D. R. MacIver.  These posts also link to other resources on legibility.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notebook.drmaciver.com/posts/2019-06-04-09:58.html&#34;&gt;Notes on the Legibility War&lt;/a&gt; also mentions the idea of torque, which is the &amp;ldquo;force that acts between lives and classification systems, shaping each to the other&amp;rdquo;.  I tend to prefer Siderea&amp;rsquo;s concept of Procrustean Epistemologies: &lt;a href=&#34;https://siderea.dreamwidth.org/1540620.html&#34;&gt;Part 1&lt;/a&gt;, &lt;a href=&#34;https://siderea.dreamwidth.org/1541132.html&#34;&gt;Part 2&lt;/a&gt;, &lt;a href=&#34;https://siderea.dreamwidth.org/1548040.html&#34;&gt;Metalogue 1&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Also related is the concept of the &lt;a href=&#34;https://wiki.lesswrong.com/wiki/Typical_mind_fallacy&#34;&gt;typical mind fallacy&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lots and lots (and lots) of examples of specific problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://siderea.dreamwidth.org/1430601.html&#34;&gt;Means Tests and Self-Employment&lt;/a&gt; and &lt;a href=&#34;https://siderea.livejournal.com/1220766.html&#34;&gt;De Facto Sexism&lt;/a&gt;, also by Siderea&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/talking-microcopy-writing-ux/dear-tech-you-suck-at-delight-86382d101575&#34;&gt;Dear Tech, You Suck at Delight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://meyerweb.com/eric/thoughts/2014/12/24/inadvertent-algorithmic-cruelty/&#34;&gt;Inadvertent Algorithmic Cruelty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sarawb.com/2015/01/13/personal-histories/&#34;&gt;Personal Histories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@maggied/i-tried-tracking-my-period-and-it-was-even-worse-than-i-could-have-imagined-bb46f869f45&#34;&gt;I tried tracking my period and it was even worse than I could have imagined&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.theguardian.com/lifeandstyle/2019/feb/23/truth-world-built-for-men-car-crashes&#34;&gt;The deadly truth about a world built for men&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Also: the standard computer keyboard key size was designed for men&amp;rsquo;s hands.  There were some experiments in Asia with smaller keyboards, which many women apparently find more comfortable, but they never caught on (and can&amp;rsquo;t even be found in the ergo keyboard market today as far as I&amp;rsquo;m aware, and I&amp;rsquo;m pretty obsessive about keyboards).  Like it or not, the standard key size is 19mm, and you&amp;rsquo;re stuck with it even more than you&amp;rsquo;re stuck with QWERTY &amp;ndash; at least layout can be reprogrammed in software.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thefourthvine.tumblr.com/post/81447259791/youre-always-coming-out&#34;&gt;You&amp;rsquo;re Always Coming Out&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;d like to especially call your attention to the quote &amp;ldquo;we only ever fit on forms designed by people like us&amp;rdquo;.  If someone on your team frequently falls into an often-overlooked edge case, they&amp;rsquo;re more likely to notice it in your product.  It&amp;rsquo;s the best practical argument I know of for diversity in the workplace.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/DataPup_/status/1118516662305685504&#34;&gt;Twitter thread on TSA body scanners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shinesolutions.com/2018/01/08/falsehoods-programmers-believe-about-names-with-examples/&#34;&gt;Falsehoods Programmers Believe About Names, with examples&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;d like to append to this one the vast number of systems that have trouble dealing with trans people, whose deadnames can often still be their legal names, but who would prefer to be known in all situations by a different chosen name.  Particularly medical and administrative systems, as well as anything that insists on a &amp;ldquo;legal name&amp;rdquo; for no apparent reason.  If you are involved in the design of a system that deals with names, please let the user provide a &amp;ldquo;preferred name&amp;rdquo; that may bear no relation to their legal name, and use the preferred name whenever absolutely possible.  Do not, if you are a doctor&amp;rsquo;s office, shout a patient&amp;rsquo;s deadname to the whole waiting room.  Do not, if you are sending users push notifications or messages, refer to them by deadname in the notification.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t have a link for this on hand, but please consider people who&amp;rsquo;ve recently lost their mothers and people who&amp;rsquo;ve cut off toxic or abusive mothers when writing cutesy Mother&amp;rsquo;s Day email copy (similar deal for Father&amp;rsquo;s Day and all other parent- or family-related holidays).&lt;/li&gt;
+&lt;li&gt;My rant about the FitBit &lt;a href=&#34;https://shilohc.github.io/blog/posts/fitbit/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Indifference towards people and the reality in which they live is actually the one and only cardinal sin in design.&amp;rdquo;&lt;br&gt;
+&amp;ndash; Dieter Rams&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
     </item>
     
   </channel>
 </rss>
+

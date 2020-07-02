@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>projects on </title>
@@ -8,7 +7,7 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://shilohc.github.io/blog/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://shilohc.github.io/blog/tags/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,7 +16,14 @@
       <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/posts/gcal_tracker/</guid>
-      <description>The rest of this post was originally written in spring of 2019, when I&amp;rsquo;d just created the time tracker. In the interim, Google seems to have changed their auth flow, and I can no longer get the tracker to work &amp;ndash; not that I tried very hard, in all honesty.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;The rest of this post was originally written in spring of 2019, when I&amp;rsquo;d just created the time tracker.  In the interim, Google seems to have changed their auth flow, and I can no longer get the tracker to work &amp;ndash; not that I tried very hard, in all honesty.  It&amp;rsquo;s undocumented and hastily written, and I wouldn&amp;rsquo;t necessarily recommend trying to reuse my code.  Nevertheless, I still like the idea!  Maybe I&amp;rsquo;ll rewrite it some day&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Google Calendar Time Tracker is a simple command-line utility that displays time breakdowns for the tasks on my Google Calendar, grouped by calendar and optionally by name.  For example, I can compute the total time of the events in my calendar for 6.832 (Underactuated Robotics) for the past week, and also check what portion of this time was spent on homework or in class.&lt;/p&gt;
+&lt;p&gt;I wrote this to track how much time I spend on each of my classes, but it&amp;rsquo;s flexible enough to be useful as a generic time tracker for contractors billing by the hour, interns working an hourly wage, or anyone else that wants to check how they&amp;rsquo;re spending their time. You can find it on my github &lt;a href=&#34;https://github.com/shilohc/gcal-tracker&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/gcal_tracker.png&#34; alt=&#34;Screenshot of Google Calendar with an inset showing the output of my time tracker&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Above is my calendar for the week, with an inset showing some of the time tracker&amp;rsquo;s output for this week&amp;rsquo;s planned schedule.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,7 +32,40 @@
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/posts/hnav/</guid>
-      <description>The H-NAV is a LIDAR-based navigational aid for visually impaired people. The LIDAR detects obstacles within two meters that are approximately at face height, and a set of vibrating motors in the hatband indicates the obstacles&amp;rsquo; direction and rough distance.</description>
+      <description>&lt;p&gt;The H-NAV is a LIDAR-based navigational aid for visually impaired people. The LIDAR detects obstacles within two meters that are approximately at face height, and a set of vibrating motors in the hatband indicates the obstacles&amp;rsquo; direction and rough distance.&lt;/p&gt;
+&lt;p&gt;This project went through three major versions, each revision prompted by user tests. I tested the first two versions on myself and other sighted users, and was also able to test the third version on a group of blind volunteers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/hnav.jpg&#34; alt=&#34;Picture of the H-NAV.  It&amp;rsquo;s a light brown cowboy hat with a LiDAR mounted on the top and a PCB with a knob and slider on the side.  It is sitting on a white foam display head.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pictured above is the third revision of the H-NAV. A PCB mounted on the side of the hat contains a slider for adjusting the obstacle distance threshold. The main PCB, tucked under the LIDAR, contains an ATMega324 microprocessor for processing LIDAR data and the lithium-ion battery charging circuitry, and the vibrating motors are mounted to a flexible PCB inside the hatband containing a second microprocessor, the ATTiny2313.&lt;/p&gt;
+&lt;p&gt;The H-NAV was my science fair project from 2013 to 2015, and won numerous awards, including Project of the Year at the California State Science Fair, National Finalist at the Junior Science and Humanities Symposium, and Regional Finalist for the Americas at the Google Science Fair. It was also featured in Popular Mechanics (winner of a Next Generation Breakthrough Award) and on the Today Show (winner of a Make the Future Award).&lt;/p&gt;
+&lt;video controls name=&#34;media&#34;&gt;
+  &lt;source src=https://shilohc.github.io/blog/img/todayshow.mp4#t&amp;#61;290 type=&#34;video/mp4&#34;/&gt;
+&lt;/video&gt;
+
+&lt;blockquote&gt;
+&lt;details&gt;
+  &lt;summary&gt;Transcript of relevant segment, 4:50 - 6:05&lt;/summary&gt;
+  &lt;p&gt;HOST: Let&amp;rsquo;s move over to our last one.  This is Shiloh, she&amp;rsquo;s 15, from Sunnyvale, California.  Shiloh, what did you invent here?&lt;/p&gt;
+&lt;p&gt;SHILOH: So, it&amp;rsquo;s a hat for the blind that detects face-level obstacles, and indicates them to the user using an array of vibrating motors inside the hatband.&lt;/p&gt;
+&lt;p&gt;HOST: May I try one on?&lt;/p&gt;
+&lt;p&gt;SHILOH: Sure, why don&amp;rsquo;t you try this on.&lt;/p&gt;
+&lt;p&gt;HOST: Oh, you&amp;rsquo;re going to let me try yours?  Okay.  Hey, give me an idea of how this works.  I have a giant head, and there&amp;rsquo;s nothing I can do about that, but &amp;ndash;&lt;/p&gt;
+&lt;p&gt;[LAUGHTER]&lt;/p&gt;
+&lt;p&gt;HOST: Okay.  So what &amp;ndash; how does it work.&lt;/p&gt;
+&lt;p&gt;SHILOH: So you&amp;rsquo;re going to start feeling vibrating motors all around your head &amp;ndash;&lt;/p&gt;
+&lt;p&gt;HOST: Oh my gosh, I do.&lt;/p&gt;
+&lt;p&gt;SHILOH: &amp;ndash; corresponding to where the obstacles are.&lt;/p&gt;
+&lt;p&gt;HOST: I sense you over here.&lt;/p&gt;
+&lt;p&gt;SHILOH: So if you can feel my hand over here, you should be able to find &amp;ndash; feel it moving towards your front.&lt;/p&gt;
+&lt;p&gt;HOST: That is remarkable.&lt;/p&gt;
+&lt;p&gt;SHILOH: And these LEDs I put on this hat for demonstration also show the vibration pulses of the motors.&lt;/p&gt;
+&lt;p&gt;HOST: How was this idea born?  How&amp;rsquo;d you come up with it?&lt;/p&gt;
+&lt;p&gt;SHILOH: So that&amp;rsquo;s kind of an interesting story.  One day I was demonstrating one of my robots to some children and I used an analogy like, a robot is blind until you put sensors on it, to explain how sensors are used.  And then a while later I was attending a presentation given by Brian Higgins, a blind rehabilitation specialist, and he was describing his idea for a robot guide dog, and I was thinking, why don&amp;rsquo;t we put sensors on the blind so they can navigate like robots?&lt;/p&gt;
+&lt;p&gt;HOST: It&amp;rsquo;s brilliant, and I sense you right now, it&amp;rsquo;s vibrating.  Congratulations Shiloh, it&amp;rsquo;s great.&lt;/p&gt;
+
+&lt;/details&gt;
+
+&lt;/blockquote&gt;
+</description>
     </item>
     
     <item>
@@ -35,7 +74,10 @@
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/posts/sting_operation/</guid>
-      <description>Sting Operation is a homebrew telepresence robot; my original intent was to use it to attend robot club when I&amp;rsquo;m away at MIT. Currently, it&amp;rsquo;s outfitted with a Neato BotVac LiDAR, a Raspberry Pi running ROS, and a PyBoard controlling the motors and LIDAR.</description>
+      <description>&lt;p&gt;Sting Operation is a homebrew telepresence robot; my original intent was to use it to attend &lt;a href=&#34;http://hbrobotics.org/&#34;&gt;robot club&lt;/a&gt; when I&amp;rsquo;m away at MIT.  Currently, it&amp;rsquo;s outfitted with a Neato BotVac LiDAR, a Raspberry Pi running ROS, and a PyBoard controlling the motors and LIDAR. An iPad mounted on a tripod lets me FaceTime the robot.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/stingoperation.jpg&#34; alt=&#34;Picture of Sting Operation&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pictured above: Sting Operation base (minus tripod). It&amp;rsquo;s a two-wheeled base with a castor wheel.  There is also a RC receiver that can be used for local teleoperation, and a dial on the front of the robot indicating its state (under remote control, under local control, stopped, etc).&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -44,9 +86,21 @@
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shilohc.github.io/blog/posts/typewriter_keyboard/</guid>
-      <description>This is a mechanical keyboard build (DZ60 PCB, Kailh Box Navy switches) that uses as its keycaps real keys from old typewriters.
-I used three different sets of vintage typewriter keys.</description>
+      <description>&lt;p&gt;This is a mechanical keyboard build (DZ60 PCB, Kailh Box Navy switches) that uses as its keycaps real keys from old typewriters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/typewriter_kb.jpg&#34; alt=&#34;Picture of typewriter keyboard without case, with more typewriter keys clustered near it&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I used three different sets of vintage typewriter keys. The alpha keys and some of the modifiers are glass tombstone-style keys from a vintage Royal mechanical typewriter, but since that&amp;rsquo;s only 50 keys, I augmented it with plastic keys from two different sets (origin unknown).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fun fact: Old typewriters &amp;ndash; including the Royal that my keys are from &amp;ndash; often didn&amp;rsquo;t come with a &lt;code&gt;1&lt;/code&gt; key; instead, the digit &lt;code&gt;1&lt;/code&gt; was typed using a lowercase &lt;code&gt;l&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;These keys came with part of the typewriter stem still attached to the back, which I had to trim to a reasonable length. I cut a few off with a dremel tool, but this was more time-consuming than I liked, so I used a sheet metal hand nibbler on the rest and gave myself a wicked hand cramp.&lt;/p&gt;
+&lt;p&gt;Next I designed (in OnShape) and 3D-printed adapters for these keys that would fit on the Cherry MX switches.  These, I hot-glued to the typewriter keys. I ended up designing six or so types of adapters &amp;ndash; some of the metal keys had wider stems than the others, a few came without stems, and of course each set of plastic keys needed its own type of adapter.  If I re-did this project I might use a material other than hot-melt glue to attach the adapters to the plastic keys; a couple of the keycaps I used on my arrow keys have an alarming tendency to come loose.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t really think far enough ahead to design and lasercut a custom plate, so I decided to do a plateless build with PCB-mount switches. Problem: Kailh BOX Navy switches aren&amp;rsquo;t PCB-mount. (PCB-mount switches have, in addition to the two metal switch pins, two plastic pins that fit into holes on the PCB for added rigidity.) Therefore, I hot-glued them to the PCB. A lot of hot glue was involved in this build.  I then mounted the finished PCB in a 3D-printed case from Thingiverse (I believe &lt;a href=&#34;https://www.thingiverse.com/thing:962978&#34;&gt;this one&lt;/a&gt;, but I&amp;rsquo;ve long since misplaced the original link).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/typewriter_kb2.jpg&#34; alt=&#34;Picture of typewriter keyboard with case&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The final step was flashing the keyboard firmware. Thankfully, the DZ60 is one of the incredibly many keyboards supported by the open-source QMK keyboard firmware. I tweaked one of the standard layouts a bit, since I&amp;rsquo;m using a somewhat weird split-spacebar layout with arrow keys. I also customized the underglow LED lighting and started adding some interesting layers.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s still more to do with this project.  I primarily want to work on the firmware; &lt;a href=&#34;https://shilohc.github.io/blog/posts/keyboard_layout/&#34;&gt;programming my Preonic&lt;/a&gt; has given me a much better idea of what I want on my layers.  Also, my 3D-printed case is lovely and purple, but it is also unfortunately opaque, and blocks most of the underglow LEDs &amp;ndash; it would be nice to replace the back of the case with acrylic, so the light can actually get outside the case, instead of shining up through the unpopulated holes in the PCB.  But for now, the keyboard works just fine.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
 </rss>
+
