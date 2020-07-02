@@ -74,99 +74,17 @@
 
 </div>
 
+    <h1>Handle Detector</h1>
+    <p class="post-info">386 words | ~ 2 min read | Jul 1, 2020 | last modified Jul 1, 2020 | 
+    
+    </p>
+    <p>Last fall, I took <a href="http://manipulation.csail.mit.edu/Fall2019/">6.881 Intelligent Robot Manipulation</a> (well, actually 6.881 is a &ldquo;Special Subjects&rdquo; course number, and when this course is offered again it&rsquo;ll probably be renumbered, but that was the number I took it under).  We spent a lot of time on perception, because the first step in a manipulation problem is figuring out what the hell you&rsquo;re looking at and where to grab it.  Often, you may want to grab something by the handle, which means you need to identify where the handle is on the object, which is where my final project comes in.</p>
+<p>Given a segmented object point cloud (a point cloud with just the object, and no table or other clutter that may be in the environment), I fitted <a href="https://en.wikipedia.org/wiki/Quadric">quadrics</a> to randomly selected regions of the object, then used some simple heuristics to decide if the quadric probably represented a handle.  I used a recent algorithm for approximate quadric fitting that makes use of the object&rsquo;s surface normals, so the actual quadric fitting step is very fast, at the price of needing to take the time to find surface normals (which a real perception pipeline will likely need anyway for other stuff).  I tested it on some objects with handles from the <a href="http://www.ycbbenchmarks.com/object-set/">YCB object dataset</a> and it works okay.  It didn&rsquo;t do great on the mug and drill objects (which both have cylindrical areas that aren&rsquo;t handles and non-quadric-shaped handles), but did pretty well on simple objects with cylindrical or ellipsoidal handles, even when I added noise to the point clouds.  Also, no machines were learned in the making of this project (I get the impression that ML would be the more &ldquo;typical&rdquo; way to do handle detection these days, but that has all the pitfalls of, uh, ML).</p>
+<p>If you want to read more, the paper I wrote about this project is 
+<a href="https://shilohc.github.io/blog/posts/handle_detector/6881_paper.pdf">here,</a>
+ and it has all my math, citations, test results, and pretty pictures.  Go look at the pretty pictures!</p>
+<p>The full course materials for 6.881 from Fall 2019 are available online <a href="http://manipulation.csail.mit.edu/Fall2019/">here</a>, and the currently-in-progress notes are available <a href="http://manipulation.csail.mit.edu/">here</a>.  Prof. Tedrake also teaches the excellent 6.832 Underactuated Robotics, and his notes for that class are online <a href="http://underactuated.csail.mit.edu/">here</a>.  If you&rsquo;re interested at all in either of these topics, I strongly recommend you read his notes!  They&rsquo;re really good!</p>
 
-    <h1>Posts</h1>
-    <ul>
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/handle_detector/">Handle Detector</a>
-           - Jul 1, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/amigurumi-crab/">You Are Not Immune To Amigurumi Crab</a>
-           - Jul 1, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/headphone_hooks/">Headphone Hooks</a>
-           - Jun 22, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/robot_friend_01/">The Robot Is A Sweet Boy, Doing His Best</a>
-           - Jun 21, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/internships/">Shiloh&#39;s Guide to Robotics &amp; Software Internships</a>
-           - Jun 20, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/design_criticism_01/">Criticizing design articles because I can</a>
-           - Jun 19, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/fitbit/">That Fitbit rant</a>
-           - Jun 19, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/design_legibility/">Design: Edge Cases and Legibility</a>
-           - Jun 17, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/keyboard_layout_2/">Custom Keyboard Layout, Part 2</a>
-           - Jun 16, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/gcal_tracker/">Google Calendar Time Tracker</a>
-           - Jun 13, 2020</li>
-      
-    
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/hnav/">H-NAV</a>
-           - Jun 12, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/sting_operation/">Sting Operation</a>
-           - Jun 12, 2020</li>
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/typewriter_keyboard/">Typewriter Keyboard</a>
-           - Jun 12, 2020</li>
-      
-    
-      
-    
-      
-        <li>
-          <a href="https://shilohc.github.io/blog/posts/keyboard_layout/">Custom Keyboard Layout</a>
-           - Jun 10, 2020</li>
-      
-    
-    </ul>
   </div>
 
 <div id="sidebar">
@@ -246,6 +164,4 @@
   
 </body>
 </html>
-
-
 
