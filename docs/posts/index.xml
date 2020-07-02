@@ -10,28 +10,31 @@
         <atom:link href="https://shilohc.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Handle Detector</title>
-      <link>https://shilohc.github.io/blog/posts/handle_detector/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://shilohc.github.io/blog/posts/handle_detector/</guid>
-      <description>&lt;p&gt;Last fall, I took &lt;a href=&#34;http://manipulation.csail.mit.edu/Fall2019/&#34;&gt;6.881 Intelligent Robot Manipulation&lt;/a&gt; (well, actually 6.881 is a &amp;ldquo;Special Subjects&amp;rdquo; course number, and when this course is offered again it&amp;rsquo;ll probably be renumbered, but that was the number I took it under).  We spent a lot of time on perception, because the first step in a manipulation problem is figuring out what the hell you&amp;rsquo;re looking at and where to grab it.  Often, you may want to grab something by the handle, which means you need to identify where the handle is on the object, which is where my final project comes in.&lt;/p&gt;
+      <item>
+        <title>Handle Detector</title>
+        <link>https://shilohc.github.io/blog/posts/handle_detector/</link>
+        <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/handle_detector/</guid>
+        <description>&lt;p&gt;Last fall, I took &lt;a href=&#34;http://manipulation.csail.mit.edu/Fall2019/&#34;&gt;6.881 Intelligent Robot Manipulation&lt;/a&gt; (well, actually 6.881 is a &amp;ldquo;Special Subjects&amp;rdquo; course number, and when this course is offered again it&amp;rsquo;ll probably be renumbered, but that was the number I took it under).  We spent a lot of time on perception, because the first step in a manipulation problem is figuring out what the hell you&amp;rsquo;re looking at and where to grab it.  Often, you may want to grab something by the handle, which means you need to identify where the handle is on the object, which is where my final project comes in.&lt;/p&gt;
 &lt;p&gt;Given a segmented object point cloud (a point cloud with just the object, and no table or other clutter that may be in the environment), I fitted &lt;a href=&#34;https://en.wikipedia.org/wiki/Quadric&#34;&gt;quadrics&lt;/a&gt; to randomly selected regions of the object, then used some simple heuristics to decide if the quadric probably represented a handle.  I used a recent algorithm for approximate quadric fitting that makes use of the object&amp;rsquo;s surface normals, so the actual quadric fitting step is very fast, at the price of needing to take the time to find surface normals (which a real perception pipeline will likely need anyway for other stuff).  I tested it on some objects with handles from the &lt;a href=&#34;http://www.ycbbenchmarks.com/object-set/&#34;&gt;YCB object dataset&lt;/a&gt; and it works okay.  It didn&amp;rsquo;t do great on the mug and drill objects (which both have cylindrical areas that aren&amp;rsquo;t handles and non-quadric-shaped handles), but did pretty well on simple objects with cylindrical or ellipsoidal handles, even when I added noise to the point clouds.  Also, no machines were learned in the making of this project (I get the impression that ML would be the more &amp;ldquo;typical&amp;rdquo; way to do handle detection these days, but that has all the pitfalls of, uh, ML).&lt;/p&gt;
 &lt;p&gt;If you want to read more, the paper I wrote about this project is 
 &lt;a href=&#34;https://shilohc.github.io/blog/posts/handle_detector/6881_paper.pdf&#34;&gt;here,&lt;/a&gt;
  and it has all my math, citations, test results, and pretty pictures.  Go look at the pretty pictures!&lt;/p&gt;
 &lt;p&gt;The full course materials for 6.881 from Fall 2019 are available online &lt;a href=&#34;http://manipulation.csail.mit.edu/Fall2019/&#34;&gt;here&lt;/a&gt;, and the currently-in-progress notes are available &lt;a href=&#34;http://manipulation.csail.mit.edu/&#34;&gt;here&lt;/a&gt;.  Prof. Tedrake also teaches the excellent 6.832 Underactuated Robotics, and his notes for that class are online &lt;a href=&#34;http://underactuated.csail.mit.edu/&#34;&gt;here&lt;/a&gt;.  If you&amp;rsquo;re interested at all in either of these topics, I strongly recommend you read his notes!  They&amp;rsquo;re really good!&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>You Are Not Immune To Amigurumi Crab</title>
-      <link>https://shilohc.github.io/blog/posts/amigurumi-crab/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/amigurumi-crab/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/you_are_not_immune_to_crab.jpg&#34; alt=&#34;crab image&#34;&gt;&lt;/p&gt;
+    
+      
+      <item>
+        <title>You Are Not Immune To Amigurumi Crab</title>
+        <link>https://shilohc.github.io/blog/posts/amigurumi-crab/</link>
+        <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/amigurumi-crab/</guid>
+        <description>&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/you_are_not_immune_to_crab.jpg&#34; alt=&#34;crab image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.ravelry.com/patterns/library/amigurumi-crab&#34;&gt;This free crochet pattern&lt;/a&gt; for an amigurumi crab is one of the cutest little guys I&amp;rsquo;ve ever seen.  His little face is a delight!  So, of course, I&amp;rsquo;ve made three of them (one for me and two as gifts).  You&amp;rsquo;ll need red (or other crab color) yarn, black yarn or embroidery floss for the smile, stuffing/fiberfill, and safety eyes (or you can just embroider your own eyes).  A tapestry needle will help with the joins, although you could do it all with just a crochet hook if stranded on a desert island.  Stitch markers help with following the pattern increases but aren&amp;rsquo;t strictly necessary.&lt;/p&gt;
 &lt;p&gt;Usually I hate following patterns precisely, and typically make my own modifications; this crab is no exception.  Instead of real pincers, the original pattern just gives him vague club-like things &amp;ndash; which, like, c&amp;rsquo;mon, let him grab stuff!  So here&amp;rsquo;s my pattern for the pincer:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -54,15 +57,17 @@
 &lt;p&gt;(Let me know if this doesn&amp;rsquo;t make any sense; I&amp;rsquo;ve never actually thought to take any pictures during this process.)&lt;/p&gt;
 &lt;p&gt;Now go forth, and make yourself an excellent lil crab fren with the best lil smile!&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Headphone Hooks</title>
-      <link>https://shilohc.github.io/blog/posts/headphone_hooks/</link>
-      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/headphone_hooks/</guid>
-      <description>&lt;p&gt;I did not set out in life to be an audiophile, but at some point in life you look around and realize that you&amp;rsquo;ve spent hundreds of dollars on headphones and developed strong opinions on their quality, and at that point it seems kind of silly to deny that you&amp;rsquo;re an audophile.  So.&lt;/p&gt;
+    
+      
+      <item>
+        <title>Headphone Hooks</title>
+        <link>https://shilohc.github.io/blog/posts/headphone_hooks/</link>
+        <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/headphone_hooks/</guid>
+        <description>&lt;p&gt;I did not set out in life to be an audiophile, but at some point in life you look around and realize that you&amp;rsquo;ve spent hundreds of dollars on headphones and developed strong opinions on their quality, and at that point it seems kind of silly to deny that you&amp;rsquo;re an audophile.  So.&lt;/p&gt;
 &lt;p&gt;I have three main sets of headphones that I keep at my desk: Sennheiser HD 280 Pro, Bose QC35 ii, and Sennheiser HD 6XX (Massdrop edition).  These all have different characteristics and serve different purposes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;the HD 280s are wired headphones* with very good passive sound attenuation, and I&amp;rsquo;ve owned them for long enough that the original headband pad completely shredded, so it&amp;rsquo;s been replaced with a crochet pad I made.  The earpads are also coming unglued but I&amp;rsquo;m procrastinating on replacing them.  These were my daily driver headphones for walking around campus and doing work at my desk when my dorm was loud, which was a lot of the time (my dorm had other social properties that I liked enough for the noise to be worthwhile).  They clamp tightly to my head in such a way that I get headaches from prolonged use; glasses choice matters a lot for this (my current computer glasses frames were carefully selected to be as comfortable as possible for wearing headphones).  This tight clamping gives them better isolation properties.&lt;/li&gt;
@@ -77,15 +82,17 @@
 &lt;p&gt;* I am never sure how to deal with plural &amp;ldquo;headphones&amp;rdquo; grammatically.  the HD 280s are?  the HD 280 is a headphones?  the HD 280 is a headphone?&lt;/p&gt;
 &lt;p&gt;** Group-buy keycap sets are inevitably delayed.  Massdrop being an experienced group-buy manager, sometimes they do in fact deliver things on time, but I am a big fan of SA profile keycaps, and the SA production line has been very backed up lately.  And Massdrop gives me a $10 credit every time.  &lt;code&gt;&amp;gt;:)&lt;/code&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>The Robot Is A Sweet Boy, Doing His Best</title>
-      <link>https://shilohc.github.io/blog/posts/robot_friend_01/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/robot_friend_01/</guid>
-      <description>&lt;p&gt;I see so many videos on social media of robots (usually from Boston Dynamics), with a flood of comments along the lines of &amp;ldquo;haha wow can&amp;rsquo;t wait for this thing to kill us all&amp;rdquo;.  Let me bust some myths: robots are like, kind of crap, you guys.  We&amp;rsquo;ve made a lot of amazing advances in controls for legged robots lately, particularly four-legged robots, and deep learning has vastly changed robot perception &amp;ndash; but stuff like object manipulation still sucks.  And most robot tasks, uh, kind of require object manipulation.  Boston Dynamics&amp;rsquo; specialization is in controls, so if you want those robots to do high-level task and motion planning (of the kind you&amp;rsquo;d need to carry out a &amp;ldquo;kill all humans&amp;rdquo; order, or carry an object into a different room and set it gently on a table, or other extremely hard tasks like that) you&amp;rsquo;ll need to implement it yourself.  Also, most videos of robots doing stuff are carefully edited to include only the &lt;em&gt;successful&lt;/em&gt; runs; most likely either there&amp;rsquo;s 3x as much blooper reel footage that you don&amp;rsquo;t see, or the robot is being teleoperated to get a nice clean take for the video.&lt;/p&gt;
+    
+      
+      <item>
+        <title>The Robot Is A Sweet Boy, Doing His Best</title>
+        <link>https://shilohc.github.io/blog/posts/robot_friend_01/</link>
+        <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/robot_friend_01/</guid>
+        <description>&lt;p&gt;I see so many videos on social media of robots (usually from Boston Dynamics), with a flood of comments along the lines of &amp;ldquo;haha wow can&amp;rsquo;t wait for this thing to kill us all&amp;rdquo;.  Let me bust some myths: robots are like, kind of crap, you guys.  We&amp;rsquo;ve made a lot of amazing advances in controls for legged robots lately, particularly four-legged robots, and deep learning has vastly changed robot perception &amp;ndash; but stuff like object manipulation still sucks.  And most robot tasks, uh, kind of require object manipulation.  Boston Dynamics&amp;rsquo; specialization is in controls, so if you want those robots to do high-level task and motion planning (of the kind you&amp;rsquo;d need to carry out a &amp;ldquo;kill all humans&amp;rdquo; order, or carry an object into a different room and set it gently on a table, or other extremely hard tasks like that) you&amp;rsquo;ll need to implement it yourself.  Also, most videos of robots doing stuff are carefully edited to include only the &lt;em&gt;successful&lt;/em&gt; runs; most likely either there&amp;rsquo;s 3x as much blooper reel footage that you don&amp;rsquo;t see, or the robot is being teleoperated to get a nice clean take for the video.&lt;/p&gt;
 &lt;p&gt;I saw &lt;a href=&#34;https://www.youtube.com/watch?v=hM1Gd3wbA_U&#34;&gt;this video&lt;/a&gt; on Twitter today, helpfully captioned &amp;ldquo;This unassuming robot could sneak into your home.&amp;rdquo;  First of all: i LOVE this SPROINGY LAD, he is doing SO WELL!! him jump!  And he goes up uneven surfaces and stairs &lt;em&gt;super well&lt;/em&gt;.  But let&amp;rsquo;s take a look at the actual video footage again, this time through the eyes of a cynical robotics engineer.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We see the lil dude climbing a fence very slowly over the course of a long time-lapse shot (look how fast the trees are shaking).  How long does it take him to fumblingly do this outside the realm of film?  An hour?  How many takes of him falling off the fence before getting to the top are we not seeing?  Also, can he even go over the top of the fence?  I don&amp;rsquo;t think his arrangement of legs will let him push himself onto the other side of the fence, no matter how you control them.&lt;/li&gt;
@@ -102,15 +109,17 @@
 &lt;hr&gt;
 &lt;p&gt;* this is kind of a joke, but less than we robotics engineers would like.  For an example of a good robot video about some very recent manipulation research, take a look at &lt;a href=&#34;https://berkeleyautomation.github.io/dex-net/&#34;&gt;Dex-Net&lt;/a&gt;.  It uses a 5x timelapse, because otherwise the video would be interminably boring to watch, but note how it tells you at what rate the video has been sped up, and doesn&amp;rsquo;t use jump-cuts.  If you see jump-cuts in a robot video, or even just a suspiciously fast cut-away from the robot successfully finishing a task, that&amp;rsquo;s a fairly telltale sign that someone&amp;rsquo;s edited out some hilarious robot fails.  Note also that Dex-Net works in a highly controlled environment and has both a vacuum manipulator and a two-finger gripper to pick up various kinds of objects.  For reasons I won&amp;rsquo;t get into here, it&amp;rsquo;s much easier to compute grasps for vacuum manipulators, but obviously they won&amp;rsquo;t work on all objects &amp;ndash; which is where the 2-finger gripper comes in.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Shiloh&#39;s Guide to Robotics &amp; Software Internships</title>
-      <link>https://shilohc.github.io/blog/posts/internships/</link>
-      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/internships/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m currently employed at my *checks notes* seventh internship, which God willing ought to be my last.  Accordingly, I wanted to write up everything I know about internships, before I get employed full-time and forget it all.&lt;/p&gt;
+    
+      
+      <item>
+        <title>Shiloh&#39;s Guide to Robotics &amp; Software Internships</title>
+        <link>https://shilohc.github.io/blog/posts/internships/</link>
+        <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/internships/</guid>
+        <description>&lt;p&gt;I&amp;rsquo;m currently employed at my *checks notes* seventh internship, which God willing ought to be my last.  Accordingly, I wanted to write up everything I know about internships, before I get employed full-time and forget it all.&lt;/p&gt;
 &lt;p&gt;Oh, and by the way, if you&amp;rsquo;re in college or fixin&amp;rsquo; to go to one, you should give &lt;a href=&#34;https://siderea.dreamwidth.org/1238585.html&#34;&gt;this post&lt;/a&gt; a read.  I had half of a hugely long college advice post in the works, and this said everything I wanted to say way more eloquently.&lt;/p&gt;
 &lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Hey, why is networking first?&lt;/em&gt;  Networking is important.  Networking is hands down &lt;em&gt;the&lt;/em&gt; best way to find internships (and, uh, jobs), because you can completely avoid the traditional interview gauntlet in which you beg a company to please bestow upon you an internship crumb.  Instead, you float the knowledge to your network that you are Looking For An Internship, and you get responses like:&lt;/p&gt;
@@ -224,15 +233,17 @@
 &lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
 &lt;p&gt;Good luck and godspeed!  If any of this advice works out for you, or if there&amp;rsquo;s anything else you&amp;rsquo;d add, I&amp;rsquo;d love to hear about it &amp;ndash; email me at &lt;code&gt;shilohc (at) mit (dot) edu&lt;/code&gt;.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Criticizing design articles because I can</title>
-      <link>https://shilohc.github.io/blog/posts/design_criticism_01/</link>
-      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/design_criticism_01/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://uxdesign.cc/design-better-forms-96fadca0f49c&#34;&gt;This article&lt;/a&gt; on form design seems perfectly innocuous.  It&amp;rsquo;s a helpful guide that lays out best practices and briefly describes why they&amp;rsquo;re better than the obvious alternative.  But then I got to this part:&lt;/p&gt;
+    
+      
+      <item>
+        <title>Criticizing design articles because I can</title>
+        <link>https://shilohc.github.io/blog/posts/design_criticism_01/</link>
+        <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/design_criticism_01/</guid>
+        <description>&lt;p&gt;&lt;a href=&#34;https://uxdesign.cc/design-better-forms-96fadca0f49c&#34;&gt;This article&lt;/a&gt; on form design seems perfectly innocuous.  It&amp;rsquo;s a helpful guide that lays out best practices and briefly describes why they&amp;rsquo;re better than the obvious alternative.  But then I got to this part:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h3 id=&#34;why-ask&#34;&gt;Why ask?&lt;/h3&gt;
 &lt;p&gt;Omit optional fields and think of other ways to collect data.  Always ask yourself if the question can be inferred, postponed, or completely excluded.&lt;/p&gt;
@@ -269,15 +280,17 @@
 &lt;p&gt;It would make this post rhetorically prettier to have a third example here, but unfortunately I don&amp;rsquo;t have one at the moment.  That&amp;rsquo;s all for today!&lt;/p&gt;
 &lt;p&gt;Further reading: &lt;a href=&#34;https://m.signalvnoise.com/move-slowly-and-fix-things/&#34;&gt;Move Slowly and Fix Things&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>That Fitbit rant</title>
-      <link>https://shilohc.github.io/blog/posts/fitbit/</link>
-      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/fitbit/</guid>
-      <description>&lt;p&gt;While we&amp;rsquo;re at it, here&amp;rsquo;s another design rant that&amp;rsquo;s been percolating within me like a fine wine.&lt;/p&gt;
+    
+      
+      <item>
+        <title>That Fitbit rant</title>
+        <link>https://shilohc.github.io/blog/posts/fitbit/</link>
+        <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/fitbit/</guid>
+        <description>&lt;p&gt;While we&amp;rsquo;re at it, here&amp;rsquo;s another design rant that&amp;rsquo;s been percolating within me like a fine wine.&lt;/p&gt;
 &lt;p&gt;So, I have a Fitbit.  Due to my chronic illness I need to keep an eye on my (unusually high) heart rate, which is why I originally bought the thing; it turns out to also be very useful for tracking my sleep.  I do not give a shit about weight loss and I actively do not want my Fitbit to tell me about it; in the past I&amp;rsquo;ve experimented with tracking calories and I very nearly gave myself an eating disorder, so I do not want my exercise tracker to talk to me about weight.&lt;/p&gt;
 &lt;p&gt;The Fitbit and its app, at seemingly every opportunity, want to talk to me about weight.  I&amp;rsquo;ve configured the homescreen of my app to remove &amp;ldquo;calories burned&amp;rdquo;, food logging, and weight tracking, which is all the customization I have in my control.  However, for my current device (the Inspire HR), I can&amp;rsquo;t select a watch face that will show me my heart rate and the date without also showing me &amp;ldquo;calories burned&amp;rdquo;, and my device doesn&amp;rsquo;t support custom watch faces.  When my heart rate goes above 100 BPM (which frequently happens while I am sitting down doing nothing), the app helpfully informs me that I am in the &amp;ldquo;fat burn zone&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;The last iOS app redesign now shows me &amp;ldquo;tips&amp;rdquo; when I launch the app, which I can&amp;rsquo;t disable, only close as they appear.  Lots of them are about weight tracking, calories, food, and weight loss, and even in the ones that aren&amp;rsquo;t, diet talk sneaks in.  Today I was informed that &amp;ldquo;Keeping a healthy sleep routine is like maintaining a good diet &amp;ndash; every day counts.&amp;rdquo;  Once I tried their &amp;ldquo;Intro to Healthy Habits&amp;rdquo; guided program, in the hopes that it would remind me to do an exercise occasionally, and it mostly boiled down to sending me push notifications about food tracking and weight.  When you get started with this program, you &lt;em&gt;have&lt;/em&gt; to pick a goal weight.  This is, apparently, the only possible &amp;ldquo;healthy habits&amp;rdquo; goal Fitbit thinks you can have.&lt;/p&gt;
@@ -285,15 +298,17 @@
 &lt;p&gt;And that&amp;rsquo;s not even getting into the weight-science aspect.  I&amp;rsquo;m definitely not an expert here, and diet/nutrition science kind of seems like a mess, but there&amp;rsquo;s &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/17469900/&#34;&gt;evidence&lt;/a&gt; that losing weight and keeping it off long-term isn&amp;rsquo;t possible through diet alone, and there&amp;rsquo;s a &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/25614201/&#34;&gt;&amp;ldquo;fat overshoot&amp;rdquo; effect&lt;/a&gt; that can cause you to gain more weight than you originally lost (possibly due to the starvation response).  As with everything biological, weight and body composition is regulated by &lt;a href=&#34;https://web.archive.org/web/20200106162146/https://slatestarcodex.com/2017/04/26/anorexia-and-metabolic-set-point/&#34;&gt;a nasty, complex control system&lt;/a&gt; whose precise behavior is dependent on your genetics, and which is interconnected with all the other complex biological systems in weird ways, and which isn&amp;rsquo;t very well-understood, but which we insist on trying to mess with anyway.  So, personally, I think that the responsible thing for Fitbit to do would be to make sure its users are at least a little bit aware that there&amp;rsquo;s more complexity here than a straightforward calories in -&amp;gt; calories out model, and stop implying that permanent weight loss is not only possible-and-desirable-for-everyone but also so easy that their little wristwatch can help you pull it off.  (And IMO trying to lose weight is probably not a good idea unless you really know what you&amp;rsquo;re doing and have done a lot more research on weight science than me.)&lt;/p&gt;
 &lt;p&gt;Anyway, &lt;em&gt;my&lt;/em&gt; solution to the &amp;ldquo;pushiness&amp;rdquo; of the Fitbit WRT weight loss has been to use the Fitbit app as little as possible and slurp out my data using the Fitbit API.  Which is obviously not a solution that&amp;rsquo;s accessible to your average non-technical user.  And even for a technical user like me, trying to implement OAuth2 to Fitbit&amp;rsquo;s satisfaction is pretty annoying (especially since the docs &lt;a href=&#34;https://dev.fitbit.com/build/reference/web-api/basics/#app-types&#34;&gt;are&lt;/a&gt; &lt;a href=&#34;https://dev.fitbit.com/build/reference/web-api/oauth2/#implicit-grant-flow&#34;&gt;inconsistent&lt;/a&gt; about what flavors of token you can use with the &amp;ldquo;Personal&amp;rdquo; app type).  But damn it, I&amp;rsquo;m going to build my own Fitbit data viewer &lt;em&gt;just&lt;/em&gt; so I can avoid having any contact whatsoever with the app that Fitbit has designed.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Design: Edge Cases and Legibility</title>
-      <link>https://shilohc.github.io/blog/posts/design_legibility/</link>
-      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/design_legibility/</guid>
-      <description>&lt;p&gt;From &lt;a href=&#34;https://muledesign.com/2017/07/a-designers-code-of-ethics&#34;&gt;A Designer&amp;rsquo;s Code of Ethics&lt;/a&gt;:&lt;/p&gt;
+    
+      
+      <item>
+        <title>Design: Edge Cases and Legibility</title>
+        <link>https://shilohc.github.io/blog/posts/design_legibility/</link>
+        <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/design_legibility/</guid>
+        <description>&lt;p&gt;From &lt;a href=&#34;https://muledesign.com/2017/07/a-designers-code-of-ethics&#34;&gt;A Designer&amp;rsquo;s Code of Ethics&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h2 id=&#34;a-designer-does-not-believe-in-edge-cases&#34;&gt;A designer does not believe in edge cases.&lt;/h2&gt;
 &lt;p&gt;When you decide who you’re designing for, you’re making an implicit statement about who you’re not designing for. For years we referred to people who weren’t crucial to our products’ success as “edge cases”. We were marginalizing people. And we were making a decision that there were people in the world whose problems weren’t worth solving.&lt;/p&gt;
@@ -346,30 +361,34 @@
 &amp;ndash; Dieter Rams&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Custom Keyboard Layout, Part 2</title>
-      <link>https://shilohc.github.io/blog/posts/keyboard_layout_2/</link>
-      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/keyboard_layout_2/</guid>
-      <description>&lt;p&gt;Okay, so my earlier &lt;a href=&#34;https://shilohc.github.io/blog/posts/typewriter_keyboard/&#34;&gt;post&lt;/a&gt; about modifying your keyboard layout sold you, but you don&amp;rsquo;t want to buy a whole new keyboard just yet?  You want a software-side key remapping solution?  Well, sure, fair enough.&lt;/p&gt;
+    
+      
+      <item>
+        <title>Custom Keyboard Layout, Part 2</title>
+        <link>https://shilohc.github.io/blog/posts/keyboard_layout_2/</link>
+        <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/keyboard_layout_2/</guid>
+        <description>&lt;p&gt;Okay, so my earlier &lt;a href=&#34;https://shilohc.github.io/blog/posts/typewriter_keyboard/&#34;&gt;post&lt;/a&gt; about modifying your keyboard layout sold you, but you don&amp;rsquo;t want to buy a whole new keyboard just yet?  You want a software-side key remapping solution?  Well, sure, fair enough.&lt;/p&gt;
 &lt;p&gt;In the long term, this will be more annoying than modifying the keyboard firmware &amp;ndash; as I mentioned before, if you modify the keyboard firmware then you get your layout everywhere you plug in the keyboard, but software-side solutions are specific to the computer you&amp;rsquo;re on.  However, software-side solutions are easier to get started with.  Also you probably don&amp;rsquo;t want to change the firmware on the keyboard embedded in your laptop (for example, if you want to remap capslock to escape, which is one of the earliest items in my new computer setup checklist).&lt;/p&gt;
 &lt;p&gt;On Linux: Augh.  If you&amp;rsquo;re using X you can use xkb, for which there are shortcuts to do common modifications like e.g. swap capslock and escape; if you want to do anything more complex be prepared to spend a few hours on it.  I don&amp;rsquo;t use Wayland so I did a quick duckduckgo about it and my eyes went to hell.&lt;/p&gt;
 &lt;p&gt;On Mac: In later versions of MacOS, System Settings -&amp;gt; Keyboards deigns to allow you to perform a shortlist of modifications (e.g. swap capslock and escape).  For anything more advanced you&amp;rsquo;ll want Karabiner, which I seriously can&amp;rsquo;t recommend enough.  Comes with two tools: Karabiner Elements (set your remappings) and Karabiner Element Viewer (shows you what input events your keyboard is sending, which is great for debugging keyboard firmware).&lt;/p&gt;
 &lt;p&gt;On Windows: Use AutoHotKey.  I don&amp;rsquo;t know shit about AHK because the last* Windows computer I ever used was the desktop my dad helped me build when I was like 9 that dual-booted Windows XP and the educational edition of Ubuntu.  However, Hillel Wayne has a &lt;a href=&#34;https://www.hillelwayne.com/post/ahk/&#34;&gt;great post about it&lt;/a&gt; that you might want to refer to.&lt;/p&gt;
 &lt;p&gt;*This is not quite true.  Briefly, at a past internship, I had to use a Windows 10 computer because I was using a motion-capture system and its software was Windows-only.  I hated it.  Cortana kept yelling at me??  Things were happening seemingly uncontrollably?  How does anyone put up with this?&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Google Calendar Time Tracker</title>
-      <link>https://shilohc.github.io/blog/posts/gcal_tracker/</link>
-      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/gcal_tracker/</guid>
-      <description>&lt;blockquote&gt;
+    
+      
+      <item>
+        <title>Google Calendar Time Tracker</title>
+        <link>https://shilohc.github.io/blog/posts/gcal_tracker/</link>
+        <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/gcal_tracker/</guid>
+        <description>&lt;blockquote&gt;
 &lt;p&gt;The rest of this post was originally written in spring of 2019, when I&amp;rsquo;d just created the time tracker.  In the interim, Google seems to have changed their auth flow, and I can no longer get the tracker to work &amp;ndash; not that I tried very hard, in all honesty.  It&amp;rsquo;s undocumented and hastily written, and I wouldn&amp;rsquo;t necessarily recommend trying to reuse my code.  Nevertheless, I still like the idea!  Maybe I&amp;rsquo;ll rewrite it some day&amp;hellip;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Google Calendar Time Tracker is a simple command-line utility that displays time breakdowns for the tasks on my Google Calendar, grouped by calendar and optionally by name.  For example, I can compute the total time of the events in my calendar for 6.832 (Underactuated Robotics) for the past week, and also check what portion of this time was spent on homework or in class.&lt;/p&gt;
@@ -377,15 +396,19 @@
 &lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/gcal_tracker.png&#34; alt=&#34;Screenshot of Google Calendar with an inset showing the output of my time tracker&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Above is my calendar for the week, with an inset showing some of the time tracker&amp;rsquo;s output for this week&amp;rsquo;s planned schedule.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>H-NAV</title>
-      <link>https://shilohc.github.io/blog/posts/hnav/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/hnav/</guid>
-      <description>&lt;p&gt;The H-NAV is a LIDAR-based navigational aid for visually impaired people. The LIDAR detects obstacles within two meters that are approximately at face height, and a set of vibrating motors in the hatband indicates the obstacles&amp;rsquo; direction and rough distance.&lt;/p&gt;
+    
+      
+    
+      
+      <item>
+        <title>H-NAV</title>
+        <link>https://shilohc.github.io/blog/posts/hnav/</link>
+        <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/hnav/</guid>
+        <description>&lt;p&gt;The H-NAV is a LIDAR-based navigational aid for visually impaired people. The LIDAR detects obstacles within two meters that are approximately at face height, and a set of vibrating motors in the hatband indicates the obstacles&amp;rsquo; direction and rough distance.&lt;/p&gt;
 &lt;p&gt;This project went through three major versions, each revision prompted by user tests. I tested the first two versions on myself and other sighted users, and was also able to test the third version on a group of blind volunteers.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/hnav.jpg&#34; alt=&#34;Picture of the H-NAV.  It&amp;rsquo;s a light brown cowboy hat with a LiDAR mounted on the top and a PCB with a knob and slider on the side.  It is sitting on a white foam display head.&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pictured above is the third revision of the H-NAV. A PCB mounted on the side of the hat contains a slider for adjusting the obstacle distance threshold. The main PCB, tucked under the LIDAR, contains an ATMega324 microprocessor for processing LIDAR data and the lithium-ion battery charging circuitry, and the vibrating motors are mounted to a flexible PCB inside the hatband containing a second microprocessor, the ATTiny2313.&lt;/p&gt;
@@ -419,27 +442,31 @@
 
 &lt;/blockquote&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Sting Operation</title>
-      <link>https://shilohc.github.io/blog/posts/sting_operation/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/sting_operation/</guid>
-      <description>&lt;p&gt;Sting Operation is a homebrew telepresence robot; my original intent was to use it to attend &lt;a href=&#34;http://hbrobotics.org/&#34;&gt;robot club&lt;/a&gt; when I&amp;rsquo;m away at MIT.  Currently, it&amp;rsquo;s outfitted with a Neato BotVac LiDAR, a Raspberry Pi running ROS, and a PyBoard controlling the motors and LIDAR. An iPad mounted on a tripod lets me FaceTime the robot.&lt;/p&gt;
+    
+      
+      <item>
+        <title>Sting Operation</title>
+        <link>https://shilohc.github.io/blog/posts/sting_operation/</link>
+        <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/sting_operation/</guid>
+        <description>&lt;p&gt;Sting Operation is a homebrew telepresence robot; my original intent was to use it to attend &lt;a href=&#34;http://hbrobotics.org/&#34;&gt;robot club&lt;/a&gt; when I&amp;rsquo;m away at MIT.  Currently, it&amp;rsquo;s outfitted with a Neato BotVac LiDAR, a Raspberry Pi running ROS, and a PyBoard controlling the motors and LIDAR. An iPad mounted on a tripod lets me FaceTime the robot.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/stingoperation.jpg&#34; alt=&#34;Picture of Sting Operation&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pictured above: Sting Operation base (minus tripod). It&amp;rsquo;s a two-wheeled base with a castor wheel.  There is also a RC receiver that can be used for local teleoperation, and a dial on the front of the robot indicating its state (under remote control, under local control, stopped, etc).&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Typewriter Keyboard</title>
-      <link>https://shilohc.github.io/blog/posts/typewriter_keyboard/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/typewriter_keyboard/</guid>
-      <description>&lt;p&gt;This is a mechanical keyboard build (DZ60 PCB, Kailh Box Navy switches) that uses as its keycaps real keys from old typewriters.&lt;/p&gt;
+    
+      
+      <item>
+        <title>Typewriter Keyboard</title>
+        <link>https://shilohc.github.io/blog/posts/typewriter_keyboard/</link>
+        <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/typewriter_keyboard/</guid>
+        <description>&lt;p&gt;This is a mechanical keyboard build (DZ60 PCB, Kailh Box Navy switches) that uses as its keycaps real keys from old typewriters.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/typewriter_kb.jpg&#34; alt=&#34;Picture of typewriter keyboard without case, with more typewriter keys clustered near it&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I used three different sets of vintage typewriter keys. The alpha keys and some of the modifiers are glass tombstone-style keys from a vintage Royal mechanical typewriter, but since that&amp;rsquo;s only 50 keys, I augmented it with plastic keys from two different sets (origin unknown).&lt;/p&gt;
 &lt;blockquote&gt;
@@ -452,15 +479,19 @@
 &lt;p&gt;The final step was flashing the keyboard firmware. Thankfully, the DZ60 is one of the incredibly many keyboards supported by the open-source QMK keyboard firmware. I tweaked one of the standard layouts a bit, since I&amp;rsquo;m using a somewhat weird split-spacebar layout with arrow keys. I also customized the underglow LED lighting and started adding some interesting layers.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s still more to do with this project.  I primarily want to work on the firmware; &lt;a href=&#34;https://shilohc.github.io/blog/posts/keyboard_layout/&#34;&gt;programming my Preonic&lt;/a&gt; has given me a much better idea of what I want on my layers.  Also, my 3D-printed case is lovely and purple, but it is also unfortunately opaque, and blocks most of the underglow LEDs &amp;ndash; it would be nice to replace the back of the case with acrylic, so the light can actually get outside the case, instead of shining up through the unpopulated holes in the PCB.  But for now, the keyboard works just fine.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Custom Keyboard Layout</title>
-      <link>https://shilohc.github.io/blog/posts/keyboard_layout/</link>
-      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      </item>
       
-      <guid>https://shilohc.github.io/blog/posts/keyboard_layout/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s no secret that I&amp;rsquo;m massively obsessed with mechanical keyboards.  For sheer customizability, they&amp;rsquo;re impossible to beat.  Yes, I can put a lot of effort into software key remappings and then carefully port them over to every new computer I use &amp;ndash; or I can just use open-source keyboard firmware &lt;a href=&#34;https://docs.qmk.fm/#/&#34;&gt;QMK&lt;/a&gt; and my keyboard will work wherever I plug it in.  QMK also lets me program keys to do one thing when tapped and another thing when held down, or configure &amp;ldquo;layers&amp;rdquo; so that my letter keys will turn into symbol keys, so it&amp;rsquo;s more powerful than software configuration.&lt;/p&gt;
+    
+      
+    
+      
+      <item>
+        <title>Custom Keyboard Layout</title>
+        <link>https://shilohc.github.io/blog/posts/keyboard_layout/</link>
+        <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/keyboard_layout/</guid>
+        <description>&lt;p&gt;It&amp;rsquo;s no secret that I&amp;rsquo;m massively obsessed with mechanical keyboards.  For sheer customizability, they&amp;rsquo;re impossible to beat.  Yes, I can put a lot of effort into software key remappings and then carefully port them over to every new computer I use &amp;ndash; or I can just use open-source keyboard firmware &lt;a href=&#34;https://docs.qmk.fm/#/&#34;&gt;QMK&lt;/a&gt; and my keyboard will work wherever I plug it in.  QMK also lets me program keys to do one thing when tapped and another thing when held down, or configure &amp;ldquo;layers&amp;rdquo; so that my letter keys will turn into symbol keys, so it&amp;rsquo;s more powerful than software configuration.&lt;/p&gt;
 &lt;p&gt;How can I exercise this power for myself, I hear you ask?  First, get a keyboard that supports QMK.  I personally use a Preonic, which is not for everyone, but I recommend that you get a keyboard that has a split spacebar or otherwise has some extra thumb keys &amp;ndash; these are very convenient to assign as &amp;ldquo;layer activation&amp;rdquo; keys.  Then, follow the &lt;a href=&#34;https://docs.qmk.fm/#/newbs&#34;&gt;QMK docs&lt;/a&gt; on making a new keymap file and flashing your keyboard.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/preonic1.jpg&#34; alt=&#34;The Preonic, with its original keycaps&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll notice that the Preonic has a &amp;ldquo;lower&amp;rdquo; key to the left of the spacebar and a &amp;ldquo;raise&amp;rdquo; key to the right.  These let you easily access &amp;ldquo;raise&amp;rdquo; and &amp;ldquo;lower&amp;rdquo; layers by holding down the respective key &amp;ndash; instantly and enormously expanding your keyboard.  It also has actual, physical arrow keys, something that&amp;rsquo;s important to me, and yet it takes up less space than a normal 60% keyboard.&lt;/p&gt;
@@ -490,7 +521,8 @@
 &lt;p&gt;I&amp;rsquo;ve chosen to stick to the QWERTY layout rather than switch to Dvorak or Colemak or Workman or something, mostly because I use vim and don&amp;rsquo;t want to disrupt that muscle memory.  (One afternoon I decided to try out Dvorak &amp;ndash; my typing speed after a few hours of practice wasn&amp;rsquo;t terrible, but then I tried to edit something in vim and I went directly to hell.  It was like, things are happening!  Why have I just jumped to the start of the file and deleted a bunch of lines?  That&amp;rsquo;s not what I wanted!)  I find that even with QWERTY, my Preonic represents a significant ergonomic improvement over a standard keyboard, since it&amp;rsquo;s ortholinear and very compact, reducing the distance my fingers have to stretch &amp;ndash; and my custom layout improves things more by putting all the symbols under the top two rows of letters.  Your mileage, of course, may vary.  A keyboard layout is a very personal thing, and I encourage you to experiment and customize yours until it perfectly fits you and your needs.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/keyboard_layout_meme.png&#34; alt=&#34;a keyboard layout is something that can actually be so personal&#34;&gt;&lt;/p&gt;
 </description>
-    </item>
+      </item>
+      
     
   </channel>
 </rss>
