@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>diy on </title>
@@ -8,17 +7,523 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://shilohc.github.io/blog/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://shilohc.github.io/blog/tags/diy/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Headphone Hooks</title>
-      <link>https://shilohc.github.io/blog/posts/headphone_hooks/</link>
-      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://shilohc.github.io/blog/posts/headphone_hooks/</guid>
-      <description>I did not set out in life to be an audiophile, but at some point in life you look around and realize that you&amp;rsquo;ve spent hundreds of dollars on headphones and developed strong opinions on their quality, and at that point it seems kind of silly to deny that you&amp;rsquo;re an audophile.</description>
-    </item>
+      <item>
+        <title>Handle Detector</title>
+        <link>https://shilohc.github.io/blog/posts/handle_detector/</link>
+        <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/handle_detector/</guid>
+        <description>&lt;p&gt;Last fall, I took &lt;a href=&#34;http://manipulation.csail.mit.edu/Fall2019/&#34;&gt;6.881 Intelligent Robot Manipulation&lt;/a&gt; (well, actually 6.881 is a &amp;ldquo;Special Subjects&amp;rdquo; course number, and when this course is offered again it&amp;rsquo;ll probably be renumbered, but that was the number I took it under).  We spent a lot of time on perception, because the first step in a manipulation problem is figuring out what the hell you&amp;rsquo;re looking at and where to grab it.  Often, you may want to grab something by the handle, which means you need to identify where the handle is on the object, which is where my final project comes in.&lt;/p&gt;
+&lt;p&gt;Given a segmented object point cloud (a point cloud with just the object, and no table or other clutter that may be in the environment), I fitted &lt;a href=&#34;https://en.wikipedia.org/wiki/Quadric&#34;&gt;quadrics&lt;/a&gt; to randomly selected regions of the object, then used some simple heuristics to decide if the quadric probably represented a handle.  I used a recent algorithm for approximate quadric fitting that makes use of the object&amp;rsquo;s surface normals, so the actual quadric fitting step is very fast, at the price of needing to take the time to find surface normals (which a real perception pipeline will likely need anyway for other stuff).  I tested it on some objects with handles from the &lt;a href=&#34;http://www.ycbbenchmarks.com/object-set/&#34;&gt;YCB object dataset&lt;/a&gt; and it works okay.  It didn&amp;rsquo;t do great on the mug and drill objects (which both have cylindrical areas that aren&amp;rsquo;t handles and non-quadric-shaped handles), but did pretty well on simple objects with cylindrical or ellipsoidal handles, even when I added noise to the point clouds.  Also, no machines were learned in the making of this project (I get the impression that ML would be the more &amp;ldquo;typical&amp;rdquo; way to do handle detection these days, but that has all the pitfalls of, uh, ML).&lt;/p&gt;
+&lt;p&gt;If you want to read more, the paper I wrote about this project is 
+&lt;a href=&#34;https://shilohc.github.io/blog/posts/handle_detector/6881_paper.pdf&#34;&gt;here,&lt;/a&gt;
+ and it has all my math, citations, test results, and pretty pictures.  Go look at the pretty pictures!&lt;/p&gt;
+&lt;p&gt;The full course materials for 6.881 from Fall 2019 are available online &lt;a href=&#34;http://manipulation.csail.mit.edu/Fall2019/&#34;&gt;here&lt;/a&gt;, and the currently-in-progress notes are available &lt;a href=&#34;http://manipulation.csail.mit.edu/&#34;&gt;here&lt;/a&gt;.  Prof. Tedrake also teaches the excellent 6.832 Underactuated Robotics, and his notes for that class are online &lt;a href=&#34;http://underactuated.csail.mit.edu/&#34;&gt;here&lt;/a&gt;.  If you&amp;rsquo;re interested at all in either of these topics, I strongly recommend you read his notes!  They&amp;rsquo;re really good!&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>You Are Not Immune To Amigurumi Crab</title>
+        <link>https://shilohc.github.io/blog/posts/amigurumi-crab/</link>
+        <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/amigurumi-crab/</guid>
+        <description>&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/you_are_not_immune_to_crab.jpg&#34; alt=&#34;crab image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ravelry.com/patterns/library/amigurumi-crab&#34;&gt;This free crochet pattern&lt;/a&gt; for an amigurumi crab is one of the cutest little guys I&amp;rsquo;ve ever seen.  His little face is a delight!  So, of course, I&amp;rsquo;ve made three of them (one for me and two as gifts).  You&amp;rsquo;ll need red (or other crab color) yarn, black yarn or embroidery floss for the smile, stuffing/fiberfill, and safety eyes (or you can just embroider your own eyes).  A tapestry needle will help with the joins, although you could do it all with just a crochet hook if stranded on a desert island.  Stitch markers help with following the pattern increases but aren&amp;rsquo;t strictly necessary.&lt;/p&gt;
+&lt;p&gt;Usually I hate following patterns precisely, and typically make my own modifications; this crab is no exception.  Instead of real pincers, the original pattern just gives him vague club-like things &amp;ndash; which, like, c&amp;rsquo;mon, let him grab stuff!  So here&amp;rsquo;s my pattern for the pincer:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Big claw:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;6 sc in magic loop&lt;/li&gt;
+&lt;li&gt;6 sc around&lt;/li&gt;
+&lt;li&gt;2 sc in each of first 2 sc, sc in last 4 sc&lt;/li&gt;
+&lt;li&gt;8 sc around&lt;/li&gt;
+&lt;li&gt;sc in first sc, 2 sc in each of next 2 sc, sc in last 5 sc&lt;/li&gt;
+&lt;li&gt;10 sc around&lt;/li&gt;
+&lt;li&gt;sc in first 2 sc, sc2tog, sc in last 6 sc&lt;/li&gt;
+&lt;li&gt;sc in first sc, sc2tog, sc in last 5 sc&lt;/li&gt;
+&lt;li&gt;Break yarn &amp;amp; tie off&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Small claw:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Same as big claw, but skip steps 5-7&lt;/p&gt;
+&lt;p&gt;Sew together the two claws using the two stitches on each claw opposite the increases/decreases.  Stuff both claws, then SC around the 8 outside stitches (that is, excluding the two stitches from each claw that you&amp;rsquo;ve sewn together, but picking up all the other stitches around the outsides of the two claws) for five rounds.  Stuff, tuck all ends inside the claw, and attach to body as written in pattern.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Let me know if this doesn&amp;rsquo;t make any sense; I&amp;rsquo;ve never actually thought to take any pictures during this process.)&lt;/p&gt;
+&lt;p&gt;Now go forth, and make yourself an excellent lil crab fren with the best lil smile!&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>Headphone Hooks</title>
+        <link>https://shilohc.github.io/blog/posts/headphone_hooks/</link>
+        <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/headphone_hooks/</guid>
+        <description>&lt;p&gt;I did not set out in life to be an audiophile, but at some point in life you look around and realize that you&amp;rsquo;ve spent hundreds of dollars on headphones and developed strong opinions on their quality, and at that point it seems kind of silly to deny that you&amp;rsquo;re an audophile.  So.&lt;/p&gt;
+&lt;p&gt;I have three main sets of headphones that I keep at my desk: Sennheiser HD 280 Pro, Bose QC35 ii, and Sennheiser HD 6XX (Massdrop edition).  These all have different characteristics and serve different purposes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the HD 280s are wired headphones* with very good passive sound attenuation, and I&amp;rsquo;ve owned them for long enough that the original headband pad completely shredded, so it&amp;rsquo;s been replaced with a crochet pad I made.  The earpads are also coming unglued but I&amp;rsquo;m procrastinating on replacing them.  These were my daily driver headphones for walking around campus and doing work at my desk when my dorm was loud, which was a lot of the time (my dorm had other social properties that I liked enough for the noise to be worthwhile).  They clamp tightly to my head in such a way that I get headaches from prolonged use; glasses choice matters a lot for this (my current computer glasses frames were carefully selected to be as comfortable as possible for wearing headphones).  This tight clamping gives them better isolation properties.&lt;/li&gt;
+&lt;li&gt;the Bose headphones are wireless noise-canceling headphones.  I wear these when there&amp;rsquo;s a lot of environmental noise and the HD 280s don&amp;rsquo;t quite cut it.  I don&amp;rsquo;t like to wear wireless headphones when I can avoid it, but admittedly they are a lot better for walking around campus with (the HD 280s have this incredibly long and inconvenient cable and I developed a habit of spinning it around, which was probably dangerous/annoying for other hallway users).&lt;/li&gt;
+&lt;li&gt;the HD 6XX are my most recent headphone purchase, because I realized I had like $60 in Massdrop credits due to delayed keycap sets** and wanted to get myself a nice graduation/birthday present.  They are open-back headphones, because my new apartment is generally pretty quiet, and this bothers me less than noise canceling/attenuation for prolonged periods of time.  It&amp;rsquo;s also nice to be able to hear my roommates when they&amp;rsquo;re yelling for me.  These are my new daily driver headphones for doing work.  Open-back headphones also theoretically sound nicer/more &amp;ldquo;open&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, I only have the one set of ears, so the headphones not in use have to go &lt;em&gt;somewhere&lt;/em&gt;.  Previously, I was keeping all of these headphones piled up on a table near my desk.  This was annoying, and made it hard to put other things on the table; they&amp;rsquo;d also always end up on top of other items I keep on that table, like my stapler and tape dispenser.  Since headphones are sort of a funky shape, the common solution to the problem of headphone storage is the headphone hook, which is typically a cheap plastic hook with a sticky backing that you glue onto your desk somewhere.  I had a headphone hook stuck to my desk in my old dorm room, and it was ugly and felt a bit flimsy, especially since I kept piling multiple sets of headphones onto it.  Due to the furniture geometry, it also got in the way when I was moving out and had to pull my bookshelf away from the wall to rescue some stuff that fell behind it.&lt;/p&gt;
+&lt;p&gt;Therefore, my new headphone hook solution was to buy three foldable wall-mount aluminum clothes hooks and a roll of double-sided VHB tape.  The set of three hooks cost ~$10 and the tape roll was 16ft for ~$20.  Of course, I didn&amp;rsquo;t use anywhere near the whole roll; I have practically the whole thing left for future endeavors to perma-stick things to other things.  In my new room geometry, there are no pieces of furniture being blocked by these hooks, but they&amp;rsquo;re foldable anyway so I can easily get them out of the way if that changes.  The hooks are stuck to the side of my loft bed ladder in a visually pleasing vertical line, which makes them all easy to access.  They&amp;rsquo;re also close enough to my laptop that I can leave the headphones plugged in while hanging them on the hook and the cable doesn&amp;rsquo;t get in the way of anything else.  I&amp;rsquo;m very pleased with this solution.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/headphone_hooks.png&#34; alt=&#34;headphone hooks, folded and unfolded, and with headphones hanging from them&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I wrote the first draft of this post on Jun 8.  I&amp;rsquo;ve been using these hooks for a good few weeks now, and they&amp;rsquo;re great.  Unfortunately, this didn&amp;rsquo;t solve the perpetual-table-clutter problem, but at least the clutter is made of other stuff now &amp;ndash; progress?&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;* I am never sure how to deal with plural &amp;ldquo;headphones&amp;rdquo; grammatically.  the HD 280s are?  the HD 280 is a headphones?  the HD 280 is a headphone?&lt;/p&gt;
+&lt;p&gt;** Group-buy keycap sets are inevitably delayed.  Massdrop being an experienced group-buy manager, sometimes they do in fact deliver things on time, but I am a big fan of SA profile keycaps, and the SA production line has been very backed up lately.  And Massdrop gives me a $10 credit every time.  &lt;code&gt;&amp;gt;:)&lt;/code&gt;&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>The Robot Is A Sweet Boy, Doing His Best</title>
+        <link>https://shilohc.github.io/blog/posts/robot_friend_01/</link>
+        <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/robot_friend_01/</guid>
+        <description>&lt;p&gt;I see so many videos on social media of robots (usually from Boston Dynamics), with a flood of comments along the lines of &amp;ldquo;haha wow can&amp;rsquo;t wait for this thing to kill us all&amp;rdquo;.  Let me bust some myths: robots are like, kind of crap, you guys.  We&amp;rsquo;ve made a lot of amazing advances in controls for legged robots lately, particularly four-legged robots, and deep learning has vastly changed robot perception &amp;ndash; but stuff like object manipulation still sucks.  And most robot tasks, uh, kind of require object manipulation.  Boston Dynamics&amp;rsquo; specialization is in controls, so if you want those robots to do high-level task and motion planning (of the kind you&amp;rsquo;d need to carry out a &amp;ldquo;kill all humans&amp;rdquo; order, or carry an object into a different room and set it gently on a table, or other extremely hard tasks like that) you&amp;rsquo;ll need to implement it yourself.  Also, most videos of robots doing stuff are carefully edited to include only the &lt;em&gt;successful&lt;/em&gt; runs; most likely either there&amp;rsquo;s 3x as much blooper reel footage that you don&amp;rsquo;t see, or the robot is being teleoperated to get a nice clean take for the video.&lt;/p&gt;
+&lt;p&gt;I saw &lt;a href=&#34;https://www.youtube.com/watch?v=hM1Gd3wbA_U&#34;&gt;this video&lt;/a&gt; on Twitter today, helpfully captioned &amp;ldquo;This unassuming robot could sneak into your home.&amp;rdquo;  First of all: i LOVE this SPROINGY LAD, he is doing SO WELL!! him jump!  And he goes up uneven surfaces and stairs &lt;em&gt;super well&lt;/em&gt;.  But let&amp;rsquo;s take a look at the actual video footage again, this time through the eyes of a cynical robotics engineer.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We see the lil dude climbing a fence very slowly over the course of a long time-lapse shot (look how fast the trees are shaking).  How long does it take him to fumblingly do this outside the realm of film?  An hour?  How many takes of him falling off the fence before getting to the top are we not seeing?  Also, can he even go over the top of the fence?  I don&amp;rsquo;t think his arrangement of legs will let him push himself onto the other side of the fence, no matter how you control them.&lt;/li&gt;
+&lt;li&gt;The video&amp;rsquo;s main cause for alarm seems to be &amp;ldquo;omg it can go up stairs!!  It can open doors!&amp;rdquo;  Well, okay, it can go up stairs.  So if it gets into your house, it can go up stairs.  And it opens a door by throwing itself at the door, pushing the lever arm &lt;strong&gt;up&lt;/strong&gt; (at which point the door opens a crack), then pushing open the door and going about its business.  My gut instinct is that this demo has probably been hard-coded to successfully open this specific door some of the time.  Certainly I can&amp;rsquo;t see any cameras on the robot to perceive the handle, so the location of the handle relative to the robot seems to be hard-coded &amp;ndash; which makes me think the robot is being teleoperated and the human had to try a bunch of times to get him lined up just right.&lt;/li&gt;
+&lt;li&gt;If your door doesn&amp;rsquo;t have a lever-arm-type handle (if it has a round knob, for example), this robot is screwed.  If the handle is lever-arm-type but can&amp;rsquo;t be opened by pulling up, the robot is screwed.  If the door is heavy enough that the (lightweight-looking) robot can&amp;rsquo;t push it open, the robot is screwed.  If the handle is not where the robot expects it to be (e.g. if it is on the right-hand-side of the door), the robot is screwed.  If the door is a sliding door, the robot is screwed.  If there&amp;rsquo;s a screen door that needs to be held out of the way while you open the main door, the robot is screwed.  There&amp;rsquo;s, uh, a &lt;em&gt;lot&lt;/em&gt; of different kinds of doors.&lt;/li&gt;
+&lt;li&gt;I also don&amp;rsquo;t think he&amp;rsquo;s anywhere near ready to pick a lock.  How does he break into a home??  Hope for an open window?&lt;/li&gt;
+&lt;li&gt;For the uninitiated: An encoder is used to measure how much a motor turns (and it&amp;rsquo;s, uh, not a new invention).  Typically on wheeled robots this is used to get odometry data (how far the robot has gone and in which directions), which rapidly builds up error over time, particularly if the wheels slip or lose contact with the ground frequently.  But this is a legged robot that bounces, so I don&amp;rsquo;t see how they can get odometry worth a damn out of the encoders.  That makes me think they&amp;rsquo;re using the encoders as feedback in the control algorithms for the legs here, but truly you wouldn&amp;rsquo;t know it from the completely nonsensical captions.&lt;/li&gt;
+&lt;li&gt;Notice also that the original audio has been dubbed over.  Now, I don&amp;rsquo;t know for sure how much noise this lad makes, but motors are often pretty loud unless specifically designed to be nice and unobtrusive &amp;ndash; and this looks to me like a research/prototype robot, so I kind of doubt they&amp;rsquo;re spending extra money on the Good Quiet Motors.  Many of the Boston Dynamics robots you see a lot in this context have pneumatic actuation, which requires an air compressor, which can also be very loud (see the original BigDog video).  I am not accepting any assertions that this robot can sneak &lt;strong&gt;anywhere&lt;/strong&gt; until I can hear how much noise he makes.&lt;/li&gt;
+&lt;li&gt;What is it gonna do once it gets in my house?? It doesn&amp;rsquo;t have arms!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Basically, far from &amp;ldquo;THIS ROBOT CAN BREAK INTO ANY HOME&amp;rdquo;, I have seen 0 evidence so far that he can break into my unlocked garage.  Also, I love him, and he is my very springy son.&lt;/p&gt;
+&lt;p&gt;If you want to get a good idea of the current state of robot manipulation, check out &lt;a href=&#34;https://www.youtube.com/watch?v=JzlsvFN_5HI&#34;&gt;this video&lt;/a&gt;*.  I want to point out that the QR codes taped to everything are known in the biz as &amp;ldquo;fiducials&amp;rdquo;, and they&amp;rsquo;re letting the robot see where all the stuff is (and how far away it is).  I also want to say that this video is a huge goddamn mood.&lt;/p&gt;
+&lt;p&gt;However, if you&amp;rsquo;ll permit me to get serious for a sec, the real risk of advancements in AI technology isn&amp;rsquo;t a movie-type robot rebellion &amp;ndash; it&amp;rsquo;s the damage to privacy and justice done by &lt;a href=&#34;https://www.nytimes.com/2020/05/28/technology/clearview-ai-privacy-lawsuit.html&#34;&gt;widespread use&lt;/a&gt; of &lt;a href=&#34;https://www.cnbc.com/2020/06/11/clearview-ai-facial-recognition-europe.html&#34;&gt;facial recognition&lt;/a&gt; and the biased (racist, sexist, etc.) and completely non-introspectable classifiers we see in applications like &lt;a href=&#34;https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/&#34;&gt;setting jail time&lt;/a&gt;, &lt;a href=&#34;https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G&#34;&gt;hiring and recruiting&lt;/a&gt;, and &lt;a href=&#34;https://www.bloomberg.com/news/articles/2019-11-11/apple-card-s-ai-stumble-looks-familiar-to-old-school-banks&#34;&gt;deciding if someone is creditworthy&lt;/a&gt;.  And that&amp;rsquo;s just what&amp;rsquo;s happening today; who knows what new, horrible applications of machine learning will be invented in the coming few years?  But that&amp;rsquo;s kind of a downer to end this post on, so here&amp;rsquo;s the &lt;a href=&#34;https://www.youtube.com/watch?v=g0TaYhjpOfo&#34;&gt;DRC Robot Fall Compilation&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;* this is kind of a joke, but less than we robotics engineers would like.  For an example of a good robot video about some very recent manipulation research, take a look at &lt;a href=&#34;https://berkeleyautomation.github.io/dex-net/&#34;&gt;Dex-Net&lt;/a&gt;.  It uses a 5x timelapse, because otherwise the video would be interminably boring to watch, but note how it tells you at what rate the video has been sped up, and doesn&amp;rsquo;t use jump-cuts.  If you see jump-cuts in a robot video, or even just a suspiciously fast cut-away from the robot successfully finishing a task, that&amp;rsquo;s a fairly telltale sign that someone&amp;rsquo;s edited out some hilarious robot fails.  Note also that Dex-Net works in a highly controlled environment and has both a vacuum manipulator and a two-finger gripper to pick up various kinds of objects.  For reasons I won&amp;rsquo;t get into here, it&amp;rsquo;s much easier to compute grasps for vacuum manipulators, but obviously they won&amp;rsquo;t work on all objects &amp;ndash; which is where the 2-finger gripper comes in.&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>Shiloh&#39;s Guide to Robotics &amp; Software Internships</title>
+        <link>https://shilohc.github.io/blog/posts/internships/</link>
+        <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/internships/</guid>
+        <description>&lt;p&gt;I&amp;rsquo;m currently employed at my *checks notes* seventh internship, which God willing ought to be my last.  Accordingly, I wanted to write up everything I know about internships, before I get employed full-time and forget it all.&lt;/p&gt;
+&lt;p&gt;Oh, and by the way, if you&amp;rsquo;re in college or fixin&amp;rsquo; to go to one, you should give &lt;a href=&#34;https://siderea.dreamwidth.org/1238585.html&#34;&gt;this post&lt;/a&gt; a read.  I had half of a hugely long college advice post in the works, and this said everything I wanted to say way more eloquently.&lt;/p&gt;
+&lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Hey, why is networking first?&lt;/em&gt;  Networking is important.  Networking is hands down &lt;em&gt;the&lt;/em&gt; best way to find internships (and, uh, jobs), because you can completely avoid the traditional interview gauntlet in which you beg a company to please bestow upon you an internship crumb.  Instead, you float the knowledge to your network that you are Looking For An Internship, and you get responses like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You should intern for my cool startup!  Send me an email later and we can work out the offer details.&lt;/li&gt;
+&lt;li&gt;I know this company is hiring interns, let me introduce you to the intern program coordinator&amp;hellip;&lt;/li&gt;
+&lt;li&gt;You should intern for my company!  Send me an email when you apply and I&amp;rsquo;ll talk to the recruiter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once, a friend of mine (who had, at the time, just graduated from high school) wanted to intern at a particular robotics team.  The manager of this team knew him through the &lt;a href=&#34;https://www.hbrobotics.org&#34;&gt;Homebrew Robotics Club&lt;/a&gt;, and very much wanted to hire him as an intern.  However, as a matter of policy this team could not hire any intern who was not a PhD student or postdoc.  To do an end-run around the policy, my friend was hired as an intern at a contracting company that he was &lt;em&gt;also&lt;/em&gt; connected with through the HBRC, then contracted to work for the robotics team.  At no point did any interviews take place.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s important here to understand: by networking, I do not mean the thing where you email (or Linkedin-message) random people and go to events where you trade crappy business cards with other people who are There To Network.  You want to make &lt;em&gt;genuine friends&lt;/em&gt; with people who are in the industry you want to be in, but a few years older.  I think the best way to do this is to attend some casual event that lots of people in your industry go to, and make friends there in the normal way.  You also want to start as early as possible; the process kind of snowballs once you know enough people.  Here&amp;rsquo;s how I built my network:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Attending the aforementioned Homebrew Robotics Club.  I started doing this when I was 7, but the club has attendees of all ages, including a good few robotics industry professionals.&lt;/li&gt;
+&lt;li&gt;Through the HBRC, I met the two founders of Fetch Robotics, who invited me to intern there.  This was (a) a cool internship and (b) got me onto the Willow Garage board game night mailing list.  Willow Garage no longer exists, but its diaspora still get together ~every week for board games and chat about robotics inside baseball.&lt;/li&gt;
+&lt;li&gt;Attending board game night.  This helped me get to know a bunch of other people in the Willow Garage diaspora network who don&amp;rsquo;t go to the HBRC.  Eventually, I was offered my Iron Ox internship at a board game night.&lt;/li&gt;
+&lt;li&gt;Separately from this, one day I was messaged on Linkedin by a recruiter for a Playground Global portfolio company.  Playground is an incubator with a good few robotics startups; it also has weekly happy hours, which let me meet other people at Playground portfolio companies.  I met my mentor at my current internship, also a Playground company, last summer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Obviously not all of this is actionable (particularly if you do not live in the SF Bay Area), but this is what I did/knew how to do.  You&amp;rsquo;ll have to do your own legwork, if you live elsewhere, on what events (if any) are in your area.  (Also, if you&amp;rsquo;re interested in robotics and can swing an internship in the Bay Area for the summer, I strongly recommend attending the HBRC.  If nothing else, it&amp;rsquo;s fun!)&lt;/p&gt;
+&lt;p&gt;I hear that you can also get good results, if you are an undergrad at a research college, by doing research in a lab and insinuating yourself into their lab meetings and other informal events.  I&amp;rsquo;ve always been abjectly crap at this one, but if you can get yourself to be less shy than me it&amp;rsquo;d probably work well.  Also on the academia side of networking, conferences sound cool, but I&amp;rsquo;ve never been to one.  (one day I dream of finally going to ROSCon&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;Career fairs are IME mostly useless, and I say this as an MIT student.  Allegedly companies are clamoring to hire us, and my career fair experience is still &amp;ldquo;we&amp;rsquo;re not hiring sophomores&amp;rdquo; or &amp;ldquo;we&amp;rsquo;re only hiring grad students&amp;rdquo; (so why are you at the undergrad career fair?) or &amp;ldquo;hm, we&amp;rsquo;re really looking for someone who has 10 years of C++ experience and will accept $15/hour&amp;rdquo; (SO WHY ARE YOU AT THE UNDERGRAD CAREER FAIR).  Also, the vast majority of the companies there are just generic software places, and I&amp;rsquo;m looking for robotics jobs specifically; maybe a pure-software person would have better luck.  But career fairs still put you through the standard recruitment process, and the goal of networking is to bypass that process to the greatest possible extent because you know the right person.&lt;/p&gt;
+&lt;p&gt;I mean, I would still go to career fairs though.  Maybe you&amp;rsquo;ll get lucky.  And a free T-shirt = one more day to procrastinate on laundry, which is nothing to sneeze at.&lt;/p&gt;
+&lt;p&gt;Try to figure out what your college&amp;rsquo;s career-relevant mailing lists and so forth are, and get on them.  At MIT, Course 6 (EECS) has a mailing list called eecs-jobs-announce for job announcements, and a Piazza forum called 6.AcAd where people often compare intern pay rates; robotics-specific jobs are often posted to the robotics-related mailing list.  I&amp;rsquo;ve also seen job announcements on class mailing lists for robotics classes like 6.141.&lt;/p&gt;
+&lt;p&gt;Oh, and keep your Linkedin profile up-to-date.  Most of the Linkedin messages I get are from people who clearly haven&amp;rsquo;t read my profile (I got one as a sophomore asking if I wanted to be a Senior Robotics Engineer &amp;ndash; like, buddy, I&amp;rsquo;m not even a senior in college), but sometimes cool stuff comes in over Linkedin if you have a bunch of the good keywords.&lt;/p&gt;
+&lt;h2 id=&#34;application&#34;&gt;Application&lt;/h2&gt;
+&lt;p&gt;The application timeline for summer software internships starts in the fall, which is mildly silly.  Typically, only bigger and better-established companies will have their shit together this far in advance, so many startups will still be available to you if you start looking in Jan/Feb.  But the big career fair is probably in the fall, the application deadline for my Google Engineering Practicum internship was, IIRC, October 31, and (particularly in the excitement of your freshman year) it&amp;rsquo;s easy to let these deadlines slip by.  It helps to be organized about it &amp;ndash; make a list of companies you&amp;rsquo;re interested in and add all their relevant application tasks and deadlines to your calendar/planner/task tracking system.&lt;/p&gt;
+&lt;p&gt;Also in the fall, if you have a solid network, I would recommend emailing people in your network and asking about potential internship opportunities.  Since most of my network is startup-focused, often the companies I email haven&amp;rsquo;t yet started recruiting interns, but it never hurts to be early.&lt;/p&gt;
+&lt;p&gt;Usually, the internship application process consists of a coding challenge or coding assessment over the phone, then maybe one or two technical interviews, then an offer call.  Google also for some reason wanted an application essay.  There typically aren&amp;rsquo;t onsites; I had two onsite interviews at Boston area startups and one at a company in Palo Alto, which I did over my winter break because I was conveniently at home in Sunnyvale.  (I&amp;rsquo;m pretty sure they wouldn&amp;rsquo;t have invited me for the onsite if I hadn&amp;rsquo;t been from the area.  Nobody flies intern candidates anywhere, is my point.)&lt;/p&gt;
+&lt;p&gt;If you anticipate a lot of coding challenges it&amp;rsquo;s probably worthwhile to practice a bit on Leetcode or similar.  Also make sure to review the most common languages you think you&amp;rsquo;ll see; I have, in the past, completely bombed a coding challenge because it was in C++ and I didn&amp;rsquo;t have enough C++ experience at the time to write anything remotely sensible on the clock.  (It still takes me 3x as long to do anything in C++, compared to Python.)&lt;/p&gt;
+&lt;p&gt;Come January, many big companies&amp;rsquo; intern recruiting cycles will be over, but others may not have gotten the memo yet, and lots of startups will still probably be looking.  MIT has a second, smaller career fair at the end of January called XFair, and a third career fair a little later in the spring semester.  I&amp;rsquo;ve never been to the spring career fair because we&amp;rsquo;re not given the day off and I inevitably have a fully-booked schedule of classes for whatever random Tuesday it happens to be, but XFair tends to be smaller, calmer, and more startup-biased, and I honestly think it&amp;rsquo;s been at least as valuable for me as the fall career fair.  If anyone you emailed earlier in the fall hasn&amp;rsquo;t responded yet, this is also a great time to poke them.&lt;/p&gt;
+&lt;p&gt;I have not personally tried this, but if you&amp;rsquo;re interested in a startup where you don&amp;rsquo;t know anyone and they haven&amp;rsquo;t yet set up an official intern program, you could definitely just email them anyway (&amp;ldquo;Hello [cofounder/CTO], I&amp;rsquo;m a robotics/CS/underwater basketweaving student at XYZ University, and I&amp;rsquo;m interested in interning at your company because blah blah blah&amp;hellip;&amp;quot;) and see what happens.&lt;/p&gt;
+&lt;p&gt;By March/April, most internship recruiting will be over.  You could try using your network to do a Hail Mary pass, but at this point if you haven&amp;rsquo;t found an internship you probably want to start looking for a summer research position or something.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-do-career-fair&#34;&gt;How to do career fair&lt;/h2&gt;
+&lt;p&gt;My procedure for every career fair is pretty similar.&lt;/p&gt;
+&lt;p&gt;A few days before the fair, I go through the list of companies that will be there, and make a list of all the robotics companies.  There are usually 6-8 of these (out of the hundreds of companies at the fair).  I further narrow these down by crossing off all the companies that seem very boring or that I don&amp;rsquo;t want to work for.  Then I copy this list onto a notecard, which I stick in my nondescriptly professional fake-leather folder, along with ~20 copies of my resume.  I always get really paranoid and print out way too many copies of my resume (what if there&amp;rsquo;s an emergency that can only be solved by a small integer number of paper airplanes???) and I never use more than like 5.  This is the secret second reason why &lt;a href=&#34;http://www.bitchesgetriches.com/how-to-write-a-resume-so-you-actually-have-a-prayer-of-getting-hired/&#34;&gt;your resume should fit in one page&lt;/a&gt;: if it&amp;rsquo;s double-sided, you can&amp;rsquo;t use the backs of your unused resumes as scratch paper later.&lt;/p&gt;
+&lt;p&gt;I try to not bring too much stuff with me to the fair, because I know I&amp;rsquo;ll be collecting half a dozen tote bags full of miscellaneous career fair crap later.  I keep a pad of paper and a pen in my folio and my keys + Leatherman tool in my pocket.  I also bring a pair of concert earplugs (specifically Etymotics), which don&amp;rsquo;t help as much as I wish they did.&lt;/p&gt;
+&lt;p&gt;Once I check in to the fair, I usually get handed some kind of map that shows me where all the booths are.  I take a few minutes to mark on the map all the companies on my list, and plan a route that means I have to spend the absolute minimum possible time in the hellishly noisy halls.  Then I start talking to my companies of interest.  At this stage of the procedure I don&amp;rsquo;t collect any swag, because it&amp;rsquo;s really awkward to juggle five water bottles as you try to give someone your resume.&lt;/p&gt;
+&lt;p&gt;I try to remember to ask a few questions at all of my companies of interest:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is the intern program like?&lt;/li&gt;
+&lt;li&gt;[if talking to an engineer] So what do you personally do, on a day-to-day basis?&lt;/li&gt;
+&lt;li&gt;What&amp;rsquo;s your tech stack?&lt;/li&gt;
+&lt;li&gt;(this is the really important one) &lt;strong&gt;What are my next steps here?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I always try to ask the &amp;ldquo;next steps&amp;rdquo; question last, so I actually have a hope of remembering all the details, and then I leave and try to find a quiet spot to scribble down what I&amp;rsquo;m supposed to do.  I am never fully consistent about this, but a scribbled note that says the company name and &amp;ldquo;wait for email&amp;rdquo; or &amp;ldquo;fill out form on flyer&amp;rdquo; is infinitely better than nothing.  The other questions are partly so I can get a general impression about the company but mostly so the people at the booth think I&amp;rsquo;m a Smart Person who Asks Good Questions and not some dweeb who just walks up and silently hands them a resume.  Also, if they ask &lt;em&gt;me&lt;/em&gt; a question I have to get them to repeat it like three times because I can&amp;rsquo;t hear, and I am not very coherent when put on the spot; I feel like the interaction leaves them with a much better impression if I also ask some questions.&lt;/p&gt;
+&lt;p&gt;Once I&amp;rsquo;m done talking to all my companies of interest, I spend the rest of my time at career fair collecting as much swag as possible before my legs give out, then stumble back to my dorm and crash on the bed, where I immediately muck up my career fair makeup and ponytail and get lint all over my black pants.&lt;/p&gt;
+&lt;p&gt;After the career fair I try to interpret my mysterious notes about my next steps and follow them to the best of my ability.  If there were no mysterious notes, or if I can&amp;rsquo;t read the mysterious notes, or if the mysterious notes seem to imply that the next step is on their end, just to be safe and make sure they didn&amp;rsquo;t forget about me I send an email:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hi [person&amp;rsquo;s name, if I was handed a specific person&amp;rsquo;s business card],&lt;/p&gt;
+&lt;p&gt;It was great to meet you at the MIT Career Fair yesterday!  Thanks for taking the time to speak with me about [year] internships.  My resume is attached for your reference.&lt;/p&gt;
+&lt;p&gt;Thanks,
+[my name]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(It&amp;rsquo;s important to remember to actually attach the resume here.)&lt;/p&gt;
+&lt;p&gt;In the few weeks post-career-fair, I tend to receive a lot of emails about coding challenges and interview dates and such things, and I suck at keeping track of these.  If you receive an email with an action item for you, make sure to immediately log it in your to-do list or task tracker.  However, and this has historically been one of my weak points, if you receive an email and the next action item is on the company&amp;rsquo;s end, you should add to your to-do list something to the effect of &amp;ldquo;If [thing] not yet received, follow up with [company]&amp;quot;, and set this task to be due in a few days or whenever the company told you you&amp;rsquo;d receive [thing].  This prevents the scenario where the company says they&amp;rsquo;ll send you a coding challenge, forgets to send the coding challenge, bugs you in a week like &amp;ldquo;hey we noticed you failed to complete the coding challenge by our deadline,&amp;rdquo; and then gets shirty with you when you admit you did not receive the coding challenge and forgot to follow up with them about it.  Companies are often kind of disorganized about career-fair follow-up, so this sort of thing happens more frequently than you&amp;rsquo;d think.&lt;/p&gt;
+&lt;p&gt;Above all, don&amp;rsquo;t feel discouraged if the outcome of all your career fair efforts amounts to a wet fart.  It happens, often to very smart and qualified people, and it&amp;rsquo;s not a referendum on your actual value.  Also, applying to internships is a numbers game, and the numbers are very much not in your favor if you&amp;rsquo;re doing anything other than Generic Software or if you&amp;rsquo;re a freshman/sophomore (many companies have blanket policies preventing them from hiring underclassmen).  I think it&amp;rsquo;s still worth going to career fair if you&amp;rsquo;re in one of these numbers-disadvantaged categories, because the practice is valuable and will help you freak out less when you become a senior and Uber or whoever will finally deign to talk to you.  Just, you know, keep your expectations low.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not going to discuss interview prep here; I think it&amp;rsquo;s been adequately covered elsewhere on the Internet.&lt;/p&gt;
+&lt;h2 id=&#34;wage-negotiation&#34;&gt;Wage negotiation&lt;/h2&gt;
+&lt;p&gt;Wage negotiation scares me a lot, since I am anxious and hate confrontation.  However, I do like having money, which is a pretty decent incentive to put some effort into getting over this.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s plenty of advice out there on salary negotiation &amp;ndash; my favorites being &lt;a href=&#34;https://www.kalzumeus.com/2012/01/23/salary-negotiation/&#34;&gt;patio11&amp;rsquo;s classic post&lt;/a&gt; and this two-part series (&lt;a href=&#34;https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/&#34;&gt;part 1&lt;/a&gt;, &lt;a href=&#34;https://haseebq.com/how-not-to-bomb-your-offer-negotiation/&#34;&gt;part 2&lt;/a&gt;).  This advice is largely geared towards people who are interviewing for full-time roles; intern pay works a little differently.  As an intern, you generally get paid less, and you&amp;rsquo;re being hired for a temporary period, e.g. a summer.  Typically, interns are also paid by the hour.  Also, companies (unless they are very small and new) usually have a standard intern rate.  Some startups may be amenable to changing this if you negotiate, whereas a big company like Google is take-it-or-leave-it.&lt;/p&gt;
+&lt;p&gt;For a software engineer or software adjacent internship, your rate will basically be a linear function of the number of years you&amp;rsquo;ve been in college.  It&amp;rsquo;s a super good idea to get an idea of what rate you want/feel you deserve by talking to other students at your school; at MIT, the 6.AcAd Piazza forum was the place to discuss internship wages.  Wages will also depend to some extent on cost-of-living in your location, so keep an eye out for that.&lt;/p&gt;
+&lt;p&gt;In the interests of transparency, my past internships, all of which have been in Silicon Valley/SF Bay:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High school: free lunch, small robotics consulting company&lt;/li&gt;
+&lt;li&gt;Gap year before college: $25/hour, robotics startup (~30 employees and hiring rapidly, maybe 5 other interns)&lt;/li&gt;
+&lt;li&gt;Post-freshman year: $27.50/hour, Google (Engineering Practicum).  I also got a $9k &amp;ldquo;relocation bonus&amp;rdquo;, even though I&amp;rsquo;m literally from Sunnyvale and spent the summer living with my parents, and I told the recruiter this.  After the internship they gave me a return offer for $32/hour, which I turned down.&lt;/li&gt;
+&lt;li&gt;Post-sophomore year: $35/hour and $1000/month relocation, robotics startup (~10 employees, 1 other intern).  Again, I don&amp;rsquo;t know why they gave me a relocation bonus, but I&amp;rsquo;m not complaining.  (Actually, I just looked at the email thread, and apparently I told them the full specifics of the Google return offer with &lt;em&gt;its&lt;/em&gt; relocation bonus.  Uhh&amp;hellip; negotiation, baby?)&lt;/li&gt;
+&lt;li&gt;Post-junior year: $35/hour, robotics startup (~5 employees, 0 other interns)&lt;/li&gt;
+&lt;li&gt;Currently (post-senior year): $55/hour, robotics startup (~20 employees, 2 other interns)
+&lt;ul&gt;
+&lt;li&gt;(for context, I&amp;rsquo;m doing a 5th-year MEng program at MIT, which is why I have a post-senior year internship)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are looking for software internships and a startup gives you the &amp;ldquo;oooh nooo we can&amp;rsquo;t possibly pay you more than [crap amount] we&amp;rsquo;re just a little bitty startup waaaaah you can&amp;rsquo;t expect us to pay google wages&amp;rdquo; sob story, they&amp;rsquo;re ripping you off.  If a startup is so poorly funded or mismanaged that they can&amp;rsquo;t pay an intern competitively, that can also be a red flag.  Now, if you&amp;rsquo;re willing to put up with it financially and you think the internship has something else to offer, you might decide to go for it anyway.  But that&amp;rsquo;s, you know, a decision you can make from an informed position.&lt;/p&gt;
+&lt;p&gt;If a startup is on a rapid hiring spree, that tends to mean the company is well-funded and in a good position (although I&amp;rsquo;ve also seen VCs encourage startups to hire way outside their means in an attempt to drive the company to either succeed or fail fast).  Startups in general can be more volatile, even on the timescale of an internship, because the startup industry moves fast.  This isn&amp;rsquo;t at all likely to happen to you, but in the worst-case a startup could hire you as a summer intern in January and be out-of-business by June.  As with investing, it all depends on your risk tolerance.  It&amp;rsquo;s super valid to ask about a company&amp;rsquo;s stability and funding situation in the interview (and you&amp;rsquo;ll want to mentally translate this from &amp;ldquo;rose-tinted stories told to VCs&amp;rdquo; to normal human language).&lt;/p&gt;
+&lt;p&gt;If the company asks what I would expect to be paid (during the offer call or late in the hiring pipeline), I typically just give them a range off the bat, where the low number is an hourly rate I feel is &amp;ldquo;average&amp;rdquo; for MIT course 6 students in my class year and the high number is maybe $10-15 more.  Intern hiring is less tolerant of a bunch of negotiation henning-around, and I feel pretty well informed about reasonable intern pay.  If they ask me what I expect to be paid in one of the earlier phone interviews I&amp;rsquo;m more evasive: &amp;ldquo;well, I was paid X amount last summer, so I would expect an increase that reflects what I&amp;rsquo;ve learned since then&amp;hellip;&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Oh, one more thing &amp;ndash; it&amp;rsquo;s also super valid to ask about the company&amp;rsquo;s overtime policies.  At my past internships the rule has been time-and-a-half for working over 8 hours a day, but some companies are chill with you staying a couple extra hours because you were in the zone and lost track of time or you wanted to eat the free dinner at the company cafeteria, and some are more strict about not wanting you to work any overtime.  If this matters to you, an email thread after the offer call is the perfect time to discuss it.  The full, legal agreement will be laid out in the offer letter, but you won&amp;rsquo;t usually be sent this until you and the company have agreed on the details.&lt;/p&gt;
+&lt;h2 id=&#34;okay-so-i-have-one-or-more-companies-offering-to-hire-me-now-what-do-i-do&#34;&gt;Okay, so I have one or more companies offering to hire me, now what do I do??&lt;/h2&gt;
+&lt;p&gt;If you have no other companies still in-pipeline, then your decision is pretty straightforward.  Unfortunately, real life doesn&amp;rsquo;t tend to work out this neatly.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve gotten an offer you like well enough to take it without waiting for the rest of the companies in pipeline to come to a decision, go for it!  The company will probably make you the offer over the phone, so make sure you ask to get the details in writing, and have a pad of paper handy to scribble down the relevant numbers as you hear them.  I would recommend not accepting the offer in this initial phone call; take a few days to think about it, then email the recruiter back.&lt;/p&gt;
+&lt;p&gt;However, if you&amp;rsquo;d like to stall the offering company and light a fire under the still-in-pipeline companies to get you an offer:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[To the offering company]&lt;/p&gt;
+&lt;p&gt;Thank you so much for the offer!  I&amp;rsquo;m currently in the interview process with another company, so I&amp;rsquo;ll need a little more time to consider it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Your decision whether you want to namedrop the other company; I personally wouldn&amp;rsquo;t.)  If the offer has an explicit deadline that you want to extend:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is it possible for you to give me until [date] to make my decision?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Your school may also set an earliest possible offer deadline or prohibit companies from making offers that expire too quickly &amp;ndash; at MIT these &lt;a href=&#34;https://capd.mit.edu/employers/recruiting-policies-and-resources&#34;&gt;recruiting policies&lt;/a&gt; are set by CAPD and companies that violate them may be banned from the career fair.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[To the still-in-pipeline company]&lt;/p&gt;
+&lt;p&gt;I just wanted to let you know that I&amp;rsquo;ve received another internship offer which I need to respond to by [date].  As I&amp;rsquo;m still very much interested in [your company], will it be possible for you to complete the interview process by this time?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I would give them a date a little ways in advance of the true deadline.  If the other company is very famous you might consider name-dropping them here, but I&amp;rsquo;ve had this blow up on me.&lt;/p&gt;
+&lt;p&gt;But how do you actually decide which offer to take?  I generally decide based on some combination of&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;how interesting/fun I think the company will be to work for&lt;/li&gt;
+&lt;li&gt;how valuable I think it&amp;rsquo;ll be from a networking perspective&lt;/li&gt;
+&lt;li&gt;whether it will teach me new skills&lt;/li&gt;
+&lt;li&gt;how different it is from things I&amp;rsquo;ve already done&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Typically I also lean towards startups, because I think they&amp;rsquo;re more fun to work at than big companies.  However, I assume you the reader are not a clone of me, so it&amp;rsquo;s probably worth interning at both startups and established companies and seeing which one you like better.  I would also note that at Google specifically, if you apply as a standard intern, you have to accept your offer &lt;em&gt;before&lt;/em&gt; you get matched with a team, and you&amp;rsquo;re not guaranteed to be matched with a team that has any relevance to, say, robotics.  Which is fine if you&amp;rsquo;re open to a bunch of different topics; less great if you want to specialize.  I don&amp;rsquo;t know how many other large companies do this, but be on the lookout for it.&lt;/p&gt;
+&lt;p&gt;When you take your offer, you&amp;rsquo;ll be sent an offer letter, an NDA (non-disclosure agreement), and possibly an invention assignment agreement.  Non-competes are illegal in the state of California and kind of ridiculous to give an intern anyway, so I wouldn&amp;rsquo;t expect you to see one.  The invention assignment agreement assigns any IP you create during your internship to the company &amp;ndash; &lt;strong&gt;read this carefully&lt;/strong&gt; to make sure it doesn&amp;rsquo;t apply to stuff you do in your spare time on your own equipment or stuff you&amp;rsquo;ve done before the internship started, and cause a ruckus if it seems overly broad!  There may be a place where you write down all the IP you want to explicitly exclude from the agreement (e.g. a patent, if you have one).  Everything else you should read carefully, and if you see anything you&amp;rsquo;re uncomfortable with you can definitely ask your recruiter or point of contact with the company about it.  Finally, this is &lt;strong&gt;not legal advice&lt;/strong&gt; and I am &lt;strong&gt;not a lawyer&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Often I find I&amp;rsquo;ve accepted an internship offer in the fall and then a while later another interesting company messages me on Linkedin or I talk to them at XFair or something.  This isn&amp;rsquo;t a bad thing!  You have many opportunities to do internships!  If it&amp;rsquo;s an email or similar, I might say&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Thanks for reaching out!  Unfortunately I&amp;rsquo;ve already accepted an offer for Summer [year], but I&amp;rsquo;m definitely interested in discussing future internships with [company].  Let&amp;rsquo;s stay in touch!  I&amp;rsquo;ve attached my current resume, and I&amp;rsquo;ll check back in the fall.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;At a spring career fair, you can do the usual career fair chat about the company&amp;rsquo;s technology and your skills/past experience.  Make sure to mention that you&amp;rsquo;ve accepted an offer already (so you&amp;rsquo;re not &amp;ldquo;leading them on&amp;rdquo;), &amp;ldquo;but it&amp;rsquo;s never too early to start looking for [year+1] internships, right?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Of course, you do then have to put in your calendar or to-do list a reminder to actually follow up with the company in the fall.  (It&amp;rsquo;s always best to be proactive; don&amp;rsquo;t trust that the company is organized; things can always fall through the cracks).  You may also want to contact in the fall any companies that you were interviewing with, liked, but ultimately turned down.  It&amp;rsquo;s best to do all of this fairly early in the fall, particularly if your current internship might make a return offer, but in any case it&amp;rsquo;s great if your resume is the first in the pile come fall.&lt;/p&gt;
+&lt;p&gt;This follow-up fall email is a great place to write a couple casual paragraphs about what you&amp;rsquo;ve been up to since they last heard from you (e.g. anything you learned in your summer internship), but whether or not you do this, you should re-attach an updated version of your resume.  This may seem super redundant, but companies often have processes such that they only &amp;ldquo;know&amp;rdquo; the information you have given them in your resume (presumably because this makes their &lt;a href=&#34;https://siderea.dreamwidth.org/1177349.html&#34;&gt;coordinative communication&lt;/a&gt; smoother and more standardized).  The wildest version of this is that last fall I had a company email me asking me to &lt;em&gt;edit my resume&lt;/em&gt; so it had information about my MEng program, because apparently this was the only way they could put me in the summer-internship stack and not the new-grad hiring stack.  Now, this is a kind of crap experience for the candidate, but once you know about it you can start playing their game (in this case, attach your resume every time you email the company since you last edited it, and also anytime you want to give them a backup copy).&lt;/p&gt;
+&lt;h2 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h2&gt;
+&lt;p&gt;Good luck and godspeed!  If any of this advice works out for you, or if there&amp;rsquo;s anything else you&amp;rsquo;d add, I&amp;rsquo;d love to hear about it &amp;ndash; email me at &lt;code&gt;shilohc (at) mit (dot) edu&lt;/code&gt;.&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>Criticizing design articles because I can</title>
+        <link>https://shilohc.github.io/blog/posts/design_criticism_01/</link>
+        <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/design_criticism_01/</guid>
+        <description>&lt;p&gt;&lt;a href=&#34;https://uxdesign.cc/design-better-forms-96fadca0f49c&#34;&gt;This article&lt;/a&gt; on form design seems perfectly innocuous.  It&amp;rsquo;s a helpful guide that lays out best practices and briefly describes why they&amp;rsquo;re better than the obvious alternative.  But then I got to this part:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;why-ask&#34;&gt;Why ask?&lt;/h3&gt;
+&lt;p&gt;Omit optional fields and think of other ways to collect data.  Always ask yourself if the question can be inferred, postponed, or completely excluded.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Okay, we&amp;rsquo;re doing great so far.  The more unnecessary data you ask for, the more likely you are to violate your users&amp;rsquo; privacy, and incidentally the more likely you are to exclude &amp;ldquo;edge-case&amp;rdquo; users.  For example, Basler makes you fill out a brief biographical form in order to &lt;em&gt;download software for their cameras&lt;/em&gt; &amp;ndash; name, address, and salutation (select exactly one of Mr. or Ms.) are all required fields.  No joy for nonbinary people or people with doctorates.  As a nonbinary person I am never going to let this one go, because I was essentially forced to misgender myself to do my job correctly when I worked at an otherwise fantastic internship that used Basler cameras.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data entry is increasingly automated.  For example, mobile and wearable devices collect large amounts of data without the user&amp;rsquo;s conscious awareness.  Think of ways you can leverage social, conversational UI, SMS, email, voice, OCR, location, fingerprint, biometric, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I DON&amp;rsquo;T LIKE THE SOUND OF THAT AT ALL.&lt;/p&gt;
+&lt;p&gt;So&amp;hellip; what you&amp;rsquo;re saying, essentially, is that instead of actually asking users for data you don&amp;rsquo;t strictly need (so that they could leave it off the form if they don&amp;rsquo;t want you to have it), you want designers to collect it by other means, &amp;ldquo;without the user&amp;rsquo;s conscious awareness&amp;rdquo; if necessary??  Let me be clear: this is unethical.  Bad designer!  No cookie!  Consent is important for all things in life, including sex and collection of user data.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Next up is &lt;a href=&#34;https://www.fastcompany.com/3053406/how-apple-is-giving-design-a-bad-name&#34;&gt;How Apple Is Giving Design A Bad Name&lt;/a&gt; was written by Don Norman and Bruce Tognazzini.  I don&amp;rsquo;t have anything bad to say about the actual design recommendations in this article, but I do have a beef with its casual ableism.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what it says in the context of a discussion about how the Apple system font, which uses thin lines and low contrast, is hard to read, taking as an example a middle-aged woman who used the iOS accessibility settings to embiggen the system font.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It’s important to note that she did not have defective vision. She just didn’t have the eyesight of a 17-year-old.&lt;/p&gt;
+&lt;p&gt;[&amp;hellip;]&lt;/p&gt;
+&lt;p&gt;What kind of design philosophy requires millions of its users to have to pretend they are disabled in order to be able to use the product?  Apple could have designed its phone so that the majority of people could read and use the phone without having to label themselves as needy, disabled, and requiring assistance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;First of all, I don&amp;rsquo;t particularly care for the implication that being disabled is somehow bad or shameful.  The (not-particularly-well-)hidden message here is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Obviously, it&amp;rsquo;s insulting to the user to force them to identify themselves as disabled, or use accessibility tools meant for disabled people.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The user here didn&amp;rsquo;t have &lt;em&gt;defective vision&lt;/em&gt;, oh no!  She wasn&amp;rsquo;t really &lt;em&gt;disabled&lt;/em&gt;.  Because being disabled is &lt;em&gt;bad&lt;/em&gt;.  Now, the problem here seems to be that Apple has designed for the ability of exactly one type of user (our hypothetical 17-year-old), and therefore excludes&amp;hellip; other users&amp;hellip; because they don&amp;rsquo;t have the same level of ability&amp;hellip; But this isn&amp;rsquo;t a disability issue!  Because being disabled is &lt;em&gt;bad&lt;/em&gt;.  The article goes on to say that this woman then enabled the accessibility tool for enlarging text, which makes some text run off the screen in other apps.&lt;/p&gt;
+&lt;p&gt;Now, to me, both of these things are failures of accessibility!  Both the insufficient contrast in the system font, and the fact that the accessibility tool makes some text unreadable, are accessibility problems.  Design for accessibility helps everyone, even people who don&amp;rsquo;t think of themselves as disabled.  And stigmatizing disability and the use of accessibility tools is harmful*; there&amp;rsquo;s no good reason for this, and it may deter someone from using tools that can help them.&lt;/p&gt;
+&lt;p&gt;But I&amp;rsquo;m not done.  Let&amp;rsquo;s look at this quote again:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Apple could have designed its phone so that the majority of people could read and use the phone without having to label themselves as needy, disabled, and requiring assistance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Using accessibility tools, says the article, means you are labeling yourself as &amp;ldquo;needy&amp;rdquo;, &amp;ldquo;disabled&amp;rdquo;, and &amp;ldquo;requiring assistance&amp;rdquo;, which it conflates by listing them like this.  The concept that any disabled person must be in need of assistance from any abled person in the vicinity is &amp;ndash; well, first of all, it&amp;rsquo;s false, but it&amp;rsquo;s also actively dangerous to disabled people.  For example, many wheelchair users report that abled people tend to try to &amp;ldquo;help&amp;rdquo; them by suddenly pushing their chairs, which can, and regularly does, injure the wheelchair user.  In addition, if the disabled person refuses &amp;ldquo;help&amp;rdquo;, the abled person often gets angry about it.  Please understand: a disabled person is not &amp;ldquo;needy&amp;rdquo; or &amp;ldquo;requiring assistance&amp;rdquo; just because they are existing, somewhere.  Do not, do not, do not assume that a disabled person requires assistance unless they are actually asking you for help.&lt;/p&gt;
+&lt;p&gt;Besides, someone who enables accessibility options on their phone is not &amp;ldquo;needy&amp;rdquo;; they have used the tools at their disposal to help themselves.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in learning more about accessibility and disability, the disability rights and neurodiversity movements are great places to start.  I&amp;rsquo;d also recommend reading about the &lt;a href=&#34;https://en.wikipedia.org/wiki/Social_model_of_disability&#34;&gt;social model of disability&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;* We can also see a pretty clear pattern where people undergoing the normal course of aging &lt;em&gt;hate&lt;/em&gt; thinking of themselves as &amp;ldquo;disabled&amp;rdquo;, due to this stigma.  Because of this, they injure themselves by refusing to use mobility aids, or suffer through refusing other accessibility tools because they&amp;rsquo;re not going to &amp;ldquo;give in&amp;rdquo;.  Many older adults also judge younger invisibly disabled people, because a 20-year-old couldn&amp;rsquo;t &lt;em&gt;possibly&lt;/em&gt; need a cane for any legitimate reason, and this can result in verbal or even physical abuse.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;It would make this post rhetorically prettier to have a third example here, but unfortunately I don&amp;rsquo;t have one at the moment.  That&amp;rsquo;s all for today!&lt;/p&gt;
+&lt;p&gt;Further reading: &lt;a href=&#34;https://m.signalvnoise.com/move-slowly-and-fix-things/&#34;&gt;Move Slowly and Fix Things&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>That Fitbit rant</title>
+        <link>https://shilohc.github.io/blog/posts/fitbit/</link>
+        <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/fitbit/</guid>
+        <description>&lt;p&gt;While we&amp;rsquo;re at it, here&amp;rsquo;s another design rant that&amp;rsquo;s been percolating within me like a fine wine.&lt;/p&gt;
+&lt;p&gt;So, I have a Fitbit.  Due to my chronic illness I need to keep an eye on my (unusually high) heart rate, which is why I originally bought the thing; it turns out to also be very useful for tracking my sleep.  I do not give a shit about weight loss and I actively do not want my Fitbit to tell me about it; in the past I&amp;rsquo;ve experimented with tracking calories and I very nearly gave myself an eating disorder, so I do not want my exercise tracker to talk to me about weight.&lt;/p&gt;
+&lt;p&gt;The Fitbit and its app, at seemingly every opportunity, want to talk to me about weight.  I&amp;rsquo;ve configured the homescreen of my app to remove &amp;ldquo;calories burned&amp;rdquo;, food logging, and weight tracking, which is all the customization I have in my control.  However, for my current device (the Inspire HR), I can&amp;rsquo;t select a watch face that will show me my heart rate and the date without also showing me &amp;ldquo;calories burned&amp;rdquo;, and my device doesn&amp;rsquo;t support custom watch faces.  When my heart rate goes above 100 BPM (which frequently happens while I am sitting down doing nothing), the app helpfully informs me that I am in the &amp;ldquo;fat burn zone&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The last iOS app redesign now shows me &amp;ldquo;tips&amp;rdquo; when I launch the app, which I can&amp;rsquo;t disable, only close as they appear.  Lots of them are about weight tracking, calories, food, and weight loss, and even in the ones that aren&amp;rsquo;t, diet talk sneaks in.  Today I was informed that &amp;ldquo;Keeping a healthy sleep routine is like maintaining a good diet &amp;ndash; every day counts.&amp;rdquo;  Once I tried their &amp;ldquo;Intro to Healthy Habits&amp;rdquo; guided program, in the hopes that it would remind me to do an exercise occasionally, and it mostly boiled down to sending me push notifications about food tracking and weight.  When you get started with this program, you &lt;em&gt;have&lt;/em&gt; to pick a goal weight.  This is, apparently, the only possible &amp;ldquo;healthy habits&amp;rdquo; goal Fitbit thinks you can have.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not the only person with a Fitbit who uses it for something that the designers didn&amp;rsquo;t seem to expect.  For example, I know of a disabled person with mobility issues who uses the step counting/step goal feature to warn her when she&amp;rsquo;s taken too many steps, because she can cause herself permanent injury by going too far over the limit.  But the weight thing seems pretty egregious: lots of people struggle with disordered eating, which can take many forms, including compulsive exercise and calorie tracking.  I am not arguing that Fitbit should remove these tracking capabilities entirely; however, Fitbit is actively alienating people who have struggled with disordered eating by not allowing its users to disable all mentions of weight and calories.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s not even getting into the weight-science aspect.  I&amp;rsquo;m definitely not an expert here, and diet/nutrition science kind of seems like a mess, but there&amp;rsquo;s &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/17469900/&#34;&gt;evidence&lt;/a&gt; that losing weight and keeping it off long-term isn&amp;rsquo;t possible through diet alone, and there&amp;rsquo;s a &lt;a href=&#34;https://pubmed.ncbi.nlm.nih.gov/25614201/&#34;&gt;&amp;ldquo;fat overshoot&amp;rdquo; effect&lt;/a&gt; that can cause you to gain more weight than you originally lost (possibly due to the starvation response).  As with everything biological, weight and body composition is regulated by &lt;a href=&#34;https://web.archive.org/web/20200106162146/https://slatestarcodex.com/2017/04/26/anorexia-and-metabolic-set-point/&#34;&gt;a nasty, complex control system&lt;/a&gt; whose precise behavior is dependent on your genetics, and which is interconnected with all the other complex biological systems in weird ways, and which isn&amp;rsquo;t very well-understood, but which we insist on trying to mess with anyway.  So, personally, I think that the responsible thing for Fitbit to do would be to make sure its users are at least a little bit aware that there&amp;rsquo;s more complexity here than a straightforward calories in -&amp;gt; calories out model, and stop implying that permanent weight loss is not only possible-and-desirable-for-everyone but also so easy that their little wristwatch can help you pull it off.  (And IMO trying to lose weight is probably not a good idea unless you really know what you&amp;rsquo;re doing and have done a lot more research on weight science than me.)&lt;/p&gt;
+&lt;p&gt;Anyway, &lt;em&gt;my&lt;/em&gt; solution to the &amp;ldquo;pushiness&amp;rdquo; of the Fitbit WRT weight loss has been to use the Fitbit app as little as possible and slurp out my data using the Fitbit API.  Which is obviously not a solution that&amp;rsquo;s accessible to your average non-technical user.  And even for a technical user like me, trying to implement OAuth2 to Fitbit&amp;rsquo;s satisfaction is pretty annoying (especially since the docs &lt;a href=&#34;https://dev.fitbit.com/build/reference/web-api/basics/#app-types&#34;&gt;are&lt;/a&gt; &lt;a href=&#34;https://dev.fitbit.com/build/reference/web-api/oauth2/#implicit-grant-flow&#34;&gt;inconsistent&lt;/a&gt; about what flavors of token you can use with the &amp;ldquo;Personal&amp;rdquo; app type).  But damn it, I&amp;rsquo;m going to build my own Fitbit data viewer &lt;em&gt;just&lt;/em&gt; so I can avoid having any contact whatsoever with the app that Fitbit has designed.&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>Design: Edge Cases and Legibility</title>
+        <link>https://shilohc.github.io/blog/posts/design_legibility/</link>
+        <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/design_legibility/</guid>
+        <description>&lt;p&gt;From &lt;a href=&#34;https://muledesign.com/2017/07/a-designers-code-of-ethics&#34;&gt;A Designer&amp;rsquo;s Code of Ethics&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;a-designer-does-not-believe-in-edge-cases&#34;&gt;A designer does not believe in edge cases.&lt;/h2&gt;
+&lt;p&gt;When you decide who you’re designing for, you’re making an implicit statement about who you’re not designing for. For years we referred to people who weren’t crucial to our products’ success as “edge cases”. We were marginalizing people. And we were making a decision that there were people in the world whose problems weren’t worth solving.&lt;/p&gt;
+&lt;p&gt;Facebook now claims to have two billion users. 1% of two billion people, which most products would consider an edge case, is twenty million people. Those are the people at the margins.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“When you call something an edge case, you’re really just defining the limits of what you care about.” &lt;/p&gt;
+&lt;p&gt;&amp;ndash; Eric Meyer&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;These are the trans people who get caught on the edges of “real names” projects. These are the single moms who get caught on the edges of “both parents must sign” permission slips. These are the elderly immigrants who show up to vote and can’t get ballots in their native tongues.&lt;/p&gt;
+&lt;p&gt;They are not edge cases. They are human beings, and we owe them our best work.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I don&amp;rsquo;t think the main issue is that designers think consciously about an edge case and decide not to care about it.  That is an issue &amp;ndash; but to me, the bigger problem is that there&amp;rsquo;s a lot of edge cases that just&amp;hellip; don&amp;rsquo;t occur to the designer, or anyone else involved in the product.  Designers wind up making a lot of assumptions subconsciously, without even realizing what&amp;rsquo;s happening.  Thus, it&amp;rsquo;s not enough to just say &amp;ldquo;oh, I&amp;rsquo;ll just deal properly with all the edge cases as they come up&amp;rdquo; &amp;ndash; you must actively work to divest yourself of these assumptions.&lt;/p&gt;
+&lt;p&gt;To me, &amp;ldquo;good&amp;rdquo; design (universal, accessible, and to some extent pleasing) consists of making as few assumptions as possible about your users.  When design does make excessive assumptions, or false assumptions, it often has the effect of forcing the users to fit the design.  This is upsetting to the users, who (if they have a choice in the matter) may then choose to stop using the product (if it is a product).  However, if the product or design is imposed on the user by an outside force, the resulting effect &amp;ndash; of forcing the user to fit the designer&amp;rsquo;s assumptions &amp;ndash; gets far more dangerous.&lt;/p&gt;
+&lt;p&gt;What I wish to do now is provide context: a list of links that have informed and shaped my thinking on this topic.&lt;/p&gt;
+&lt;p&gt;Epistemological resources to help you on your quest:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Of prime importance is the concept of legibility, which I first encountered in the SlateStarCodex review of &amp;ldquo;Seeing like a State&amp;rdquo;, &lt;a href=&#34;https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Further reading on legibility: &lt;a href=&#34;https://notebook.drmaciver.com/posts/2019-06-04-09:58.html&#34;&gt;Notes on the Legibility War&lt;/a&gt;, &lt;a href=&#34;https://notebook.drmaciver.com/posts/2020-02-23-09:37.html&#34;&gt;Legibility Privileges&lt;/a&gt;, and &lt;a href=&#34;https://notebook.drmaciver.com/posts/2020-03-02-09:31.html&#34;&gt;Legibility as a relationship&lt;/a&gt; by D. R. MacIver.  These posts also link to other resources on legibility.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notebook.drmaciver.com/posts/2019-06-04-09:58.html&#34;&gt;Notes on the Legibility War&lt;/a&gt; also mentions the idea of torque, which is the &amp;ldquo;force that acts between lives and classification systems, shaping each to the other&amp;rdquo;.  I tend to prefer Siderea&amp;rsquo;s concept of Procrustean Epistemologies: &lt;a href=&#34;https://siderea.dreamwidth.org/1540620.html&#34;&gt;Part 1&lt;/a&gt;, &lt;a href=&#34;https://siderea.dreamwidth.org/1541132.html&#34;&gt;Part 2&lt;/a&gt;, &lt;a href=&#34;https://siderea.dreamwidth.org/1548040.html&#34;&gt;Metalogue 1&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Also related is the concept of the &lt;a href=&#34;https://wiki.lesswrong.com/wiki/Typical_mind_fallacy&#34;&gt;typical mind fallacy&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lots and lots (and lots) of examples of specific problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://siderea.dreamwidth.org/1430601.html&#34;&gt;Means Tests and Self-Employment&lt;/a&gt; and &lt;a href=&#34;https://siderea.livejournal.com/1220766.html&#34;&gt;De Facto Sexism&lt;/a&gt;, also by Siderea&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/talking-microcopy-writing-ux/dear-tech-you-suck-at-delight-86382d101575&#34;&gt;Dear Tech, You Suck at Delight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://meyerweb.com/eric/thoughts/2014/12/24/inadvertent-algorithmic-cruelty/&#34;&gt;Inadvertent Algorithmic Cruelty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sarawb.com/2015/01/13/personal-histories/&#34;&gt;Personal Histories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@maggied/i-tried-tracking-my-period-and-it-was-even-worse-than-i-could-have-imagined-bb46f869f45&#34;&gt;I tried tracking my period and it was even worse than I could have imagined&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.theguardian.com/lifeandstyle/2019/feb/23/truth-world-built-for-men-car-crashes&#34;&gt;The deadly truth about a world built for men&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Also: the standard computer keyboard key size was designed for men&amp;rsquo;s hands.  There were some experiments in Asia with smaller keyboards, which many women apparently find more comfortable, but they never caught on (and can&amp;rsquo;t even be found in the ergo keyboard market today as far as I&amp;rsquo;m aware, and I&amp;rsquo;m pretty obsessive about keyboards).  Like it or not, the standard key size is 19mm, and you&amp;rsquo;re stuck with it even more than you&amp;rsquo;re stuck with QWERTY &amp;ndash; at least layout can be reprogrammed in software.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thefourthvine.tumblr.com/post/81447259791/youre-always-coming-out&#34;&gt;You&amp;rsquo;re Always Coming Out&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;d like to especially call your attention to the quote &amp;ldquo;we only ever fit on forms designed by people like us&amp;rdquo;.  If someone on your team frequently falls into an often-overlooked edge case, they&amp;rsquo;re more likely to notice it in your product.  It&amp;rsquo;s the best practical argument I know of for diversity in the workplace.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/DataPup_/status/1118516662305685504&#34;&gt;Twitter thread on TSA body scanners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shinesolutions.com/2018/01/08/falsehoods-programmers-believe-about-names-with-examples/&#34;&gt;Falsehoods Programmers Believe About Names, with examples&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;d like to append to this one the vast number of systems that have trouble dealing with trans people, whose deadnames can often still be their legal names, but who would prefer to be known in all situations by a different chosen name.  Particularly medical and administrative systems, as well as anything that insists on a &amp;ldquo;legal name&amp;rdquo; for no apparent reason.  If you are involved in the design of a system that deals with names, please let the user provide a &amp;ldquo;preferred name&amp;rdquo; that may bear no relation to their legal name, and use the preferred name whenever absolutely possible.  Do not, if you are a doctor&amp;rsquo;s office, shout a patient&amp;rsquo;s deadname to the whole waiting room.  Do not, if you are sending users push notifications or messages, refer to them by deadname in the notification.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t have a link for this on hand, but please consider people who&amp;rsquo;ve recently lost their mothers and people who&amp;rsquo;ve cut off toxic or abusive mothers when writing cutesy Mother&amp;rsquo;s Day email copy (similar deal for Father&amp;rsquo;s Day and all other parent- or family-related holidays).&lt;/li&gt;
+&lt;li&gt;My rant about the FitBit &lt;a href=&#34;https://shilohc.github.io/blog/posts/fitbit/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Indifference towards people and the reality in which they live is actually the one and only cardinal sin in design.&amp;rdquo;&lt;br&gt;
+&amp;ndash; Dieter Rams&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>Custom Keyboard Layout, Part 2</title>
+        <link>https://shilohc.github.io/blog/posts/keyboard_layout_2/</link>
+        <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/keyboard_layout_2/</guid>
+        <description>&lt;p&gt;Okay, so my earlier &lt;a href=&#34;https://shilohc.github.io/blog/posts/typewriter_keyboard/&#34;&gt;post&lt;/a&gt; about modifying your keyboard layout sold you, but you don&amp;rsquo;t want to buy a whole new keyboard just yet?  You want a software-side key remapping solution?  Well, sure, fair enough.&lt;/p&gt;
+&lt;p&gt;In the long term, this will be more annoying than modifying the keyboard firmware &amp;ndash; as I mentioned before, if you modify the keyboard firmware then you get your layout everywhere you plug in the keyboard, but software-side solutions are specific to the computer you&amp;rsquo;re on.  However, software-side solutions are easier to get started with.  Also you probably don&amp;rsquo;t want to change the firmware on the keyboard embedded in your laptop (for example, if you want to remap capslock to escape, which is one of the earliest items in my new computer setup checklist).&lt;/p&gt;
+&lt;p&gt;On Linux: Augh.  If you&amp;rsquo;re using X you can use xkb, for which there are shortcuts to do common modifications like e.g. swap capslock and escape; if you want to do anything more complex be prepared to spend a few hours on it.  I don&amp;rsquo;t use Wayland so I did a quick duckduckgo about it and my eyes went to hell.&lt;/p&gt;
+&lt;p&gt;On Mac: In later versions of MacOS, System Settings -&amp;gt; Keyboards deigns to allow you to perform a shortlist of modifications (e.g. swap capslock and escape).  For anything more advanced you&amp;rsquo;ll want Karabiner, which I seriously can&amp;rsquo;t recommend enough.  Comes with two tools: Karabiner Elements (set your remappings) and Karabiner Element Viewer (shows you what input events your keyboard is sending, which is great for debugging keyboard firmware).&lt;/p&gt;
+&lt;p&gt;On Windows: Use AutoHotKey.  I don&amp;rsquo;t know shit about AHK because the last* Windows computer I ever used was the desktop my dad helped me build when I was like 9 that dual-booted Windows XP and the educational edition of Ubuntu.  However, Hillel Wayne has a &lt;a href=&#34;https://www.hillelwayne.com/post/ahk/&#34;&gt;great post about it&lt;/a&gt; that you might want to refer to.&lt;/p&gt;
+&lt;p&gt;*This is not quite true.  Briefly, at a past internship, I had to use a Windows 10 computer because I was using a motion-capture system and its software was Windows-only.  I hated it.  Cortana kept yelling at me??  Things were happening seemingly uncontrollably?  How does anyone put up with this?&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>Google Calendar Time Tracker</title>
+        <link>https://shilohc.github.io/blog/posts/gcal_tracker/</link>
+        <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/gcal_tracker/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;The rest of this post was originally written in spring of 2019, when I&amp;rsquo;d just created the time tracker.  In the interim, Google seems to have changed their auth flow, and I can no longer get the tracker to work &amp;ndash; not that I tried very hard, in all honesty.  It&amp;rsquo;s undocumented and hastily written, and I wouldn&amp;rsquo;t necessarily recommend trying to reuse my code.  Nevertheless, I still like the idea!  Maybe I&amp;rsquo;ll rewrite it some day&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Google Calendar Time Tracker is a simple command-line utility that displays time breakdowns for the tasks on my Google Calendar, grouped by calendar and optionally by name.  For example, I can compute the total time of the events in my calendar for 6.832 (Underactuated Robotics) for the past week, and also check what portion of this time was spent on homework or in class.&lt;/p&gt;
+&lt;p&gt;I wrote this to track how much time I spend on each of my classes, but it&amp;rsquo;s flexible enough to be useful as a generic time tracker for contractors billing by the hour, interns working an hourly wage, or anyone else that wants to check how they&amp;rsquo;re spending their time. You can find it on my github &lt;a href=&#34;https://github.com/shilohc/gcal-tracker&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/gcal_tracker.png&#34; alt=&#34;Screenshot of Google Calendar with an inset showing the output of my time tracker&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Above is my calendar for the week, with an inset showing some of the time tracker&amp;rsquo;s output for this week&amp;rsquo;s planned schedule.&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+    
+      
+      <item>
+        <title>H-NAV</title>
+        <link>https://shilohc.github.io/blog/posts/hnav/</link>
+        <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/hnav/</guid>
+        <description>&lt;p&gt;The H-NAV is a LIDAR-based navigational aid for visually impaired people. The LIDAR detects obstacles within two meters that are approximately at face height, and a set of vibrating motors in the hatband indicates the obstacles&amp;rsquo; direction and rough distance.&lt;/p&gt;
+&lt;p&gt;This project went through three major versions, each revision prompted by user tests. I tested the first two versions on myself and other sighted users, and was also able to test the third version on a group of blind volunteers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/hnav.jpg&#34; alt=&#34;Picture of the H-NAV.  It&amp;rsquo;s a light brown cowboy hat with a LiDAR mounted on the top and a PCB with a knob and slider on the side.  It is sitting on a white foam display head.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pictured above is the third revision of the H-NAV. A PCB mounted on the side of the hat contains a slider for adjusting the obstacle distance threshold. The main PCB, tucked under the LIDAR, contains an ATMega324 microprocessor for processing LIDAR data and the lithium-ion battery charging circuitry, and the vibrating motors are mounted to a flexible PCB inside the hatband containing a second microprocessor, the ATTiny2313.&lt;/p&gt;
+&lt;p&gt;The H-NAV was my science fair project from 2013 to 2015, and won numerous awards, including Project of the Year at the California State Science Fair, National Finalist at the Junior Science and Humanities Symposium, and Regional Finalist for the Americas at the Google Science Fair. It was also featured in Popular Mechanics (winner of a Next Generation Breakthrough Award) and on the Today Show (winner of a Make the Future Award).&lt;/p&gt;
+&lt;video controls name=&#34;media&#34;&gt;
+  &lt;source src=https://shilohc.github.io/blog/img/todayshow.mp4#t&amp;#61;290 type=&#34;video/mp4&#34;/&gt;
+&lt;/video&gt;
+
+&lt;blockquote&gt;
+&lt;details&gt;
+  &lt;summary&gt;Transcript of relevant segment, 4:50 - 6:05&lt;/summary&gt;
+  &lt;p&gt;HOST: Let&amp;rsquo;s move over to our last one.  This is Shiloh, she&amp;rsquo;s 15, from Sunnyvale, California.  Shiloh, what did you invent here?&lt;/p&gt;
+&lt;p&gt;SHILOH: So, it&amp;rsquo;s a hat for the blind that detects face-level obstacles, and indicates them to the user using an array of vibrating motors inside the hatband.&lt;/p&gt;
+&lt;p&gt;HOST: May I try one on?&lt;/p&gt;
+&lt;p&gt;SHILOH: Sure, why don&amp;rsquo;t you try this on.&lt;/p&gt;
+&lt;p&gt;HOST: Oh, you&amp;rsquo;re going to let me try yours?  Okay.  Hey, give me an idea of how this works.  I have a giant head, and there&amp;rsquo;s nothing I can do about that, but &amp;ndash;&lt;/p&gt;
+&lt;p&gt;[LAUGHTER]&lt;/p&gt;
+&lt;p&gt;HOST: Okay.  So what &amp;ndash; how does it work.&lt;/p&gt;
+&lt;p&gt;SHILOH: So you&amp;rsquo;re going to start feeling vibrating motors all around your head &amp;ndash;&lt;/p&gt;
+&lt;p&gt;HOST: Oh my gosh, I do.&lt;/p&gt;
+&lt;p&gt;SHILOH: &amp;ndash; corresponding to where the obstacles are.&lt;/p&gt;
+&lt;p&gt;HOST: I sense you over here.&lt;/p&gt;
+&lt;p&gt;SHILOH: So if you can feel my hand over here, you should be able to find &amp;ndash; feel it moving towards your front.&lt;/p&gt;
+&lt;p&gt;HOST: That is remarkable.&lt;/p&gt;
+&lt;p&gt;SHILOH: And these LEDs I put on this hat for demonstration also show the vibration pulses of the motors.&lt;/p&gt;
+&lt;p&gt;HOST: How was this idea born?  How&amp;rsquo;d you come up with it?&lt;/p&gt;
+&lt;p&gt;SHILOH: So that&amp;rsquo;s kind of an interesting story.  One day I was demonstrating one of my robots to some children and I used an analogy like, a robot is blind until you put sensors on it, to explain how sensors are used.  And then a while later I was attending a presentation given by Brian Higgins, a blind rehabilitation specialist, and he was describing his idea for a robot guide dog, and I was thinking, why don&amp;rsquo;t we put sensors on the blind so they can navigate like robots?&lt;/p&gt;
+&lt;p&gt;HOST: It&amp;rsquo;s brilliant, and I sense you right now, it&amp;rsquo;s vibrating.  Congratulations Shiloh, it&amp;rsquo;s great.&lt;/p&gt;
+
+&lt;/details&gt;
+
+&lt;/blockquote&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>Sting Operation</title>
+        <link>https://shilohc.github.io/blog/posts/sting_operation/</link>
+        <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/sting_operation/</guid>
+        <description>&lt;p&gt;Sting Operation is a homebrew telepresence robot; my original intent was to use it to attend &lt;a href=&#34;http://hbrobotics.org/&#34;&gt;robot club&lt;/a&gt; when I&amp;rsquo;m away at MIT.  Currently, it&amp;rsquo;s outfitted with a Neato BotVac LiDAR, a Raspberry Pi running ROS, and a PyBoard controlling the motors and LIDAR. An iPad mounted on a tripod lets me FaceTime the robot.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/stingoperation.jpg&#34; alt=&#34;Picture of Sting Operation&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pictured above: Sting Operation base (minus tripod). It&amp;rsquo;s a two-wheeled base with a castor wheel.  There is also a RC receiver that can be used for local teleoperation, and a dial on the front of the robot indicating its state (under remote control, under local control, stopped, etc).&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
+        <title>Typewriter Keyboard</title>
+        <link>https://shilohc.github.io/blog/posts/typewriter_keyboard/</link>
+        <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/typewriter_keyboard/</guid>
+        <description>&lt;p&gt;This is a mechanical keyboard build (DZ60 PCB, Kailh Box Navy switches) that uses as its keycaps real keys from old typewriters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/typewriter_kb.jpg&#34; alt=&#34;Picture of typewriter keyboard without case, with more typewriter keys clustered near it&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I used three different sets of vintage typewriter keys. The alpha keys and some of the modifiers are glass tombstone-style keys from a vintage Royal mechanical typewriter, but since that&amp;rsquo;s only 50 keys, I augmented it with plastic keys from two different sets (origin unknown).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fun fact: Old typewriters &amp;ndash; including the Royal that my keys are from &amp;ndash; often didn&amp;rsquo;t come with a &lt;code&gt;1&lt;/code&gt; key; instead, the digit &lt;code&gt;1&lt;/code&gt; was typed using a lowercase &lt;code&gt;l&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;These keys came with part of the typewriter stem still attached to the back, which I had to trim to a reasonable length. I cut a few off with a dremel tool, but this was more time-consuming than I liked, so I used a sheet metal hand nibbler on the rest and gave myself a wicked hand cramp.&lt;/p&gt;
+&lt;p&gt;Next I designed (in OnShape) and 3D-printed adapters for these keys that would fit on the Cherry MX switches.  These, I hot-glued to the typewriter keys. I ended up designing six or so types of adapters &amp;ndash; some of the metal keys had wider stems than the others, a few came without stems, and of course each set of plastic keys needed its own type of adapter.  If I re-did this project I might use a material other than hot-melt glue to attach the adapters to the plastic keys; a couple of the keycaps I used on my arrow keys have an alarming tendency to come loose.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t really think far enough ahead to design and lasercut a custom plate, so I decided to do a plateless build with PCB-mount switches. Problem: Kailh BOX Navy switches aren&amp;rsquo;t PCB-mount. (PCB-mount switches have, in addition to the two metal switch pins, two plastic pins that fit into holes on the PCB for added rigidity.) Therefore, I hot-glued them to the PCB. A lot of hot glue was involved in this build.  I then mounted the finished PCB in a 3D-printed case from Thingiverse (I believe &lt;a href=&#34;https://www.thingiverse.com/thing:962978&#34;&gt;this one&lt;/a&gt;, but I&amp;rsquo;ve long since misplaced the original link).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/typewriter_kb2.jpg&#34; alt=&#34;Picture of typewriter keyboard with case&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The final step was flashing the keyboard firmware. Thankfully, the DZ60 is one of the incredibly many keyboards supported by the open-source QMK keyboard firmware. I tweaked one of the standard layouts a bit, since I&amp;rsquo;m using a somewhat weird split-spacebar layout with arrow keys. I also customized the underglow LED lighting and started adding some interesting layers.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s still more to do with this project.  I primarily want to work on the firmware; &lt;a href=&#34;https://shilohc.github.io/blog/posts/keyboard_layout/&#34;&gt;programming my Preonic&lt;/a&gt; has given me a much better idea of what I want on my layers.  Also, my 3D-printed case is lovely and purple, but it is also unfortunately opaque, and blocks most of the underglow LEDs &amp;ndash; it would be nice to replace the back of the case with acrylic, so the light can actually get outside the case, instead of shining up through the unpopulated holes in the PCB.  But for now, the keyboard works just fine.&lt;/p&gt;
+</description>
+      </item>
+      
+    
+      
+    
+      
+      <item>
+        <title>Custom Keyboard Layout</title>
+        <link>https://shilohc.github.io/blog/posts/keyboard_layout/</link>
+        <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/keyboard_layout/</guid>
+        <description>&lt;p&gt;It&amp;rsquo;s no secret that I&amp;rsquo;m massively obsessed with mechanical keyboards.  For sheer customizability, they&amp;rsquo;re impossible to beat.  Yes, I can put a lot of effort into software key remappings and then carefully port them over to every new computer I use &amp;ndash; or I can just use open-source keyboard firmware &lt;a href=&#34;https://docs.qmk.fm/#/&#34;&gt;QMK&lt;/a&gt; and my keyboard will work wherever I plug it in.  QMK also lets me program keys to do one thing when tapped and another thing when held down, or configure &amp;ldquo;layers&amp;rdquo; so that my letter keys will turn into symbol keys, so it&amp;rsquo;s more powerful than software configuration.&lt;/p&gt;
+&lt;p&gt;How can I exercise this power for myself, I hear you ask?  First, get a keyboard that supports QMK.  I personally use a Preonic, which is not for everyone, but I recommend that you get a keyboard that has a split spacebar or otherwise has some extra thumb keys &amp;ndash; these are very convenient to assign as &amp;ldquo;layer activation&amp;rdquo; keys.  Then, follow the &lt;a href=&#34;https://docs.qmk.fm/#/newbs&#34;&gt;QMK docs&lt;/a&gt; on making a new keymap file and flashing your keyboard.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/preonic1.jpg&#34; alt=&#34;The Preonic, with its original keycaps&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll notice that the Preonic has a &amp;ldquo;lower&amp;rdquo; key to the left of the spacebar and a &amp;ldquo;raise&amp;rdquo; key to the right.  These let you easily access &amp;ldquo;raise&amp;rdquo; and &amp;ldquo;lower&amp;rdquo; layers by holding down the respective key &amp;ndash; instantly and enormously expanding your keyboard.  It also has actual, physical arrow keys, something that&amp;rsquo;s important to me, and yet it takes up less space than a normal 60% keyboard.&lt;/p&gt;
+&lt;p&gt;The rest of this post will be about my personal layout choices.  You may want to follow along by looking at my personal config, which is &lt;a href=&#34;https://github.com/shilohc/qmk_firmware/tree/shilohc/keymaps/keyboards/preonic/keymaps/shilohc&#34;&gt;here&lt;/a&gt;.  You can find all my personal QMK configs in my fork of QMK &lt;a href=&#34;https://github.com/shilohc/qmk_firmware/tree/shilohc/keymaps&#34;&gt;here&lt;/a&gt;.  I also have a custom config for a DZ60, which is the PCB I used for my &lt;a href=&#34;https://shilohc.github.io/blog/posts/typewriter_keyboard/&#34;&gt;typewriter keyboard&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/preonic2.jpg&#34; alt=&#34;The Preonic, with Tengwar DSA keycaps&#34;&gt;&lt;/p&gt;
+&lt;p&gt;First, the default layer, labeled &lt;code&gt;_QWERTY&lt;/code&gt; in &lt;code&gt;keymap.c&lt;/code&gt;.  I haven&amp;rsquo;t made too many changes here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Delete key changed to backslash because I write a lot of LaTeX and don&amp;rsquo;t use delete.&lt;/li&gt;
+&lt;li&gt;Capslock changed to escape, something I highly recommend to all vim users.  If you use emacs I would instead suggest remapping it to ctrl.&lt;/li&gt;
+&lt;li&gt;The Enter key has been changed to &lt;code&gt;SFT_T(KC_ENT)&lt;/code&gt;.  If it&amp;rsquo;s held down, and another key is pressed, it functions as a shift; if tapped, it acts as enter.  This is because when I first switched to the Preonic I exclusively used the right shift key, which the Preonic doesn&amp;rsquo;t have.  I now use the left shift more often on my preonic, but on my Macbook&amp;rsquo;s rubber keyboard cover, there&amp;rsquo;s still a massive wear spot in the right shift while the left shift is near-pristine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;_LOWER&lt;/code&gt; layer is the one I&amp;rsquo;ve customized the most &amp;ndash; this is now my &amp;ldquo;symbols and function keys&amp;rdquo; layer.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The symbols that usually live on the number keys, &lt;code&gt;!@#$%^&amp;amp;*()&lt;/code&gt;, have been moved to the top row of letters, and the other common programming symbols live on the home row.&lt;/li&gt;
+&lt;li&gt;All three sets of brackets (parentheses, square-brackets, and curlyboys) are in a vertical stack on the rightmost columns of letter keys.&lt;/li&gt;
+&lt;li&gt;Backslash stays the same, but pipe (&lt;code&gt;|&lt;/code&gt;) has been moved to the quote key.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ll notice that the little diagram in the comments says Squid on it.  I was experimenting with QMK&amp;rsquo;s Unicode-sending functionality, something the USB HID device standard typically doesn&amp;rsquo;t allow, by using this key to send the squid kaomoji, &lt;code&gt;くコ:彡&lt;/code&gt;.  Unfortunately, it didn&amp;rsquo;t work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;_RAISE&lt;/code&gt; layer is for special commands, since I moved all the symbol functionality into &lt;code&gt;_LOWER&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;H, J, K, L can be used to drive the mouse around, and the semicolon key sends a click.  U and I scroll down and up.  This is probably the functionality on this layer I use most often.&lt;/li&gt;
+&lt;li&gt;I experimented with using several other keys on this layer to control brightness, music, etc., but honestly I mostly don&amp;rsquo;t use them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, there&amp;rsquo;s the &lt;code&gt;_ADJUST&lt;/code&gt; layer, which I never use (except once, when I was randomly button-mashing and accidentally switched into Colemak).  The less said about this, the better.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/preonic3.jpg&#34; alt=&#34;The Preonic, with Godspeed MT3 keycaps&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In the default keymap, both raise and lower have all the function keys on them, which is wasteful.  In addition, raise has a few symbols on it, in the same place where the lower layer also has symbols, which was really confusing for me to learn &amp;ndash; I could never remember whether the symbol I wanted was on raise or lower.  And some of the symbols were just hard to reach, especially &lt;code&gt;~&lt;/code&gt; and &lt;code&gt;|&lt;/code&gt; which I type a lot in bash commands.  With all the symbols on the raise layer, the functionality is (mostly) neatly divided into &amp;ldquo;symbols layer&amp;rdquo; and &amp;ldquo;not symbols layer&amp;rdquo;, which is easier to remember.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve chosen to stick to the QWERTY layout rather than switch to Dvorak or Colemak or Workman or something, mostly because I use vim and don&amp;rsquo;t want to disrupt that muscle memory.  (One afternoon I decided to try out Dvorak &amp;ndash; my typing speed after a few hours of practice wasn&amp;rsquo;t terrible, but then I tried to edit something in vim and I went directly to hell.  It was like, things are happening!  Why have I just jumped to the start of the file and deleted a bunch of lines?  That&amp;rsquo;s not what I wanted!)  I find that even with QWERTY, my Preonic represents a significant ergonomic improvement over a standard keyboard, since it&amp;rsquo;s ortholinear and very compact, reducing the distance my fingers have to stretch &amp;ndash; and my custom layout improves things more by putting all the symbols under the top two rows of letters.  Your mileage, of course, may vary.  A keyboard layout is a very personal thing, and I encourage you to experiment and customize yours until it perfectly fits you and your needs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shilohc.github.io/blog/img/keyboard_layout_meme.png&#34; alt=&#34;a keyboard layout is something that can actually be so personal&#34;&gt;&lt;/p&gt;
+</description>
+      </item>
+      
     
   </channel>
 </rss>
+
