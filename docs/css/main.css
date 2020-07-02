@@ -61,11 +61,10 @@ body {
     color: #524EF9;
 }
 
-#main h1::before, #sidebar h1::before {
+#main h1::before, #sidebar h1::before, #nav h1::before {
     content: "# ";
     color: #524EF9;
 }
-
 
 #sidebar h2::before, #nav h2::before {
     content: "## ";
@@ -99,7 +98,6 @@ body {
 h1#software-infrastructure-engineering {
     margin-bottom: 4rem;
 }
-
 
 .img-holder {
     float: left;
@@ -204,7 +202,10 @@ a:hover {
 #nav {
     display: none;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+}
+
+#nav h2 {
+    font-family: "Fira Code";
 }
 
 #nav li {
@@ -214,10 +215,6 @@ a:hover {
 #nav img.logo {
     width: 65px;
     margin-bottom: 10px;
-}
-
-#nav h1 {
-    font-size: 1.3rem;
 }
 
 #nav-items {
@@ -526,15 +523,19 @@ background-color: #FF6600
             display: none;
         }
 
-        #nav {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-
-
         #nav h1 {
             text-align: left;
+            font-size: 2rem;
+        }
+
+        #nav h1::before {
+            content: "# ";
+            color: #524EF9;
+        }
+
+        #main h2::before {
+            content: "## ";
+            color: #524EF9;
         }
 
         #main {
@@ -546,11 +547,15 @@ background-color: #FF6600
 
         #main h1 {
             position: static;
-            padding-left: 0;
+            padding-left: 20px;
         }
 
-        #main h1::before {
-            content: none;
+        #nav {
+            line-height: 0.6;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
         }
 
         h2 {
@@ -559,7 +564,6 @@ background-color: #FF6600
 
         h1 {
             font-size: 2rem;
-            text-align: center;
         }
 
         .post-info {
