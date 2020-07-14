@@ -3,6 +3,7 @@ title: "Legibility and MIT's Mandatory Meal Plans"
 date: 2020-07-08
 lastmod: 2020-07-13
 draft: false
+tags: ["disability", "MIT"]
 ---
 
 

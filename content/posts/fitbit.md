@@ -3,7 +3,7 @@ title: "That Fitbit rant"
 date: 2020-06-19
 lastmod: 2020-07-01
 draft: false
-tags: ["design"]
+tags: ["design", "disability"]
 ---
 
 While we're at it, here's another design rant that's been percolating within me like a fine wine.

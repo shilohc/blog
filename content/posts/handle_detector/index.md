@@ -3,7 +3,7 @@ title: "Handle Detector"
 date: 2020-07-01
 lastmod: 2020-07-01
 draft: false
-tags: ["projects"]
+tags: ["projects", "robotics"]
 ---
 
 Last fall, I took [6.881 Intelligent Robot Manipulation](http://manipulation.csail.mit.edu/Fall2019/ ) (well, actually 6.881 is a "Special Subjects" course number, and when this course is offered again it'll probably be renumbered, but that was the number I took it under).  We spent a lot of time on perception, because the first step in a manipulation problem is figuring out what the hell you're looking at and where to grab it.  Often, you may want to grab something by the handle, which means you need to identify where the handle is on the object, which is where my final project comes in.

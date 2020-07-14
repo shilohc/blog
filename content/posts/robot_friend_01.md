@@ -3,6 +3,7 @@ title: "The Robot Is A Sweet Boy, Doing His Best"
 date: 2020-06-21
 lastmod: 2020-06-21
 draft: false
+tags: ["robotics"]
 ---
 
 I see so many videos on social media of robots (usually from Boston Dynamics), with a flood of comments along the lines of "haha wow can't wait for this thing to kill us all".  Let me bust some myths: robots are like, kind of crap, you guys.  We've made a lot of amazing advances in controls for legged robots lately, particularly four-legged robots, and deep learning has vastly changed robot perception -- but stuff like object manipulation still sucks.  And most robot tasks, uh, kind of require object manipulation.  Boston Dynamics' specialization is in controls, so if you want those robots to do high-level task and motion planning (of the kind you'd need to carry out a "kill all humans" order, or carry an object into a different room and set it gently on a table, or other extremely hard tasks like that) you'll need to implement it yourself.  Also, most videos of robots doing stuff are carefully edited to include only the *successful* runs; most likely either there's 3x as much blooper reel footage that you don't see, or the robot is being teleoperated to get a nice clean take for the video.

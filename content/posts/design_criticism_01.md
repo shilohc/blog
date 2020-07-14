@@ -3,7 +3,7 @@ title: "Criticizing design articles because I can"
 date: 2020-06-19
 lastmod: 2020-06-19
 draft: false
-tags: ["design"]
+tags: ["design", "disability"]
 ---
 
 [This article](https://uxdesign.cc/design-better-forms-96fadca0f49c) on form design seems perfectly innocuous.  It's a helpful guide that lays out best practices and briefly describes why they're better than the obvious alternative.  But then I got to this part:
