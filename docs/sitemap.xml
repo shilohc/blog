@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://shilohc.github.io/blog/posts/legibility_and_disability/</loc>
+    <loc>https://shilohc.github.io/blog/tags/disability/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/posts/mealplan/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/tags/mit/</loc>
     <lastmod>2020-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://shilohc.github.io/blog/posts/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/tags/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/posts/fatigue/</loc>
     <lastmod>2020-07-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,7 +48,7 @@
   </url>
   
   <url>
-    <loc>https://shilohc.github.io/blog/tags/</loc>
+    <loc>https://shilohc.github.io/blog/tags/robotics/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url>
   
