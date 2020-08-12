@@ -21,10 +21,14 @@ video {
     width: 100%;
 }
 
+pre {
+	background-color: #eae9fe !important; /* light purple */
+}
+
 code {
   font-family: 'Fira Code', monospace;
   font-size: 0.8em;
-	background: #eae9fe; /*#b9b8fc; /* light purple */
+	background-color: #eae9fe; /*#b9b8fc; /* light purple */
   padding: 2px;
   white-space: pre;
 }
