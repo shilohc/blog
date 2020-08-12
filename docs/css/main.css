@@ -26,7 +26,7 @@ code {
   font-size: 0.8em;
 	background: #eae9fe; /*#b9b8fc; /* light purple */
   padding: 2px;
-  white-space: nowrap;
+  white-space: pre;
 }
 
 blockquote {

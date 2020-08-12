@@ -11,6 +11,59 @@
     
       
       <item>
+        <title>Visualize Everything</title>
+        <link>https://shilohc.github.io/blog/posts/visualization/</link>
+        <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://shilohc.github.io/blog/posts/visualization/</guid>
+        <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;foo&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;bar&lt;/span&gt;
+
+&lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; bleh:
+
+    baz.quux()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;adasgwb
+alkg;hasldfhg;
+
+hashdfgwerg
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;One of the best things you can do for yourself, debugging-wise, is visualization &amp;ndash; this is especially true in robotics, where we deal nearly exclusively with things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the physical world&lt;/li&gt;
+&lt;li&gt;cameras and other sensors&lt;/li&gt;
+&lt;li&gt;algorithms like localization, mapping, and path planning&lt;/li&gt;
+&lt;li&gt;humans and their activities&lt;/li&gt;
+&lt;li&gt;&amp;hellip; and other stuff with physical meaning that you can look at&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In all of these cases, it&amp;rsquo;s much easier to understand what&amp;rsquo;s going on if you slap your bizarre data that makes no sense in a picture, plot, or 3D visualizer.  It&amp;rsquo;s easy to draw on images with OpenCV.  It&amp;rsquo;s easy to publish stuff to rviz.  Unfortunately, it feels a lot harder than just printing a bunch of floats and trying to do the mental math yourself to check if they make sense.  This post is partially a reminder to me: it takes like 10 minutes tops to add a debug visualization; you are bad at mental math and after 10 minutes of trying to do it you will not have nearly as much insight as the visualization will give you.&lt;/p&gt;
+&lt;p&gt;Important point: the whole purpose of debug visualizations is that you have a confusing thing and you want to look at a picture of it, with as few conversion layers as possible so there&amp;rsquo;s no room for bugs to sneak in.  For example, if you&amp;rsquo;re trying to debug the conversion between image coordinates and some other quantity&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, you don&amp;rsquo;t want to convert your thing &lt;em&gt;back&lt;/em&gt; to image coordinates to draw it on an OpenCV image, since the conversion is what&amp;rsquo;s not working in the first place.  Instead, try rviz if your output quantity is 3D points, or matplotlib if it&amp;rsquo;s two-dimensional.&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;The most basic possible usage of matplotlib to plot two-dimensional data, here given as &lt;code&gt;xs&lt;/code&gt; and &lt;code&gt;ys&lt;/code&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;import matplotlib.pyplot as plt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;plt.plot(xs, ys)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;plt.show()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;See the docs for &lt;a href=&#34;https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot&#34;&gt;&lt;code&gt;plot&lt;/code&gt;&lt;/a&gt; for more info, particularly about format strings.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html&#34;&gt;Documentation for OpenCV draw functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Documentation for the &lt;code&gt;visualization_msgs&lt;/code&gt; &lt;a href=&#34;http://wiki.ros.org/visualization_msgs&#34;&gt;package&lt;/a&gt; and the &lt;code&gt;visualization_msgs/Marker&lt;/code&gt; &lt;a href=&#34;http://docs.ros.org/api/visualization_msgs/html/msg/Marker.html&#34;&gt;message&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Debugging over SSH, or for some other reason can&amp;rsquo;t use rviz?  Try &lt;a href=&#34;https://github.com/dheera/rosshow&#34;&gt;rosshow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you happen to be using a RealSense, the Intel RealSense SDK also comes with a terminal-based tool for &lt;a href=&#34;https://dev.intelrealsense.com/docs/rs-depth&#34;&gt;visualizing depth data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The usual debug flow using images in ROS is to publish images with debug info drawn on them to a new &lt;code&gt;xyz_debug&lt;/code&gt; image topic, then view them using &lt;a href=&#34;https://wiki.ros.org/image_view&#34;&gt;&lt;code&gt;image_view&lt;/code&gt;&lt;/a&gt; or &lt;a href=&#34;http://wiki.ros.org/rqt_image_view&#34;&gt;&lt;code&gt;rqt_image_view&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I swear I&amp;rsquo;ve lost years of my life to image-related conversions.  For some reason nobody can agree on where the X and Y axes should go, what rows and columns and width and height mean, and what order the R, G, and B should go in.  Today for my internship I wrote a function that converts from [REDACTED] image coordinates to OpenCV image coordinates, and the X and Y axes are swapped but also for some reason one of them is backwards?  I&amp;rsquo;m only confident I got it right because the pink circle I&amp;rsquo;m drawing on the output image is in the correct place.  At least when you forget to convert BGR &amp;lt;-&amp;gt; RGB it&amp;rsquo;s pretty immediately noticeable. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+      </item>
+      
+    
+      
+      <item>
         <title>You Should Learn To Sew</title>
         <link>https://shilohc.github.io/blog/posts/sewing/</link>
         <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>

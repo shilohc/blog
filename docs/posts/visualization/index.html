@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>emergent misbehavior</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="https://shilohc.github.io/blog/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Serif+Pro|Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href=https://shilohc.github.io/blog/css/main.css>
+
+  
+  
+  
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+  
+  <link href="//fonts.googleapis.com/css?family=Fira+Code:400,700|Ovo:400" rel="stylesheet">
+
+
+
+  <html>
+  <body lang="en">
+
+
+  <div id="main">
+    
+
+<div id="nav">
+  
+
+  <h1><a href="https://shilohc.github.io/blog/" style="text-decoration:none;">emerg*nt misbeh@vior </a></h1>
+  
+  
+  <a href="https://shilohc.github.io/blog/about/" style="text-decoration:none;">
+    <h2>About</h2>
+  </a>
+  
+  <a href="https://shilohc.github.io/blog/all/" style="text-decoration:none;">
+    <h2>All Posts</h2>
+  </a>
+  
+  <a href="https://shilohc.github.io/blog/tags/" style="text-decoration:none;">
+    <h2>Tags</h2>
+  </a>
+  
+  <a href="https://shilohc.github.io/blog/blogroll/" style="text-decoration:none;">
+    <h2>Blogroll</h2>
+  </a>
+  
+
+</div>
+
+    <h1>Visualize Everything</h1>
+    <p class="post-info">525 words | ~ 3 min read | Aug 11, 2020 | last modified Aug 11, 2020 | 
+    
+    </p>
+    <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="font-weight:bold">import</span> <span style="font-weight:bold">foo</span> <span style="font-weight:bold">as</span> <span style="font-weight:bold">bar</span>
+
+<span style="font-weight:bold">if</span> bleh:
+
+    baz.quux()</code></pre></div>
+<pre><code>adasgwb
+alkg;hasldfhg;
+
+hashdfgwerg
+</code></pre><p>One of the best things you can do for yourself, debugging-wise, is visualization &ndash; this is especially true in robotics, where we deal nearly exclusively with things like:</p>
+<ul>
+<li>the physical world</li>
+<li>cameras and other sensors</li>
+<li>algorithms like localization, mapping, and path planning</li>
+<li>humans and their activities</li>
+<li>&hellip; and other stuff with physical meaning that you can look at</li>
+</ul>
+<p>In all of these cases, it&rsquo;s much easier to understand what&rsquo;s going on if you slap your bizarre data that makes no sense in a picture, plot, or 3D visualizer.  It&rsquo;s easy to draw on images with OpenCV.  It&rsquo;s easy to publish stuff to rviz.  Unfortunately, it feels a lot harder than just printing a bunch of floats and trying to do the mental math yourself to check if they make sense.  This post is partially a reminder to me: it takes like 10 minutes tops to add a debug visualization; you are bad at mental math and after 10 minutes of trying to do it you will not have nearly as much insight as the visualization will give you.</p>
+<p>Important point: the whole purpose of debug visualizations is that you have a confusing thing and you want to look at a picture of it, with as few conversion layers as possible so there&rsquo;s no room for bugs to sneak in.  For example, if you&rsquo;re trying to debug the conversion between image coordinates and some other quantity<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, you don&rsquo;t want to convert your thing <em>back</em> to image coordinates to draw it on an OpenCV image, since the conversion is what&rsquo;s not working in the first place.  Instead, try rviz if your output quantity is 3D points, or matplotlib if it&rsquo;s two-dimensional.</p>
+<h2 id="reference">Reference</h2>
+<p>The most basic possible usage of matplotlib to plot two-dimensional data, here given as <code>xs</code> and <code>ys</code>:</p>
+<blockquote>
+<p><code>import matplotlib.pyplot as plt</code></p>
+<p><code>plt.plot(xs, ys)</code></p>
+<p><code>plt.show()</code></p>
+</blockquote>
+<p>See the docs for <a href="https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot"><code>plot</code></a> for more info, particularly about format strings.</p>
+<ul>
+<li><a href="https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html">Documentation for OpenCV draw functions</a></li>
+<li>Documentation for the <code>visualization_msgs</code> <a href="http://wiki.ros.org/visualization_msgs">package</a> and the <code>visualization_msgs/Marker</code> <a href="http://docs.ros.org/api/visualization_msgs/html/msg/Marker.html">message</a></li>
+<li>Debugging over SSH, or for some other reason can&rsquo;t use rviz?  Try <a href="https://github.com/dheera/rosshow">rosshow</a></li>
+<li>If you happen to be using a RealSense, the Intel RealSense SDK also comes with a terminal-based tool for <a href="https://dev.intelrealsense.com/docs/rs-depth">visualizing depth data</a></li>
+<li>The usual debug flow using images in ROS is to publish images with debug info drawn on them to a new <code>xyz_debug</code> image topic, then view them using <a href="https://wiki.ros.org/image_view"><code>image_view</code></a> or <a href="http://wiki.ros.org/rqt_image_view"><code>rqt_image_view</code></a></li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I swear I&rsquo;ve lost years of my life to image-related conversions.  For some reason nobody can agree on where the X and Y axes should go, what rows and columns and width and height mean, and what order the R, G, and B should go in.  Today for my internship I wrote a function that converts from [REDACTED] image coordinates to OpenCV image coordinates, and the X and Y axes are swapped but also for some reason one of them is backwards?  I&rsquo;m only confident I got it right because the pink circle I&rsquo;m drawing on the output image is in the correct place.  At least when you forget to convert BGR &lt;-&gt; RGB it&rsquo;s pretty immediately noticeable. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </div>
+
+<div id="sidebar">
+  
+
+  <h1><a href="https://shilohc.github.io/blog/" style="text-decoration:none;">emerg*nt misbeh@vior</a></h1>
+
+  <h2>Pages</h2>
+  <ul>
+    
+      <li><a href="https://shilohc.github.io/blog/about/" style="text-decoration:none;">About</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/all/" style="text-decoration:none;">All Posts</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/tags/" style="text-decoration:none;">Tags</a></li>
+    
+      <li><a href="https://shilohc.github.io/blog/blogroll/" style="text-decoration:none;">Blogroll</a></li>
+    
+  </ul>
+
+  <h2>Recent Posts</h2>
+  <ul>
+    
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/visualization/" style="text-decoration:none;">Visualize Everything</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/sewing/" style="text-decoration:none;">You Should Learn To Sew</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/mealplan/" style="text-decoration:none;">Legibility and MIT&#39;s Mandatory Meal Plans</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/fatigue/" style="text-decoration:none;">Living with Chronic Fatigue</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/handle_detector/" style="text-decoration:none;">Handle Detector</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/amigurumi-crab/" style="text-decoration:none;">You Are Not Immune To Amigurumi Crab</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/headphone_hooks/" style="text-decoration:none;">Headphone Hooks</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/robot_friend_01/" style="text-decoration:none;">The Robot Is A Sweet Boy, Doing His Best</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/internships/" style="text-decoration:none;">Shiloh&#39;s Guide to Robotics &amp; Software Internships</a></li>
+      
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/design_criticism_01/" style="text-decoration:none;">Criticizing design articles because I can</a></li>
+      
+    
+  </ul>
+
+  <h2>Contact</h2>
+  <ul>
+    
+      <li><a href="mailto:shilohc@mit.edu">Email</a></li>
+    
+      <li><a href="https://github.com/shilohc">Github</a></li>
+    
+  </ul>
+</div>
+
+  
+</body>
+</html>
+
