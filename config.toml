@@ -6,6 +6,7 @@ googleAnalytics = ""
 theme = "pristine"
 summaryLength = 25
 publishDir = "docs"
+pygmentsCodeFences = true
 
 [params]
   title = "emerg*nt misbeh@vior"
@@ -15,6 +16,18 @@ publishDir = "docs"
   ]
   heading_font = "Fira Code"
   body_font = "Open Sans"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "algol_nu"
+    tabWidth = 4
 
 [[menu.main]]
   name = "About"
