@@ -1,13 +1,29 @@
 ---
 title: "Shiloh's Guide to Robotics & Software Internships"
 date: 2020-06-20
-lastmod: 2020-06-22
+lastmod: 2020-08-20
 draft: false
 ---
 
 I'm currently employed at my \*checks notes\* seventh internship, which God willing ought to be my last.  Accordingly, I wanted to write up everything I know about internships, before I get employed full-time and forget it all.
 
 Oh, and by the way, if you're in college or fixin' to go to one, you should give [this post](https://siderea.dreamwidth.org/1238585.html ) a read.  I had half of a hugely long college advice post in the works, and this said everything I wanted to say way more eloquently.
+
+_Edited 20-Aug-2020 to add the "Why internships?" section._
+
+## Why internships?
+
+In the first version of this post, I made some assumptions, some knowingly and some not: that you, my audience, are an undergraduate student in software/robotics; that you understand vaguely what a software internship is for, career-wise; and that you are already planning to do an internship but don't quite know how to go about snagging one.  My background is such that I had a very deep understanding of the robotics industry and how internships would fit into my career before I even set foot on campus, and it literally did not occur to me that not everyone knows this stuff until my roommate pointed it out to me.  Thus this section of the post, where I assume that you're probably a freshman and try to sell you on the concept that internships are a thing you really, really want to do.
+
+The two general career tracks in robotics (and software more broadly) are "industry" and "research", and which one of these you go down will determine the best way for you to spend your summers.  Typically, if you're going down the research track, your goal in undergrad is to make yourself as attractive a candidate in grad school admissions as possible (much like how your goal in high school was to make yourself attractive in college admissions).  This usually means research -- what we at MIT call UROPs.  You want to try to get associated with a research lab in undergrad as soon as possible, and spend your summers working on research.  This is all I'll say about the research track; it's not the focus of this post.
+
+For the industry track, you instead want to spend your summers doing internships.  Jobs you apply for after graduating college will expect you to have done at least one software internship, and probably several.  You can (and should) start getting internships as early as the summer after your freshman year.  At MIT, I also knew people who did externships (mini-internships), particularly during IAP (MIT starts the spring semester in February; you can spend the month of January, known as IAP, doing externships, taking mini-classes, or just recovering from burnout), and if you're taking a gap year or a leave of absence, you might want to spend part of it doing an internship.  If you've had little luck so far with getting summer internships or spent a while on the research track and decided it wasn't for you, doing a bunch of these smaller off-cycle internships/externships can be a great way to get more experience on your resume, and the application process for them tends to be much less competitive.
+
+A software or robotics engineering internship should be paid.  Generally, the company will find a project for you that is scoped to take an undergrad roughly three months to finish and (hopefully) interesting, but not really business-critical.  They'll also assign you a mentor/supervisor.  At some companies, you may have a separate supervisor (your boss) and mentor (advises you on professional development); at others these may be the same person, or the mentor role won't really exist.  You'll probably have the best experience if there is some kind of explicit mentorship happening and both your mentor and your supervisor are excited about having an intern.  The overall goal is for you to get some work experience in your field of interest and maybe also some professional mentorship.  (The benefit to the company is not really useful labor from its interns; instead, what it wants is to recruit the best interns as full-time employees in the future.  Its hope is that you'll be more likely to choose the company you had a great internship at over other companies that you've only interacted with in interviews.)
+
+To reiterate: it's never too early to get an internship.  Large tech companies often have intern programs specifically for freshmen (and large companies with established processes will also help you learn software best-practices).  Smaller companies and startups don't typically have elaborately organized internship programs, but can also be less selective.  MIT has a special freshmen-only section of career fair; make sure to check if your college does that, because talking to five companies in a row that by policy can only hire juniors will make you feel lower than dirt.  Very early in your college career you may not have any actual coursework to speak of (and this is not helped by the stupid internship recruiting cycle that starts in SEPTEMBER), but hopefully you have a couple high school or personal projects that prove you know, at least a little bit, what you're doing.  There will also be companies that have sensible expectations of freshmen, and it is definitely possible to get internships at them.
+
+Okay, rant over, back to the rest of the post.
 
 ## Networking
 
@@ -39,7 +55,7 @@ Oh, and keep your Linkedin profile up-to-date.  Most of the Linkedin messages I 
 
 ## Application
 
-The application timeline for summer software internships starts in the fall, which is mildly silly.  Typically, only bigger and better-established companies will have their shit together this far in advance, so many startups will still be available to you if you start looking in Jan/Feb.  But the big career fair is probably in the fall, the application deadline for my Google Engineering Practicum internship was, IIRC, October 31, and (particularly in the excitement of your freshman year) it's easy to let these deadlines slip by.  It helps to be organized about it -- make a list of companies you're interested in and add all their relevant application tasks and deadlines to your calendar/planner/task tracking system.
+The application timeline for summer software internships starts in the fall, which is silly.  Typically, only bigger and better-established companies will have their shit together this far in advance, so many startups will still be available to you if you start looking in Jan/Feb.  But the big career fair is probably in the fall, the application deadline for my Google Engineering Practicum internship was, IIRC, October 31, and (particularly in the excitement of your freshman year) it's easy to let these deadlines slip by.  It helps to be organized about it -- make a list of companies you're interested in and add all their relevant application tasks and deadlines to your calendar/planner/task tracking system.
 
 Also in the fall, if you have a solid network, I would recommend emailing people in your network and asking about potential internship opportunities.  Since most of my network is startup-focused, often the companies I email haven't yet started recruiting interns, but it never hurts to be early.
 
@@ -51,7 +67,9 @@ Come January, many big companies' intern recruiting cycles will be over, but oth
 
 I have not personally tried this, but if you're interested in a startup where you don't know anyone and they haven't yet set up an official intern program, you could definitely just email them anyway ("Hello [cofounder/CTO], I'm a robotics/CS/underwater basketweaving student at XYZ University, and I'm interested in interning at your company because blah blah blah...") and see what happens.
 
-By March/April, most internship recruiting will be over.  You could try using your network to do a Hail Mary pass, but at this point if you haven't found an internship you probably want to start looking for a summer research position or something.
+By March/April, most internship recruiting will be over.  You could try using your network to do a Hail Mary pass, but at this point if you haven't found an internship you probably want to start looking for a summer research position or something (this is not a diss of research; grad students looking to hire undergrads for their projects just don't tend to do things all that far in advance).
+
+During this whole process, you will have to send a lot of professional-sounding emails.  The main way I figured out how to do the professional-sounding email tone is by binge-reading [Ask a Manager](http://www.askamanager.org/ ).
 
 ## How to do career fair
 
@@ -88,7 +106,7 @@ In the few weeks post-career-fair, I tend to receive a lot of emails about codin
 
 Above all, don't feel discouraged if the outcome of all your career fair efforts amounts to a wet fart.  It happens, often to very smart and qualified people, and it's not a referendum on your actual value.  Also, applying to internships is a numbers game, and the numbers are very much not in your favor if you're doing anything other than Generic Software or if you're a freshman/sophomore (many companies have blanket policies preventing them from hiring underclassmen).  I think it's still worth going to career fair if you're in one of these numbers-disadvantaged categories, because the practice is valuable and will help you freak out less when you become a senior and Uber or whoever will finally deign to talk to you.  Just, you know, keep your expectations low.
 
-I'm not going to discuss interview prep here; I think it's been adequately covered elsewhere on the Internet.
+I'm not going to discuss interview prep here; I think it's been adequately covered elsewhere on the Internet.  Briefly: Read _Cracking the Coding Interview_, maybe do some practice problems on Leetcode, and have material from your data structures/algorithms class(es) fresh in your mind.
 
 ## Wage negotiation
 

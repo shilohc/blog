@@ -1,11 +1,12 @@
 ---
 title: "Legibility and MIT's Mandatory Meal Plans"
 date: 2020-07-08
-lastmod: 2020-07-13
+lastmod: 2020-08-22
 draft: false
 tags: ["disability", "MIT"]
 ---
 
+_Update 22-Aug-2020:_ [i fuckin' called it](https://www.buzzfeednews.com/article/tanyachen/nyu-uga-college-students-sharing-fyre-fest-quarantine-meals )
 
 MIT's policy for allowing students back on campus in the fall is upsetting a lot of students for a lot of reasons.  I won't go into detail about most of these here, since I wanted to focus on one thing: the meal plan is now mandatory for all students who live in dorms, who are no longer permitted to use the kitchens.  And if you are an undergraduate not living in the dorms you are not allowed to access campus (yes, even if your apartment with its private kitchenette is a 5-minute walk from campus, and yes, even though the admins hinted strongly that space concerns were the main limitation preventing them from allowing more students back on campus, with the result that a lot of students have already signed leases for off-campus apartments).
 
