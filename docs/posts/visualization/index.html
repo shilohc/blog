@@ -65,7 +65,13 @@
 </div>
 
     <h1>Visualize Everything</h1>
-    <p class="post-info">515 words | ~ 3 min read | Aug 11, 2020 | last modified Aug 11, 2020 | 
+    <p class="post-info">544 words | ~ 3 min read | Aug 11, 2020 | last modified Oct 21, 2020 | 
+    
+      <i data-feather="tag"></i>
+      
+      
+      <a class="btn tag-btn btn-sm" href="https://shilohc.github.io/blog/tags/robotics">robotics</a>
+      
     
     </p>
     <p>One of the best things you can do for yourself, debugging-wise, is visualization &ndash; this is especially true in robotics, where we deal nearly exclusively with things like:</p>
@@ -85,12 +91,18 @@
 <li>Debugging over SSH, or for some other reason can&rsquo;t use rviz?  Try <a href="https://github.com/dheera/rosshow">rosshow</a></li>
 <li>If you happen to be using a RealSense, the Intel RealSense SDK also comes with a terminal-based tool for <a href="https://dev.intelrealsense.com/docs/rs-depth">visualizing depth data</a></li>
 <li>The usual debug flow using images in ROS is to publish images with debug info drawn on them to a new <code>xyz_debug</code> image topic, then view them using <a href="https://wiki.ros.org/image_view"><code>image_view</code></a> or <a href="http://wiki.ros.org/rqt_image_view"><code>rqt_image_view</code></a></li>
-<li>The most basic possible usage of matplotlib to plot two-dimensional data, here given as <code>xs</code> and <code>ys</code>:</li>
+<li>The most basic possible usage of <code>matplotlib</code> to plot two-dimensional data, here given as <code>xs</code> and <code>ys</code>:</li>
 </ul>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="font-weight:bold">import</span> <span style="color:#666;font-weight:bold;font-style:italic">matplotlib.pyplot</span> <span style="font-weight:bold">as</span> <span style="color:#666;font-weight:bold;font-style:italic">plt</span>
 plt.plot(xs, ys)
 plt.show()</code></pre></div>
 <p>See the docs for <a href="https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot"><code>plot</code></a> for more info, particularly about format strings.</p>
+<p>For more complex <code>matplotlib</code> tasks, it usually becomes necessary to use figures and axes (explained <a href="https://medium.com/towards-artificial-intelligence/day-3-of-matplotlib-figure-axes-explained-in-detail-d6e98f7cd4e7">here</a>):</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="font-weight:bold">import</span> <span style="color:#666;font-weight:bold;font-style:italic">matplotlib.pyplot</span> <span style="font-weight:bold">as</span> <span style="color:#666;font-weight:bold;font-style:italic">plt</span>
+fig = plt.figure()
+axes = fig.add_subplot()
+axes.plot(xs, ys)
+plt.show()</code></pre></div>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -123,6 +135,10 @@ plt.show()</code></pre></div>
   <h2>Recent Posts</h2>
   <ul>
     
+    
+      
+        <li><a href="https://shilohc.github.io/blog/posts/food_is_hard/" style="text-decoration:none;">Food Is Hard</a></li>
+      
     
       
         <li><a href="https://shilohc.github.io/blog/posts/visualization/" style="text-decoration:none;">Visualize Everything</a></li>
@@ -158,10 +174,6 @@ plt.show()</code></pre></div>
     
       
         <li><a href="https://shilohc.github.io/blog/posts/internships/" style="text-decoration:none;">Shiloh&#39;s Guide to Robotics &amp; Software Internships</a></li>
-      
-    
-      
-        <li><a href="https://shilohc.github.io/blog/posts/design_criticism_01/" style="text-decoration:none;">Criticizing design articles because I can</a></li>
       
     
   </ul>

@@ -3,13 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://shilohc.github.io/blog/</loc>
+    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/posts/food_is_hard/</loc>
+    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shilohc.github.io/blog/posts/</loc>
-    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/tags/robotics/</loc>
+    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shilohc.github.io/blog/tags/</loc>
+    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://shilohc.github.io/blog/posts/visualization/</loc>
-    <lastmod>2020-08-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,11 +54,6 @@
   </url>
   
   <url>
-    <loc>https://shilohc.github.io/blog/tags/</loc>
-    <lastmod>2020-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shilohc.github.io/blog/posts/fatigue/</loc>
     <lastmod>2020-07-22T00:00:00+00:00</lastmod>
   </url>
@@ -54,11 +70,6 @@
   
   <url>
     <loc>https://shilohc.github.io/blog/tags/projects/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shilohc.github.io/blog/tags/robotics/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -120,12 +131,6 @@
   <url>
     <loc>https://shilohc.github.io/blog/posts/gcal_tracker/</loc>
     <lastmod>2020-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shilohc.github.io/blog/</loc>
-    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
