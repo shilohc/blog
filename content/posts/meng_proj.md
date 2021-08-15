@@ -2,7 +2,7 @@
 title: "Robot Apocalypse One Step Closer: Robots Will No Longer Get Lost In Multi-Floor Buildings"
 date: 2021-08-15
 lastmod: 2021-08-15
-draft: false
+draft: true
 tags: ["robotics"]
 ---
 
