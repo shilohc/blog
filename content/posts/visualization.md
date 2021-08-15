@@ -3,6 +3,7 @@ title: "Visualize Everything"
 date: 2020-08-11
 lastmod: 2020-08-11
 draft: false
+tags: ["robotics"]
 ---
 
 One of the best things you can do for yourself, debugging-wise, is visualization -- this is especially true in robotics, where we deal nearly exclusively with things like:
