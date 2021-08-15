@@ -1,7 +1,7 @@
 ---
 title: "Visualize Everything"
 date: 2020-08-11
-lastmod: 2020-08-11
+lastmod: 2020-10-21
 draft: false
 tags: ["robotics"]
 ---
@@ -25,7 +25,7 @@ Important point: the whole purpose of debug visualizations is that you have a co
 * Debugging over SSH, or for some other reason can't use rviz?  Try [rosshow](https://github.com/dheera/rosshow )
 * If you happen to be using a RealSense, the Intel RealSense SDK also comes with a terminal-based tool for [visualizing depth data](https://dev.intelrealsense.com/docs/rs-depth )
 * The usual debug flow using images in ROS is to publish images with debug info drawn on them to a new `xyz_debug` image topic, then view them using [`image_view`](https://wiki.ros.org/image_view ) or [`rqt_image_view`](http://wiki.ros.org/rqt_image_view )
-* The most basic possible usage of matplotlib to plot two-dimensional data, here given as `xs` and `ys`:
+* The most basic possible usage of `matplotlib` to plot two-dimensional data, here given as `xs` and `ys`:
 
 {{< highlight python >}}
 import matplotlib.pyplot as plt
@@ -33,7 +33,17 @@ plt.plot(xs, ys)
 plt.show()
 {{</ highlight >}}
 
-See the docs for [`plot`](https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot ) for more info, particularly about format strings.
+See the docs for [`plot`](https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot) for more info, particularly about format strings.
+
+For more complex `matplotlib` tasks, it usually becomes necessary to use figures and axes (explained [here](https://medium.com/towards-artificial-intelligence/day-3-of-matplotlib-figure-axes-explained-in-detail-d6e98f7cd4e7)):
+
+{{< highlight python >}}
+import matplotlib.pyplot as plt
+fig = plt.figure()
+axes = fig.add_subplot()
+axes.plot(xs, ys)
+plt.show()
+{{</ highlight >}}
 
 [^1]: I swear I've lost years of my life to image-related conversions.  For some reason nobody can agree on where the X and Y axes should go, what rows and columns and width and height mean, and what order the R, G, and B should go in.  Today for my internship I wrote a function that converts from [REDACTED] image coordinates to OpenCV image coordinates, and the X and Y axes are swapped but also for some reason one of them is backwards?  I'm only confident I got it right because the pink circle I'm drawing on the output image is in the correct place.  At least when you forget to convert BGR <-> RGB it's pretty immediately noticeable.
 
